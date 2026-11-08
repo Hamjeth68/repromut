@@ -13,15 +13,15 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\textsc{ReproMut} --- exploratory preprint}
-\fancyhead[R]{\small Draft v0.1 (2026-11-08)}
+\fancyhead[L]{\small\textsc{ReproMut} --- preprint, work in progress}
+\fancyhead[R]{\small Draft v0.2 (2026-11-08)}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.3pt}
 
 \newcommand{\RM}{\textsc{ReproMut}}
 
 \title{\textbf{\RM: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments}\\[4pt]
-\large Exploratory preprint (v0.1)}
+\large Preprint --- work in progress (draft v0.2)}
 \author{Hamjeth Misree\\
 \small Independent researcher\\
 \small \texttt{hamjeth68@gmail.com}\\
@@ -32,11 +32,11 @@
 \maketitle
 
 \begin{center}
-\fbox{\parbox{0.92\linewidth}{\small\textbf{Status of this document.} This preprint describes a benchmark design and an \emph{exploratory development run}. The hypothesis thresholds were written down before the run but were not publicly preregistered; all results must therefore be read as exploratory. Any future confirmatory study will use a separately frozen and publicly timestamped protocol (Section~\ref{sec:future}).}}
+\fbox{\parbox{0.92\linewidth}{\small\textbf{Status of this document.} This is an in-progress preprint describing a benchmark design and an \emph{exploratory development run}. The hypothesis thresholds were written down before the run but were not publicly preregistered; all results should be read as exploratory. A frozen, preregistered confirmatory run is planned for v0.1.0 (Section~\ref{sec:future}). \textbf{New in v0.2:} a \emph{pre-registered} external validation (E1) on independently written code (Section~\ref{sec:e1}).}}
 \end{center}
 
 \begin{abstract}
-\noindent Computational reproducibility failures in machine-learning (ML) experiments often stem from small, mundane causes: unfixed random seeds, silently drifting dependency defaults, hidden configuration overrides, stale cached artifacts and inconsistent preprocessing. Many checks exist to guard against these causes, but there is little controlled evidence about \emph{which} kinds of check catch \emph{which} kinds of failure, and at what cost. We present \RM, an executable benchmark that injects predeclared reproducibility mutations into small, CPU-only, fully synthetic ML experiments with known ground truth. Version 0.1 comprises 28 baseline experiments (binary and multiclass classification, regression, clustering), 12 result-changing mutation operators and 7 semantics-preserving control operators, yielding 452 cases. Every declared label and divergence stage is confirmed by an independent tolerance-based execution oracle. We compare five auditing strategies: no audit, a seed-only check, a static manifest comparison, a dynamic auditor that re-executes the package and compares per-stage fingerprints, and a static--dynamic combination. In an exploratory development run, the seed-only check detected 29.4\% of result-changing mutations (95\% CI 24.3--35.1\%) and the static manifest 72.8\% (67.2--77.7\%), while the dynamic auditor detected all 272 (98.6--100\%) with no false positives on 180 controls. The static manifest detected none of the 74 mutations that live outside the declared configuration (stale caches, environment-file overrides, dependency drift) and raised false alarms on 12 harmless thread-count changes. Because the dynamic auditor and the oracle both execute the package, the dynamic result is largely expected by construction; the substantive findings concern the blind spots and false alarms of cheaper checks, localisation, and cost. During construction the oracle also exposed three non-obvious invariances in which an apparently disruptive change leaves results unchanged. Code, data generators, tests and raw results are released openly.
+\noindent Computational reproducibility failures in machine-learning (ML) experiments often stem from small, mundane causes: unfixed random seeds, silently drifting dependency defaults, hidden configuration overrides, stale cached artifacts and inconsistent preprocessing. Many checks exist to guard against these causes, but there is little controlled evidence about \emph{which} kinds of check catch \emph{which} kinds of failure, and at what cost. We present \RM, an executable benchmark that injects predeclared reproducibility mutations into small, CPU-only, fully synthetic ML experiments with known ground truth. Version 0.1 comprises 28 baseline experiments (binary and multiclass classification, regression, clustering), 12 result-changing mutation operators and 7 semantics-preserving control operators, yielding 452 cases. Every declared label and divergence stage is confirmed by an independent tolerance-based execution oracle. We compare five auditing strategies: no audit, a seed-only check, a static manifest comparison, a dynamic auditor that re-executes the package and compares per-stage fingerprints, and a static--dynamic combination. In an exploratory development run, the seed-only check detected 29.4\% of result-changing mutations (95\% CI 24.3--35.1\%) and the static manifest 72.8\% (67.2--77.7\%), while the dynamic auditor detected all 272 (98.6--100\%) with no false positives on 180 controls. The static manifest detected none of the 74 mutations that live outside the declared configuration (stale caches, environment-file overrides, dependency drift) and raised false alarms on 12 harmless thread-count changes. Because the dynamic auditor and the oracle both execute the package, the dynamic result is largely expected by construction; the substantive findings concern the blind spots and false alarms of cheaper checks, localisation, and cost. During construction the oracle also exposed three non-obvious invariances in which an apparently disruptive change leaves results unchanged. In a pre-registered external validation on 30 randomly sampled, independently written scikit-learn example scripts (199 mutation cases), the seed-only check again missed every non-seed change (recall 71--75\%), the static manifest raised false alarms on the 13\% of plausible ``breaking'' changes that turned out not to alter results (false-positive rate 6.5--7.7\%), and 2 of 32 runnable scripts were not reproducible run-to-run before any mutation. Code, data generators, tests and raw results are released openly.
 \end{abstract}
 
 \section{Introduction}
@@ -51,8 +51,9 @@ These safeguards embody different assumptions about where failures come from. A 
   \item \textbf{Oracle-verified ground truth.} An execution oracle, independent of the auditors, that confirms every declared label and first-divergence stage across all 452 cases (Section~\ref{sec:oracle}).
   \item \textbf{A comparison of five auditing strategies} on detection, false-positive rate, stage localisation and runtime (Sections~\ref{sec:auditors}--\ref{sec:results}).
   \item \textbf{Three empirically discovered invariances} in which a plausible ``breaking'' change does not alter results, motivating harder controls for future auditors (Section~\ref{sec:invariances}).
+  \item \textbf{A pre-registered external validation} on independently written ML scripts, where ground truth is decided by execution rather than declared (Section~\ref{sec:e1}).
 \end{enumerate}
-All artifacts are publicly released under open licences (Section~\ref{sec:availability}).
+All artifacts are released under open licences (Section~\ref{sec:availability}).
 
 \section{Related work}
 \label{sec:related}
@@ -76,7 +77,7 @@ Two realistic failure patterns are built into the runner on purpose. First, keys
 
 \subsection{Baseline experiments}
 
-Table~\ref{tab:experiments} lists the 28 baseline experiments. All data are generated with scikit-learn \citep{pedregosa2011sklearn} generators (400 samples), with per-feature random rescaling so that preprocessing matters. Every seed is derived as the first four bytes of $\mathrm{SHA256}(\text{``20261108/}\langle\text{experiment}\rangle\text{/}\langle\text{role}\rangle\text{''})$, so any seed can be recomputed from the experiment name. All 28 baselines were verified to repeat within $\texttt{atol}=\texttt{rtol}=10^{-12}$; this tolerance avoids treating last-bit differences from floating-point reduction order as scientific divergence.
+Table~\ref{tab:experiments} lists the 28 baseline experiments. All data are generated with scikit-learn \citep{pedregosa2011sklearn} generators (400 samples), with per-feature random rescaling so that preprocessing matters. Every seed is derived as the first four bytes of $\mathrm{SHA256}(\text{``20261108/}\langle\text{experiment}\rangle\text{/}\langle\text{role}\rangle\text{''})$, so any seed can be recomputed from the experiment name. All 28 baselines were verified to be bit-for-bit deterministic across repeated runs.
 
 \begin{table}[t]
 \centering\small
@@ -214,6 +215,45 @@ The first oracle pass disagreed with 25 of 476 initially declared cases. Each di
 \end{enumerate}
 Items 1 and 2 are natural \emph{hard controls}: intermediate artifacts change while the result does not. An auditor that compares intermediate artifacts too strictly would raise false alarms on them.
 
+\section{External validation on independently written code (E1)}
+\label{sec:e1}
+
+The synthetic suite controls ground truth but was designed by the author. To test whether its conclusions transfer, we ran a second, \emph{pre-registered} study on code the author did not write. The protocol (population, sampling seed, eligibility rules, operators, oracle and analysis) was committed and pushed to the public repository before any run (\texttt{PROTOCOL-E1-external.md}, commit \texttt{382e5fd}); all deviations are listed in \texttt{results/e1-sklearn-examples/DEVIATIONS.md}.
+
+\paragraph{Population and sampling.} All 279 \texttt{examples/} scripts of scikit-learn 1.7.2 (commit \texttt{25dee60}), written and reviewed by that project's contributors. Scripts were screened in a random order seeded from the v0.1 preprint DOI; the sample is the first 30 eligible scripts. A script was eligible if it needed no network download (E1), ran within 30\,s (E2), printed at least one number, taken as its reported result after excluding timing lines (E3), and gave the same numbers on two baseline runs (E4).
+
+\paragraph{Ground truth by execution.} Unlike the synthetic suite, labels are not declared: operators state an \emph{intent} and the oracle (two runs, full-precision tolerance comparison against both baselines and each other) decides whether the result changed. Source operators were applied through the abstract syntax tree: seeds removed or changed, train/test split size changed, fold count changed, iteration counts halved; controls were an added comment, an AST reformat, \texttt{OMP\_NUM\_THREADS=1} and a moved working directory.
+
+\paragraph{Screening.} Reaching 30 eligible scripts required screening 114: 27 needed downloads, 4 failed or timed out, 51 printed no numbers (their results are plots only), and \textbf{2 of the 32 runnable, number-printing scripts were not reproducible run-to-run before any mutation}.
+
+\paragraph{Results.} Table~\ref{tab:e1} reports both the registered analysis and a sensitivity analysis. Nine mutation units crashed only when scripts ran four at a time; re-run alone, none crashed (deviation 3), so we treat the sensitivity analysis as the better estimate while reporting both.
+
+\begin{table}[t]
+\centering\small
+\caption{E1: 199 mutation cases on 30 independently written scripts. Truth is the execution oracle. Wilson 95\% intervals.}
+\label{tab:e1}
+\resizebox{\linewidth}{!}{\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Registered (crash = changed)} & \multicolumn{2}{c}{Sensitivity (crashes re-run)} \\
+Auditor & Recall & FPR & Recall & FPR \\
+\midrule
+Seed-only & 71.1\% (60.0--80.0) & 1.6\% (0.4--5.7) & 75.4\% (64.0--84.0) & 3.1\% (1.2--7.6) \\
+Static manifest & 93.4\% (85.5--97.2) & 6.5\% (3.3--12.3) & 100\% (94.7--100) & 7.7\% (4.2--13.6) \\
+Dynamic ($k=2$) & 98.7\% (92.9--99.8) & 0.0\% (0.0--3.0) & 98.6\% (92.2--99.7) & 0.0\% (0.0--2.9) \\
+\midrule
+Result changed / cases & \multicolumn{2}{c}{76 / 199} & \multicolumn{2}{c}{69 / 199} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Four observations follow.
+\begin{enumerate}
+  \item \textbf{The seed-only blind spot transfers.} It missed every changed split size and fold count (17 cases in the sensitivity analysis; dynamic vs seed-only, exact McNemar $p=1.5\times10^{-4}$).
+  \item \textbf{Equivalent changes are common and cause static false alarms.} Of 79 positive-intent mutations, 10 (12.7\%) did not change the reported result: both halved-iteration cases, 2 of 3 fold-count changes, 2 of 18 split-size changes, and 4 seed changes in scripts whose printed numbers do not depend on randomness. The static manifest flagged all 10.
+  \item \textbf{Static and dynamic detection did not differ significantly on real code} (sensitivity: 0 vs 1 discordant cases). This does not contradict the synthetic finding: none of the generic environment operators changed any result, so E1 did not exercise the hidden-state failures (stale caches, environment overrides, dependency drift) that drove the synthetic gap. That claim remains supported only by the synthetic suite.
+  \item \textbf{Re-execution has its own failure modes.} With $k=2$ the dynamic auditor missed one seed removal whose effect appeared only in some runs (\texttt{plot\_rfe\_with\_cross\_validation.py}), and under parallel load a ``crash means flag'' policy produced nine spurious alarms that disappeared on isolated re-runs.
+\end{enumerate}
+
 \section{Discussion}
 \label{sec:discussion}
 
@@ -221,13 +261,13 @@ Items 1 and 2 are natural \emph{hard controls}: intermediate artifacts change wh
 
 \paragraph{False alarms have a cost.} Static comparison flagged every harmless thread-count change. In practice, false alarms train users to ignore a tool. A practical design is therefore layered: run cheap static checks always, and reserve re-execution, with at least two repeats to expose nondeterminism, for changes the static layer cannot clear or for pre-release audits.
 
-\paragraph{Relation to studies on real repositories.} \citet{shulepov2026mutation} found that existing validation workflows in real ML repositories detected few controlled reproducibility mutations. Our controlled results suggest one mechanism consistent with that observation: checks that do not compare re-executed results against a recorded reference are blind to whole families of change. Testing this explanation on real repositories is future work.
+\paragraph{Relation to studies on real repositories.} \citet{shulepov2026mutation} found that existing validation workflows in real ML repositories detected few controlled reproducibility mutations. Our controlled results suggest one mechanism consistent with that observation: checks that do not compare re-executed results against a recorded reference are blind to whole families of change. E1 is a first step: on independently written scripts the seed-only blind spot reproduced, but the hidden-state mechanism could not be exercised with generic operators, so testing it on real research repositories remains future work.
 
 \section{Limitations and threats to validity}
 \label{sec:limitations}
 \begin{itemize}
   \item \textbf{Circularity.} The dynamic auditor and the oracle share the principle of re-execution (see Section~\ref{sec:discussion}).
-  \item \textbf{Synthetic, small-scale experiments.} 400-sample scikit-learn experiments on generated data; no GPU, distributed or deep-learning workloads, and no real research repositories.
+  \item \textbf{Scope of the evidence.} The synthetic suite uses 400-sample scikit-learn experiments on generated data. E1 adds 30 independently written scikit-learn example scripts, which are documentation code rather than research-paper code, and only scripts that print numbers. No GPU, distributed or deep-learning workloads and no research-paper repositories have yet been audited.
   \item \textbf{Author-designed taxonomy.} The operators were chosen by the author and have not been validated against an empirical sample of real reproducibility failures; recall depends directly on which operators are included.
   \item \textbf{Simulated dependency drift} through a stand-in library rather than real package upgrades.
   \item \textbf{Single faults only}; interactions between two or more faults are untested.
@@ -239,11 +279,11 @@ Items 1 and 2 are natural \emph{hard controls}: intermediate artifacts change wh
 
 \section{Planned work}
 \label{sec:future}
-For a future confirmatory study we plan to: (i) publicly preregister the hypothesis and analysis plan before executing a separately frozen benchmark; (ii) add two-fault interactions and the hard controls of Section~\ref{sec:invariances}; (iii) run the benchmark across operating systems and library versions; and (iv) conduct a systematic literature review. Later versions will apply the operators to an independently sampled set of real research repositories under a predefined inclusion protocol.
+Before v0.1.0 we plan to: (i) publicly preregister the hypothesis and analysis plan and run the frozen benchmark as the confirmatory study; (ii) add two-fault interactions and the hard controls of Section~\ref{sec:invariances}; (iii) run the benchmark across operating systems and library versions; and (iv) conduct a systematic literature review. Stage E2 will apply the operators to an independently sampled set of research-paper repositories (for example, those of ML Reproducibility Challenge reports), executed only in isolated, ephemeral CI runners after human review of the sampled list, under a separately pre-registered protocol. It should add hidden-state operators that work on real code, such as dependency-version substitution, and a result definition that covers plotted outputs.
 
 \section{Availability}
 \label{sec:availability}
-Source code, experiment generators, mutation operators, auditors, oracle, tests and the raw case-level results (\texttt{results/dev-2026-11-08/cases.jsonl}, SHA-256 \texttt{a33dcec9\ldots 2828}) are available at \url{https://github.com/Hamjeth68/repromut}. The archived preprint is available at \url{https://doi.org/10.5281/zenodo.24048006}. Reproduce with \texttt{pip install -e ".[test]" \&\& pytest -q \&\& repromut bench --out results/full}; a full run takes under one minute on a laptop CPU. Code is released under the Apache License 2.0, documentation under CC BY 4.0 and generated fixtures under CC0.
+Source code, experiment generators, mutation operators, auditors, oracle, tests and the raw case-level results (\texttt{results/dev-2026-11-08/cases.jsonl}, SHA-256 \texttt{a33dcec9\ldots 2828}; E1: \path{results/e1-sklearn-examples/}) are available at \url{https://github.com/Hamjeth68/repromut}. Reproduce with \texttt{pip install -e ".[test]" \&\& pytest -q \&\& repromut bench --out results/full}; a full run takes under one minute on a laptop CPU. Code is released under the Apache License 2.0, documentation under CC BY 4.0 and generated fixtures under CC0.
 
 \section*{Declarations}
 \paragraph{AI assistance.} Substantial parts of the software and of this manuscript were produced with an AI assistant (Claude, Anthropic) under the author's direction. All numerical results are produced by the released scripts, and the author takes responsibility for the content.

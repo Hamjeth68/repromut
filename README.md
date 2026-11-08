@@ -11,7 +11,7 @@
 
 ![Recall by mutation family](paper/figures/recall_by_family.png)
 
-Status: `0.1.1`. This is a public exploratory release archived on Zenodo. It was not preregistered, and it is not a confirmatory study.
+Status: `0.1.0.dev0`. This is a development snapshot. Nothing has been frozen, preregistered or published yet.
 
 ## Research question
 
@@ -69,11 +69,40 @@ The static manifest checker misses everything not written in the config: stale c
 
 **Read this before quoting the numbers.** The dynamic auditor and the oracle both execute the package, so near-perfect dynamic recall on deterministic mutations is expected by construction. These numbers are not a confirmatory result. See [`docs/limitations.md`](docs/limitations.md).
 
+## External validation E1: independently written code (pre-registered)
+
+**Protocol:** [`PROTOCOL-E1-external.md`](PROTOCOL-E1-external.md), pushed in commit `382e5fd` before any run.
+
+**Sample:** 30 scikit-learn 1.7.2 example scripts, drawn in a random order seeded from the preprint DOI. That took screening 114 scripts.
+
+**Ground truth:** decided by execution, not declared in advance.
+
+**Results:** 199 mutation cases. Full tables are in [`results/e1-sklearn-examples/summary.md`](results/e1-sklearn-examples/summary.md); deviations from the protocol are in [`DEVIATIONS.md`](results/e1-sklearn-examples/DEVIATIONS.md).
+
+| Auditor | Recall | False-positive rate |
+|---|---|---|
+| Seed-only | 75% | 3.1% |
+| Static manifest | 100% | 7.7% |
+| Dynamic (2 runs) | 99% | 0% |
+
+These are the sensitivity-analysis figures. The registered analysis gives 71% / 1.6%, 93% / 6.5% and 99% / 0%.
+
+What E1 found:
+
+- **The seed-only blind spot transfers to real code.** Seed checks missed every changed split size and fold count.
+- **13% of plausible "breaking" changes didn't change the result.** The static check raised a false alarm on every one of them.
+- **2 of 32 runnable scripts weren't reproducible run-to-run** before any change was made.
+- **Re-running has its own failure modes.** Two repeats missed one intermittent effect, and running several scripts in parallel caused 9 spurious crashes.
+
+**Not shown by E1:** the hidden-state gap (stale caches, `.env` overrides, dependency drift). The generic environment operators changed nothing on these scripts, so this claim still rests only on the synthetic suite.
+
+**Next stage (E2):** research-paper repositories, run in isolated CI under a separate pre-registered protocol.
+
 ## What v0.1 demonstrates — and what it does not
 
 **Demonstrated (development run on 2026-11-08, Linux aarch64, Python 3.10, scikit-learn 1.7.2):**
 
-- All 28 baseline experiments are repeatable across repeated runs at a strict numerical tolerance (`atol=rtol=1e-12`).
+- All 28 baseline experiments are bit-for-bit deterministic across repeated runs.
 - All 452 mutation/experiment pairs behave as declared, according to the independent oracle.
 - The detection rates in the table above, on this synthetic suite.
 
@@ -110,7 +139,7 @@ A draft preprint is in [`paper/repromut-preprint.pdf`](paper/repromut-preprint.p
 - **Documentation:** CC BY 4.0.
 - **Generated fixtures:** CC0.
 
-See `INDEPENDENCE.md` for the project's provenance and separation record. That record is evidence, not a legal conclusion.
+These licence choices take effect only once the author has confirmed authority to grant them (see `INDEPENDENCE.md`).
 
 ## Citation
 

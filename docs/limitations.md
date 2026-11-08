@@ -5,10 +5,14 @@
    - the false alarms static checks raise;
    - localisation;
    - cost.
-2. **Synthetic only.** No real research repositories were audited. The taxonomy was designed by the author and has not been validated against an empirical sample of real reproducibility failures.
+2. **Mostly synthetic.**
+   - E1 adds 30 independently written scikit-learn example scripts. These are documentation code, not research-paper code, and only scripts that print numbers qualify.
+   - E1 could not exercise hidden-state failures (stale caches, `.env` overrides, dependency drift).
+   - No research-paper repositories have been audited yet (that is stage E2).
+   - The operator taxonomy is author-designed.
 3. **Scale.** Small CPU-only scikit-learn experiments (400 samples). Not tested on GPU, distributed or deep-learning workloads, or across operating systems.
 4. **Simulated dependency drift.** Version drift is modelled by `simlib`, a stand-in library, not by real package upgrades.
 5. **Single faults.** Two-fault interactions are planned but not yet implemented.
 6. **One environment.** The development run used Linux aarch64, Python 3.10.12, numpy 2.2.6 and scikit-learn 1.7.2. Cross-environment agreement is untested.
-7. **Not preregistered.** The current results are exploratory development results.
+7. **Partly preregistered.** The synthetic run is exploratory and was not preregistered. E1 was preregistered; its 3 documented deviations are in `results/e1-sklearn-examples/DEVIATIONS.md`.
 8. **Not a correctness check.** Reproducing a result does not mean the result is scientifically valid.

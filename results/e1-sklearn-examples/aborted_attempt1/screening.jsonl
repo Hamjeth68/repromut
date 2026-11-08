@@ -1,0 +1,40 @@
+{"order": 0, "script": "linear_model/plot_sgd_weighted_samples.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 1, "script": "model_selection/plot_underfitting_overfitting.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 4, "script": "release_highlights/plot_release_highlights_1_0_0.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 6, "script": "decomposition/plot_ica_vs_pca.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 2, "script": "cluster/plot_kmeans_stability_low_dim_dense.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 8, "script": "miscellaneous/plot_multioutput_face_completion.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 9, "script": "compose/plot_column_transformer.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 3, "script": "svm/plot_svm_scale_c.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 11, "script": "semi_supervised/plot_self_training_varying_threshold.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 5, "script": "neighbors/plot_nearest_centroid.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 7, "script": "linear_model/plot_quantile_regression.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 10, "script": "linear_model/plot_nnls.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 13, "script": "ensemble/plot_bias_variance.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 16, "script": "ensemble/plot_gradient_boosting_quantile.py", "eligible": false, "reason": "E2 failed/timeout: , in __getattr__\n    return object.__getattribute__(self, name)\n  File \"/usr/loc", "naturally_nondeterministic": false}
+{"order": 17, "script": "covariance/plot_covariance_estimation.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 18, "script": "cluster/plot_mini_batch_kmeans.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 19, "script": "impute/plot_iterative_imputer_variants_comparison.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 14, "script": "model_selection/plot_confusion_matrix.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 15, "script": "calibration/plot_calibration.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 22, "script": "mixture/plot_gmm_sin.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 23, "script": "compose/plot_column_transformer_mixed_types.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 24, "script": "svm/plot_custom_kernel.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 25, "script": "applications/plot_topics_extraction_with_nmf_lda.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 26, "script": "miscellaneous/plot_outlier_detection_bench.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 27, "script": "linear_model/plot_sgd_iris.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 28, "script": "model_selection/plot_permutation_tests_for_classification.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 29, "script": "gaussian_process/plot_gpr_on_structured_data.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 30, "script": "ensemble/plot_gradient_boosting_regularization.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 31, "script": "cluster/plot_digits_agglomeration.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 32, "script": "model_selection/plot_det.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 33, "script": "cross_decomposition/plot_compare_cross_decomposition.py", "eligible": false, "reason": "E4 baseline not reproducible run-to-run", "naturally_nondeterministic": true}
+{"order": 12, "script": "ensemble/plot_adaboost_multiclass.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 35, "script": "cluster/plot_agglomerative_clustering_metrics.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 36, "script": "applications/plot_out_of_core_classification.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 37, "script": "svm/plot_svm_kernels.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 21, "script": "linear_model/plot_lasso_dense_vs_sparse_data.py", "eligible": true, "reason": "", "naturally_nondeterministic": false}
+{"order": 38, "script": "linear_model/plot_robust_fit.py", "eligible": false, "reason": "E3 prints no numeric result", "naturally_nondeterministic": false}
+{"order": 40, "script": "release_highlights/plot_release_highlights_0_24_0.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 41, "script": "miscellaneous/plot_set_output.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}
+{"order": 42, "script": "multiclass/plot_multiclass_overview.py", "eligible": false, "reason": "E1 network/data download", "naturally_nondeterministic": false}

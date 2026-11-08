@@ -1,0 +1,312 @@
+{
+  "screened_prefix": 114,
+  "screening": {
+    "E3 prints no numeric result": 51,
+    "eligible": 30,
+    "E1 network/data download": 27,
+    "E2 failed/timeout": 4,
+    "E4 baseline not reproducible run-to-run": 2
+  },
+  "e4_scripts": [
+    "cross_decomposition/plot_compare_cross_decomposition.py",
+    "datasets/plot_random_multilabel_dataset.py"
+  ],
+  "e4_count": 2,
+  "e4_denominator": 32,
+  "median_baseline_s": 2.7960000000000003,
+  "primary": {
+    "n": 199,
+    "truth_changed": 76,
+    "crashed": 9,
+    "methods": {
+      "seed_only": {
+        "tp": 54,
+        "fn": 22,
+        "fp": 2,
+        "tn": 121,
+        "recall": 0.7105263157894737,
+        "recall_ci95": [
+          0.600404448228802,
+          0.8003898317437719
+        ],
+        "fpr": 0.016260162601626018,
+        "fpr_ci95": [
+          0.004470508507497795,
+          0.0573504362656066
+        ]
+      },
+      "static_manifest": {
+        "tp": 71,
+        "fn": 5,
+        "fp": 8,
+        "tn": 115,
+        "recall": 0.9342105263157895,
+        "recall_ci95": [
+          0.8550647346629656,
+          0.9715734677804679
+        ],
+        "fpr": 0.06504065040650407,
+        "fpr_ci95": [
+          0.033322636380229045,
+          0.12310459967625977
+        ]
+      },
+      "dynamic": {
+        "tp": 75,
+        "fn": 1,
+        "fp": 0,
+        "tn": 123,
+        "recall": 0.9868421052631579,
+        "recall_ci95": [
+          0.9291632524821559,
+          0.997673519954421
+        ],
+        "fpr": 0.0,
+        "fpr_ci95": [
+          0.0,
+          0.030285514345309572
+        ]
+      }
+    },
+    "operators": {
+      "seed_removed": {
+        "n": 28,
+        "intent": "positive",
+        "changed": 27,
+        "seed_only": 28,
+        "static_manifest": 28,
+        "dynamic": 26
+      },
+      "seed_changed": {
+        "n": 28,
+        "intent": "positive",
+        "changed": 27,
+        "seed_only": 28,
+        "static_manifest": 28,
+        "dynamic": 27
+      },
+      "split_changed": {
+        "n": 18,
+        "intent": "positive",
+        "changed": 16,
+        "seed_only": 0,
+        "static_manifest": 18,
+        "dynamic": 16
+      },
+      "cv_changed": {
+        "n": 3,
+        "intent": "positive",
+        "changed": 1,
+        "seed_only": 0,
+        "static_manifest": 3,
+        "dynamic": 1
+      },
+      "iterations_reduced": {
+        "n": 2,
+        "intent": "positive",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 2,
+        "dynamic": 0
+      },
+      "comment_added": {
+        "n": 30,
+        "intent": "control",
+        "changed": 2,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 2
+      },
+      "reformatted": {
+        "n": 30,
+        "intent": "control",
+        "changed": 2,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 2
+      },
+      "threads_1": {
+        "n": 30,
+        "intent": "control",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 0
+      },
+      "workdir_moved": {
+        "n": 30,
+        "intent": "control",
+        "changed": 1,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 1
+      }
+    },
+    "dynamic_vs_static_manifest": {
+      "dynamic_only": 5,
+      "other_only": 1,
+      "mcnemar_p": 0.21875
+    },
+    "dynamic_vs_seed_only": {
+      "dynamic_only": 22,
+      "other_only": 1,
+      "mcnemar_p": 5.7220458984375e-06
+    },
+    "dynamic_oracle_disagreements": [
+      {
+        "script": "feature_selection/plot_rfe_with_cross_validation.py",
+        "operator": "seed_removed",
+        "oracle": true,
+        "dynamic": false
+      }
+    ]
+  },
+  "sensitivity": {
+    "n": 199,
+    "truth_changed": 69,
+    "crashed": 0,
+    "methods": {
+      "seed_only": {
+        "tp": 52,
+        "fn": 17,
+        "fp": 4,
+        "tn": 126,
+        "recall": 0.7536231884057971,
+        "recall_ci95": [
+          0.6403933718423956,
+          0.8401022218298245
+        ],
+        "fpr": 0.03076923076923077,
+        "fpr_ci95": [
+          0.012029284314737917,
+          0.07644448849849772
+        ]
+      },
+      "static_manifest": {
+        "tp": 69,
+        "fn": 0,
+        "fp": 10,
+        "tn": 120,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.9472627418109483,
+          1.0
+        ],
+        "fpr": 0.07692307692307693,
+        "fpr_ci95": [
+          0.04231743708607818,
+          0.13581465315536378
+        ]
+      },
+      "dynamic": {
+        "tp": 68,
+        "fn": 1,
+        "fp": 0,
+        "tn": 130,
+        "recall": 0.9855072463768116,
+        "recall_ci95": [
+          0.9223687753885529,
+          0.9974370753554117
+        ],
+        "fpr": 0.0,
+        "fpr_ci95": [
+          0.0,
+          0.028701561194431423
+        ]
+      }
+    },
+    "operators": {
+      "seed_removed": {
+        "n": 28,
+        "intent": "positive",
+        "changed": 26,
+        "seed_only": 28,
+        "static_manifest": 28,
+        "dynamic": 25
+      },
+      "seed_changed": {
+        "n": 28,
+        "intent": "positive",
+        "changed": 26,
+        "seed_only": 28,
+        "static_manifest": 28,
+        "dynamic": 26
+      },
+      "split_changed": {
+        "n": 18,
+        "intent": "positive",
+        "changed": 16,
+        "seed_only": 0,
+        "static_manifest": 18,
+        "dynamic": 16
+      },
+      "cv_changed": {
+        "n": 3,
+        "intent": "positive",
+        "changed": 1,
+        "seed_only": 0,
+        "static_manifest": 3,
+        "dynamic": 1
+      },
+      "iterations_reduced": {
+        "n": 2,
+        "intent": "positive",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 2,
+        "dynamic": 0
+      },
+      "comment_added": {
+        "n": 30,
+        "intent": "control",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 0
+      },
+      "reformatted": {
+        "n": 30,
+        "intent": "control",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 0
+      },
+      "threads_1": {
+        "n": 30,
+        "intent": "control",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 0
+      },
+      "workdir_moved": {
+        "n": 30,
+        "intent": "control",
+        "changed": 0,
+        "seed_only": 0,
+        "static_manifest": 0,
+        "dynamic": 0
+      }
+    },
+    "dynamic_vs_static_manifest": {
+      "dynamic_only": 0,
+      "other_only": 1,
+      "mcnemar_p": 1.0
+    },
+    "dynamic_vs_seed_only": {
+      "dynamic_only": 17,
+      "other_only": 1,
+      "mcnemar_p": 0.00014495849609375
+    },
+    "dynamic_oracle_disagreements": [
+      {
+        "script": "feature_selection/plot_rfe_with_cross_validation.py",
+        "operator": "seed_removed",
+        "oracle": true,
+        "dynamic": false
+      }
+    ]
+  },
+  "rerun_units": 9
+}

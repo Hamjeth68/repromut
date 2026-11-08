@@ -328,86 +328,127 @@ def screen(path: Path, timeout: float) -> dict:
     return {"eligible": True, "baseline": [b1, b2]}
 
 
-def study_script(path: Path, root: Path, timeout: float, screened: dict,
-                 dyn_repeats: int = 2, oracle_repeats: int = 2) -> list[dict]:
-    src = path.read_text()
-    baseline = screened["baseline"]
-    record = make_record(src, baseline[0])
-    rows = []
-    for op in OPERATORS:
-        mutant = op.transform(src) if op.transform else src
-        if mutant is None:
-            continue
-        orc = oracle(mutant, baseline, op, oracle_repeats, timeout)
-        dyn, dyn_s = audit_dynamic(mutant, record, op, dyn_repeats, timeout)
-        rows.append({
-            "script": str(path.relative_to(root)), "operator": op.id, "intent": op.intent,
-            "kind": op.kind, "oracle_changed": orc["result_changed"], "crashed": orc["crashed"],
-            "seed_only": audit_seed_only(mutant, record), "static_manifest": audit_static(mutant, record),
-            "dynamic": dyn, "dynamic_seconds": round(dyn_s, 3),
-            "baseline_seconds": round(baseline[0].seconds, 3), "n_numbers": record["n_numbers"],
-        })
-    return rows
+def _baseline_from(rec: dict) -> list[RunOutput]:
+    return [RunOutput(True, nums, rec["baseline_seconds"]) for nums in rec["baseline_numbers"]]
 
 
-def _work(args):
+def screen_task(args):
     idx, path, root, timeout = args
     path, root = Path(path), Path(root)
     s = screen(path, timeout)
     rec = {"order": idx, "script": str(path.relative_to(root)), "eligible": s["eligible"],
-           "reason": s.get("reason", ""), "naturally_nondeterministic": s.get("naturally_nondeterministic", False)}
-    rows = study_script(path, root, timeout, s) if s["eligible"] else []
-    return rec, rows
+           "reason": s.get("reason", ""),
+           "naturally_nondeterministic": s.get("naturally_nondeterministic", False)}
+    if s["eligible"]:
+        rec["baseline_numbers"] = [b.numbers for b in s["baseline"]]
+        rec["baseline_seconds"] = round(s["baseline"][0].seconds, 3)
+    return "screen", rec
+
+
+def mutation_task(args):
+    """One (script, operator) unit: oracle + dynamic audit. Short enough to resume safely."""
+    rec, op_id, root, timeout, dyn_repeats, oracle_repeats = args
+    op = next(o for o in OPERATORS if o.id == op_id)
+    src = (Path(root) / rec["script"]).read_text()
+    baseline = _baseline_from(rec)
+    record = make_record(src, baseline[0])
+    mutant = op.transform(src) if op.transform else src
+    orc = oracle(mutant, baseline, op, oracle_repeats, timeout)
+    dyn, dyn_s = audit_dynamic(mutant, record, op, dyn_repeats, timeout)
+    return "case", {
+        "order": rec["order"], "script": rec["script"], "operator": op.id, "intent": op.intent,
+        "kind": op.kind, "oracle_changed": orc["result_changed"], "crashed": orc["crashed"],
+        "seed_only": audit_seed_only(mutant, record), "static_manifest": audit_static(mutant, record),
+        "dynamic": dyn, "dynamic_seconds": round(dyn_s, 3),
+        "baseline_seconds": rec["baseline_seconds"], "n_numbers": record["n_numbers"],
+    }
+
+
+def applicable_ops(src: str) -> list[str]:
+    return [o.id for o in OPERATORS if (o.transform is None or o.transform(src) is not None)]
 
 
 def run_study(examples_root: Path, out_dir: Path, seed_text: str, target: int,
-              budget_s: float, timeout: float = 60, workers: int = 4) -> dict:
-    """Resumable: screens scripts in sampled order until `target` eligible scripts are studied."""
-    from concurrent.futures import ProcessPoolExecutor, as_completed
+              budget_s: float, timeout: float = 30, workers: int = 4,
+              dyn_repeats: int = 2, oracle_repeats: int = 2) -> dict:
+    """Resumable, unit-based driver. Screening in sampled order until `target`
+    eligible scripts; then every applicable (script, operator) unit."""
+    from concurrent.futures import ProcessPoolExecutor, wait, FIRST_COMPLETED
     examples_root, out_dir = Path(examples_root), Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     screen_f, cases_f = out_dir / "screening.jsonl", out_dir / "cases.jsonl"
-    done = {}
-    if screen_f.exists():
-        for line in screen_f.read_text().splitlines():
-            r = json.loads(line)
-            done[r["order"]] = r
+    screened = {json.loads(l)["order"]: json.loads(l) for l in screen_f.read_text().splitlines()} \
+        if screen_f.exists() else {}
+    cases = {(json.loads(l)["order"], json.loads(l)["operator"]) for l in cases_f.read_text().splitlines()} \
+        if cases_f.exists() else set()
     paths = sample_order([str(p) for p in examples_root.rglob("*.py")], seed_text)
     (out_dir / "sampling_order.json").write_text(json.dumps(
         [str(Path(p).relative_to(examples_root)) for p in paths], indent=1))
     start = time.time()
 
-    def eligible_prefix():
-        n, i = 0, 0
-        while i in done:
-            n += done[i]["eligible"]
-            if n >= target:
-                return True
+    def sample():
+        chosen, i = [], 0
+        while i in screened and len(chosen) < target:
+            if screened[i]["eligible"]:
+                chosen.append(screened[i])
             i += 1
-        return False
+        return chosen, i, len(chosen) >= target
+
+    def next_tasks(in_flight):
+        chosen, frontier, full = sample()
+        tasks, mtasks = [], []
+        for rec in chosen:
+            src = (examples_root / rec["script"]).read_text()
+            for op_id in applicable_ops(src):
+                key = (rec["order"], op_id)
+                if key not in cases and key not in in_flight:
+                    mtasks.append((key, mutation_task,
+                                  (rec, op_id, str(examples_root), timeout, dyn_repeats, oracle_repeats)))
+        if not full:
+            j = frontier
+            eligible_needed = target - len(chosen)
+            launched = sum(1 for k in in_flight if k[1] == "screen")
+            while j < len(paths) and launched < max(eligible_needed, 1) * 2:
+                key = (j, "screen")
+                if j not in screened and key not in in_flight:
+                    tasks.append((key, screen_task, (j, paths[j], str(examples_root), timeout)))
+                    launched += 1
+                j += 1
+        # interleave screening and mutation units so neither starves
+        out = []
+        for a, b in zip(tasks, mtasks):
+            out += [a, b]
+        n = min(len(tasks), len(mtasks))
+        return out + tasks[n:] + mtasks[n:]
 
     with ProcessPoolExecutor(workers) as ex:
-        pending = {}
-        i = 0
+        running = {}
         while True:
-            while len(pending) < workers and i < len(paths) and not eligible_prefix() \
-                    and time.time() - start < budget_s:
-                if i not in done:
-                    pending[ex.submit(_work, (i, paths[i], str(examples_root), timeout))] = i
-                i += 1
-            if not pending:
+            if time.time() - start < budget_s:
+                for key, fn, args in next_tasks(set(running.values())):
+                    if len(running) >= workers:
+                        break
+                    running[ex.submit(fn, args)] = key
+            if not running:
                 break
-            fut = next(as_completed(pending))
-            pending.pop(fut)
-            rec, rows = fut.result()
-            done[rec["order"]] = rec
-            with screen_f.open("a") as fh:
-                fh.write(json.dumps(rec) + "\n")
-            with cases_f.open("a") as fh:
-                for r in rows:
-                    fh.write(json.dumps({**r, "order": rec["order"]}) + "\n")
-    n_el = sum(r["eligible"] for r in done.values())
-    return {"screened": len(done), "eligible": n_el, "complete": eligible_prefix()}
+            done_set, _ = wait(running, return_when=FIRST_COMPLETED)
+            for fut in done_set:
+                running.pop(fut)
+                kind, rec = fut.result()
+                if kind == "screen":
+                    screened[rec["order"]] = rec
+                    with screen_f.open("a") as fh:
+                        fh.write(json.dumps(rec) + "\n")
+                else:
+                    cases.add((rec["order"], rec["operator"]))
+                    with cases_f.open("a") as fh:
+                        fh.write(json.dumps(rec) + "\n")
+    chosen, _, full = sample()
+    remaining = sum(1 for rec in chosen for op in applicable_ops((examples_root / rec["script"]).read_text())
+                    if (rec["order"], op) not in cases)
+    return {"screened": len(screened), "eligible_in_sample": len(chosen), "sample_full": full,
+            "cases_done": len(cases), "cases_remaining": remaining,
+            "complete": full and remaining == 0}
 
 
 if __name__ == "__main__":
