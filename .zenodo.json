@@ -1,7 +1,7 @@
 {
   "title": "ReproMut: A Controlled Mutation Benchmark for Dynamic Reproducibility Testing of Small Machine-Learning Experiments",
   "upload_type": "software",
-  "creators": [{"name": "Misree, Hamjeth"}],
+  "creators": [{"name": "Misree, Hamjeth", "orcid": "0009-0008-2548-6920"}],
   "description": "Executable benchmark that injects predeclared result-changing reproducibility mutations and semantics-preserving controls into small CPU-only synthetic ML experiments, and compares seed-only, static-manifest and dynamic fingerprint auditors on detection, localisation and cost. Synthetic technical verification only; not validated on external repositories.",
   "license": "Apache-2.0",
   "keywords": ["computational reproducibility", "machine learning testing", "mutation testing", "research software", "artifact fingerprinting", "synthetic benchmark", "open science"]
