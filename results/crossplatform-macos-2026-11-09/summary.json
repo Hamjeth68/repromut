@@ -1,0 +1,375 @@
+{
+  "dynamic_vs_seed_only": {
+    "ci95": [
+      0.6507352941176471,
+      0.7610294117647058
+    ],
+    "dynamic_only": 192,
+    "mcnemar_exact_p": 3.1861838222649046e-58,
+    "recall_difference": 0.7058823529411764,
+    "seed_only_only": 0
+  },
+  "environment": {
+    "machine": "arm64",
+    "master_seed": 20261108,
+    "numpy": "2.5.4",
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "python": "3.12.13",
+    "repromut": "0.1.0.dev0",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "hypothesis_check": {
+    "fpr_ok": true,
+    "gain_ok": true,
+    "recall_ok": true,
+    "status": "EXPLORATORY - development run, not preregistered",
+    "thresholds": {
+      "max_fpr": 0.05,
+      "min_gain_over_seed_only": 0.3,
+      "min_recall": 0.9
+    }
+  },
+  "methods": {
+    "combined": {
+      "elapsed_s": {
+        "max": 0.125863,
+        "median": 0.006149
+      },
+      "f1": 0.9784172661870503,
+      "fn": 0,
+      "fp": 12,
+      "fpr": 0.06666666666666667,
+      "fpr_ci95": [
+        0.03854407493570259,
+        0.11289868992969537
+      ],
+      "localization": {
+        "correct": 272,
+        "of_detected": 272
+      },
+      "precision": 0.9577464788732394,
+      "precision_ci95": [
+        0.9276084188917171,
+        0.9756666029388334
+      ],
+      "recall": 1.0,
+      "recall_by_family": {
+        "caching": {
+          "detected": 28,
+          "total": 28
+        },
+        "config-mismatch": {
+          "detected": 24,
+          "total": 24
+        },
+        "data-generation": {
+          "detected": 56,
+          "total": 56
+        },
+        "data-order": {
+          "detected": 8,
+          "total": 8
+        },
+        "dependency": {
+          "detected": 18,
+          "total": 18
+        },
+        "hidden-config": {
+          "detected": 28,
+          "total": 28
+        },
+        "numeric": {
+          "detected": 30,
+          "total": 30
+        },
+        "random-state": {
+          "detected": 80,
+          "total": 80
+        }
+      },
+      "recall_ci95": [
+        0.9860736713142486,
+        1.0
+      ],
+      "tn": 168,
+      "tp": 272
+    },
+    "dynamic": {
+      "elapsed_s": {
+        "max": 0.124976,
+        "median": 0.0059605000000000005
+      },
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "fpr": 0.0,
+      "fpr_ci95": [
+        0.0,
+        0.02089549792161305
+      ],
+      "localization": {
+        "correct": 272,
+        "of_detected": 272
+      },
+      "precision": 1.0,
+      "precision_ci95": [
+        0.9860736713142486,
+        1.0
+      ],
+      "recall": 1.0,
+      "recall_by_family": {
+        "caching": {
+          "detected": 28,
+          "total": 28
+        },
+        "config-mismatch": {
+          "detected": 24,
+          "total": 24
+        },
+        "data-generation": {
+          "detected": 56,
+          "total": 56
+        },
+        "data-order": {
+          "detected": 8,
+          "total": 8
+        },
+        "dependency": {
+          "detected": 18,
+          "total": 18
+        },
+        "hidden-config": {
+          "detected": 28,
+          "total": 28
+        },
+        "numeric": {
+          "detected": 30,
+          "total": 30
+        },
+        "random-state": {
+          "detected": 80,
+          "total": 80
+        }
+      },
+      "recall_ci95": [
+        0.9860736713142486,
+        1.0
+      ],
+      "tn": 180,
+      "tp": 272
+    },
+    "no_audit": {
+      "elapsed_s": {
+        "max": 0.076932,
+        "median": 0.0027359999999999997
+      },
+      "f1": 0.0,
+      "fn": 272,
+      "fp": 0,
+      "fpr": 0.0,
+      "fpr_ci95": [
+        0.0,
+        0.02089549792161305
+      ],
+      "localization": {
+        "correct": 0,
+        "of_detected": 0
+      },
+      "precision": NaN,
+      "precision_ci95": [
+        NaN,
+        NaN
+      ],
+      "recall": 0.0,
+      "recall_by_family": {
+        "caching": {
+          "detected": 0,
+          "total": 28
+        },
+        "config-mismatch": {
+          "detected": 0,
+          "total": 24
+        },
+        "data-generation": {
+          "detected": 0,
+          "total": 56
+        },
+        "data-order": {
+          "detected": 0,
+          "total": 8
+        },
+        "dependency": {
+          "detected": 0,
+          "total": 18
+        },
+        "hidden-config": {
+          "detected": 0,
+          "total": 28
+        },
+        "numeric": {
+          "detected": 0,
+          "total": 30
+        },
+        "random-state": {
+          "detected": 0,
+          "total": 80
+        }
+      },
+      "recall_ci95": [
+        0.0,
+        0.013926328685751324
+      ],
+      "tn": 180,
+      "tp": 0
+    },
+    "seed_only": {
+      "elapsed_s": {
+        "max": 0.028891,
+        "median": 0.000101
+      },
+      "f1": 0.45454545454545453,
+      "fn": 192,
+      "fp": 0,
+      "fpr": 0.0,
+      "fpr_ci95": [
+        0.0,
+        0.02089549792161305
+      ],
+      "localization": {
+        "correct": 80,
+        "of_detected": 80
+      },
+      "precision": 1.0,
+      "precision_ci95": [
+        0.9541818704644728,
+        0.9999999999999999
+      ],
+      "recall": 0.29411764705882354,
+      "recall_by_family": {
+        "caching": {
+          "detected": 0,
+          "total": 28
+        },
+        "config-mismatch": {
+          "detected": 0,
+          "total": 24
+        },
+        "data-generation": {
+          "detected": 0,
+          "total": 56
+        },
+        "data-order": {
+          "detected": 0,
+          "total": 8
+        },
+        "dependency": {
+          "detected": 0,
+          "total": 18
+        },
+        "hidden-config": {
+          "detected": 0,
+          "total": 28
+        },
+        "numeric": {
+          "detected": 0,
+          "total": 30
+        },
+        "random-state": {
+          "detected": 80,
+          "total": 80
+        }
+      },
+      "recall_ci95": [
+        0.2431378262984569,
+        0.3508318384544995
+      ],
+      "tn": 180,
+      "tp": 80
+    },
+    "static_manifest": {
+      "elapsed_s": {
+        "max": 0.026091,
+        "median": 0.000163
+      },
+      "f1": 0.8215767634854773,
+      "fn": 74,
+      "fp": 12,
+      "fpr": 0.06666666666666667,
+      "fpr_ci95": [
+        0.03854407493570259,
+        0.11289868992969537
+      ],
+      "localization": {
+        "correct": 198,
+        "of_detected": 198
+      },
+      "precision": 0.9428571428571428,
+      "precision_ci95": [
+        0.9027901231463525,
+        0.9670131461811394
+      ],
+      "recall": 0.7279411764705882,
+      "recall_by_family": {
+        "caching": {
+          "detected": 0,
+          "total": 28
+        },
+        "config-mismatch": {
+          "detected": 24,
+          "total": 24
+        },
+        "data-generation": {
+          "detected": 56,
+          "total": 56
+        },
+        "data-order": {
+          "detected": 8,
+          "total": 8
+        },
+        "dependency": {
+          "detected": 0,
+          "total": 18
+        },
+        "hidden-config": {
+          "detected": 0,
+          "total": 28
+        },
+        "numeric": {
+          "detected": 30,
+          "total": 30
+        },
+        "random-state": {
+          "detected": 80,
+          "total": 80
+        }
+      },
+      "recall_ci95": [
+        0.6721541885489583,
+        0.7773793969031256
+      ],
+      "tn": 168,
+      "tp": 198
+    }
+  },
+  "n_cases": 452,
+  "n_control": 180,
+  "n_experiments": 28,
+  "n_positive": 272,
+  "oracle_agreement": {
+    "agree": 452,
+    "total": 452
+  },
+  "settings": {
+    "dynamic_repeats": 2,
+    "oracle_repeats": 3,
+    "smoke": false,
+    "stages": [
+      "data",
+      "split",
+      "preprocess",
+      "model",
+      "metrics"
+    ]
+  }
+}

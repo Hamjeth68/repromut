@@ -8,6 +8,7 @@
   - Results: `results/e1-sklearn-examples/`, with deviations documented.
 - **Paper:** new Section 7 (E1), plus updates to the abstract, limitations and planned work (stage E2).
 - **Tests:** 666 passing (8 new tests for the external harness).
+- **Cross-platform replication:** the full synthetic benchmark gave identical case-level outcomes for all 452 cases on macOS arm64 (Python 3.12.13, scikit-learn 1.9.1) and on Linux aarch64. The evidence is in `results/crossplatform-macos-2026-11-09/`, and the paper's limitations section is updated to match.
 
 ## 0.1.1 — 2026-11-08
 
