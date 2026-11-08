@@ -1,6 +1,15 @@
 # ReproMut
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24048006.svg)](https://doi.org/10.5281/zenodo.24048006)
+[![ci](https://github.com/Hamjeth68/repromut/actions/workflows/ci.yml/badge.svg)](https://github.com/Hamjeth68/repromut/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/Hamjeth68/repromut?include_prereleases)](https://github.com/Hamjeth68/repromut/releases)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 **A controlled mutation benchmark for dynamic reproducibility testing of small machine-learning experiments.**
+
+> **Headline finding (exploratory):** seed checks and config-manifest checks missed **every** stale cache, hidden `.env` override and dependency drift we planted. Overall, seed checks caught 29% of the planted faults and config-manifest checks 73%; re-running the experiment caught all of them. [Read the preprint →](https://doi.org/10.5281/zenodo.24048006)
+
+![Recall by mutation family](paper/figures/recall_by_family.png)
 
 Status: `0.1.0.dev0`. This is a development snapshot. Nothing has been frozen, preregistered or published yet.
 
