@@ -40,6 +40,11 @@ ORACLE_RTOL = 1e-6
 ORACLE_ATOL = 1e-9
 DECIMALS = 8
 
+_CHILD_ENV_KEYS = {
+    "COMSPEC", "HOME", "LANG", "LC_ALL", "PATH", "PATHEXT", "PYTHONPATH",
+    "SYSTEMROOT", "TEMP", "TMP", "TMPDIR", "VIRTUAL_ENV", "WINDIR",
+}
+
 
 # --------------------------------------------------------------------------
 # Running scripts
@@ -66,6 +71,19 @@ def extract_numbers(stdout: str) -> list[float]:
     return out
 
 
+def _child_environment(env_extra: dict | None = None) -> dict[str, str]:
+    """Build a minimal environment while retaining Windows runtime essentials."""
+    env = {k: v for k, v in os.environ.items() if k.upper() in _CHILD_ENV_KEYS}
+    if env_extra:
+        env.update(env_extra)
+    env.update({
+        "MPLBACKEND": "Agg",
+        "PYTHONHASHSEED": "0",
+        "PYTHONWARNINGS": "ignore",
+    })
+    return env
+
+
 def run_script(source: str, timeout: float = 60.0, env_extra: dict | None = None,
                workdir_name: str = "w") -> RunOutput:
     """Run `source` as a fresh process in an isolated temporary directory."""
@@ -73,15 +91,7 @@ def run_script(source: str, timeout: float = 60.0, env_extra: dict | None = None
         wd = Path(tmp) / workdir_name
         wd.mkdir(parents=True)
         (wd / "script.py").write_text(source)
-        env = {k: v for k, v in os.environ.items()
-               if k in ("PATH", "HOME", "LANG", "LC_ALL", "PYTHONPATH", "VIRTUAL_ENV", "TMPDIR")}
-        if env_extra:
-            env.update(env_extra)
-        env.update({
-            "MPLBACKEND": "Agg",
-            "PYTHONHASHSEED": "0",
-            "PYTHONWARNINGS": "ignore",
-        })
+        env = _child_environment(env_extra)
         t = time.perf_counter()
         try:
             p = subprocess.run([sys.executable, "script.py"], cwd=wd, env=env,

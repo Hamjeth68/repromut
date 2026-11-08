@@ -72,6 +72,18 @@ def test_run_script_fixes_python_hash_seed():
     assert out.ok and out.numbers == [0.0]
 
 
+def test_child_environment_preserves_windows_runtime_essentials(monkeypatch):
+    monkeypatch.setenv("SystemRoot", r"C:\\Windows")
+    monkeypatch.setenv("WINDIR", r"C:\\Windows")
+    monkeypatch.setenv("TEMP", r"C:\\Temp")
+    monkeypatch.setenv("REPROMUT_SHOULD_NOT_LEAK", "secret")
+    env = X._child_environment()
+    assert env["SystemRoot"] == r"C:\\Windows"
+    assert env["WINDIR"] == r"C:\\Windows"
+    assert env["TEMP"] == r"C:\\Temp"
+    assert "REPROMUT_SHOULD_NOT_LEAK" not in env
+
+
 def test_sampling_is_deterministic():
     p = [f"f{i}.py" for i in range(20)]
     assert X.sample_order(p, "x") == X.sample_order(list(reversed(p)), "x")
