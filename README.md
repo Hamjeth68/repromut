@@ -94,4 +94,6 @@ These licence choices take effect only once the author has confirmed authority t
 
 ## Citation
 
-See `CITATION.cff`. A DOI will be added after the first Zenodo archive.
+Preprint (draft v0.1): Misree, H. (2026). *ReproMut: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments.* Zenodo. https://doi.org/10.5281/zenodo.24048006
+
+To cite all versions, use the concept DOI 10.5281/zenodo.24048005. Machine-readable metadata is in `CITATION.cff`.

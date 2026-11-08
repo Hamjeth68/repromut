@@ -9,7 +9,17 @@ authors:
     given-names: Hamjeth
     # orcid: https://orcid.org/XXXX-XXXX-XXXX-XXXX   # TODO: add before release
 repository-code: https://github.com/Hamjeth68/repromut
-# doi: 10.5281/zenodo.XXXXXXX                                       # TODO after first archive
+preferred-citation:
+  type: article
+  title: "ReproMut: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments (Preprint, draft v0.1)"
+  authors:
+    - family-names: Misree
+      given-names: Hamjeth
+  year: 2026
+  publisher:
+    name: Zenodo
+  doi: 10.5281/zenodo.24048006
+  url: https://zenodo.org/records/24048006
 keywords:
   - computational reproducibility
   - machine learning testing
