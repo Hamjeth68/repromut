@@ -1,0 +1,65 @@
+name: release
+
+# Push a tag like v0.1.0.dev0 (must equal the version in pyproject.toml).
+# The workflow tests the code, builds the wheel and sdist, regenerates a
+# smoke benchmark, and publishes a GitHub Release with downloadable assets.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check tag matches package version
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          VERSION=$(python -c "import tomllib;print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])")
+          if [ "$TAG" != "v$VERSION" ]; then
+            echo "Tag $TAG does not match pyproject version v$VERSION" >&2
+            exit 1
+          fi
+
+      - name: Install and test
+        run: |
+          pip install -e ".[test]" build
+          pytest -q
+
+      - name: Build wheel and sdist
+        run: python -m build
+
+      - name: Smoke benchmark
+        run: repromut bench --smoke --out results/release-smoke
+
+      - name: Package assets
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          mkdir -p assets
+          cp dist/* assets/
+          cp paper/repromut-preprint.pdf "assets/repromut-preprint-${TAG}.pdf"
+          (cd results && zip -qr "../assets/repromut-results-${TAG}.zip" dev-2026-11-08 release-smoke)
+          (cd assets && sha256sum * > SHA256SUMS.txt)
+          ls -l assets
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          PRERELEASE=""
+          case "$TAG" in *dev*|*a*|*b*|*rc*) PRERELEASE="--prerelease" ;; esac
+          gh release create "$TAG" assets/* \
+            --title "ReproMut $TAG" \
+            --notes-file .github/RELEASE_NOTES.md \
+            $PRERELEASE

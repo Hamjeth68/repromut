@@ -15,6 +15,17 @@ ReproMut deliberately breaks small, fully synthetic, CPU-only experiments in kno
 - **5 audit methods:** none, seed-only, static manifest, dynamic (repeated execution plus stage fingerprints), and static + dynamic combined.
 - **An independent oracle:** it compares full arrays at a fixed tolerance, with more repeats than any auditor. The test suite checks every declared label and stage against it.
 
+## Download
+
+Ready-made downloads are on the [Releases page](https://github.com/Hamjeth68/repromut/releases):
+
+- the wheel and source package;
+- the preprint PDF;
+- the raw results;
+- SHA-256 checksums.
+
+Releases are built automatically by `.github/workflows/release.yml` whenever a `v*` tag is pushed.
+
 ## Quick start
 
 ```bash
