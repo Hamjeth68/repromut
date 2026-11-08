@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "ReproMut: A Controlled Mutation Benchmark for Dynamic Reproducibility Testing of Small Machine-Learning Experiments"
+version: 0.1.0.dev0
+license: Apache-2.0
+authors:
+  - family-names: Misree
+    given-names: Hamjeth
+    # orcid: https://orcid.org/XXXX-XXXX-XXXX-XXXX   # TODO: add before release
+repository-code: https://github.com/Hamjeth68/repromut
+# doi: 10.5281/zenodo.XXXXXXX                                       # TODO after first archive
+keywords:
+  - computational reproducibility
+  - machine learning testing
+  - mutation testing
+  - research software
+  - synthetic benchmark

@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.hypothesis/
+build/
+dist/
+results/smoke/
+results/full/
+results/ci-smoke/
