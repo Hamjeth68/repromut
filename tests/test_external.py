@@ -78,10 +78,11 @@ def test_child_environment_preserves_windows_runtime_essentials(monkeypatch):
     monkeypatch.setenv("TEMP", r"C:\\Temp")
     monkeypatch.setenv("REPROMUT_SHOULD_NOT_LEAK", "secret")
     env = X._child_environment()
-    assert env["SystemRoot"] == r"C:\\Windows"
-    assert env["WINDIR"] == r"C:\\Windows"
-    assert env["TEMP"] == r"C:\\Temp"
-    assert "REPROMUT_SHOULD_NOT_LEAK" not in env
+    env_upper = {key.upper(): value for key, value in env.items()}
+    assert env_upper["SYSTEMROOT"] == r"C:\\Windows"
+    assert env_upper["WINDIR"] == r"C:\\Windows"
+    assert env_upper["TEMP"] == r"C:\\Temp"
+    assert "REPROMUT_SHOULD_NOT_LEAK" not in env_upper
 
 
 def test_sampling_is_deterministic():
