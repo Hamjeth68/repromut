@@ -1,4 +1,6 @@
-# Preregistration (DRAFT — not yet frozen)
+# Prospective confirmatory protocol (DRAFT — not preregistered)
+
+The v0.1 development results were produced before this protocol received a public timestamp. This file must not be represented as a preregistration of those results. It may be adapted and publicly registered only for a future, separately frozen confirmatory study before that study is run.
 
 Freeze this file with a signed git tag and a public timestamp (for example a Zenodo or OSF deposit) **before** running the confirmatory benchmark. Any analysis that changes after freezing must be labelled exploratory.
 
