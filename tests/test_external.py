@@ -63,6 +63,15 @@ def test_run_script_and_oracle_end_to_end():
     assert X.oracle(X.seed_changed(src), base, op_seed)["result_changed"]
 
 
+def test_run_script_fixes_python_hash_seed():
+    out = X.run_script(
+        "import os\nprint(os.environ['PYTHONHASHSEED'])\n",
+        timeout=30,
+        env_extra={"PYTHONHASHSEED": "123"},
+    )
+    assert out.ok and out.numbers == [0.0]
+
+
 def test_sampling_is_deterministic():
     p = [f"f{i}.py" for i in range(20)]
     assert X.sample_order(p, "x") == X.sample_order(list(reversed(p)), "x")

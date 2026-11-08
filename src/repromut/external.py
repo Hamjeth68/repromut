@@ -75,9 +75,13 @@ def run_script(source: str, timeout: float = 60.0, env_extra: dict | None = None
         (wd / "script.py").write_text(source)
         env = {k: v for k, v in os.environ.items()
                if k in ("PATH", "HOME", "LANG", "LC_ALL", "PYTHONPATH", "VIRTUAL_ENV", "TMPDIR")}
-        env.update({"MPLBACKEND": "Agg", "PYTHONWARNINGS": "ignore"})
         if env_extra:
             env.update(env_extra)
+        env.update({
+            "MPLBACKEND": "Agg",
+            "PYTHONHASHSEED": "0",
+            "PYTHONWARNINGS": "ignore",
+        })
         t = time.perf_counter()
         try:
             p = subprocess.run([sys.executable, "script.py"], cwd=wd, env=env,
