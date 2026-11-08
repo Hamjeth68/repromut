@@ -11,7 +11,7 @@
 
 ![Recall by mutation family](paper/figures/recall_by_family.png)
 
-Status: `0.1.0.dev0`. This is a development snapshot. Nothing has been frozen, preregistered or published yet.
+Status: `0.1.1`. This is a public exploratory release archived on Zenodo. It was not preregistered, and it is not a confirmatory study.
 
 ## Research question
 
@@ -73,7 +73,7 @@ The static manifest checker misses everything not written in the config: stale c
 
 **Demonstrated (development run on 2026-11-08, Linux aarch64, Python 3.10, scikit-learn 1.7.2):**
 
-- All 28 baseline experiments are bit-for-bit deterministic across repeated runs.
+- All 28 baseline experiments are repeatable across repeated runs at a strict numerical tolerance (`atol=rtol=1e-12`).
 - All 452 mutation/experiment pairs behave as declared, according to the independent oracle.
 - The detection rates in the table above, on this synthetic suite.
 
@@ -110,7 +110,7 @@ A draft preprint is in [`paper/repromut-preprint.pdf`](paper/repromut-preprint.p
 - **Documentation:** CC BY 4.0.
 - **Generated fixtures:** CC0.
 
-These licence choices take effect only once the author has confirmed authority to grant them (see `INDEPENDENCE.md`).
+See `INDEPENDENCE.md` for the project's provenance and separation record. That record is evidence, not a legal conclusion.
 
 ## Citation
 

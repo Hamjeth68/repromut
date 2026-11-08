@@ -32,7 +32,14 @@ def test_every_baseline_is_deterministic(catalog, idx):
     spec = catalog[idx]
     a, b = execute(spec), execute(spec)
     for s in STAGES:
-        assert stage_allclose(a.arrays[s], b.arrays[s], atol=0, rtol=0), (spec.config["name"], s)
+        # Threaded BLAS implementations can differ by a few final bits across
+        # repeated reductions even with identical seeds.  The benchmark's
+        # oracle uses 1e-9 and dynamic fingerprints round to 8 decimals, so a
+        # much tighter 1e-12 repeatability check catches meaningful drift
+        # without incorrectly requiring bitwise-identical floating point.
+        assert stage_allclose(a.arrays[s], b.arrays[s], atol=1e-12, rtol=1e-12), (
+            spec.config["name"], s
+        )
 
 
 def test_package_round_trip(tmp_path, catalog):

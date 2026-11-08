@@ -13,7 +13,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\textsc{ReproMut} --- preprint, work in progress}
+\fancyhead[L]{\small\textsc{ReproMut} --- exploratory preprint}
 \fancyhead[R]{\small Draft v0.1 (2026-11-08)}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.3pt}
@@ -21,7 +21,7 @@
 \newcommand{\RM}{\textsc{ReproMut}}
 
 \title{\textbf{\RM: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments}\\[4pt]
-\large Preprint --- work in progress (draft v0.1)}
+\large Exploratory preprint (v0.1)}
 \author{Hamjeth Misree\\
 \small Independent researcher\\
 \small \texttt{hamjeth68@gmail.com}\\
@@ -32,7 +32,7 @@
 \maketitle
 
 \begin{center}
-\fbox{\parbox{0.92\linewidth}{\small\textbf{Status of this document.} This is an in-progress preprint describing a benchmark design and an \emph{exploratory development run}. The hypothesis thresholds were written down before the run but were not publicly preregistered; all results should be read as exploratory. A frozen, preregistered confirmatory run is planned for v0.1.0 (Section~\ref{sec:future}).}}
+\fbox{\parbox{0.92\linewidth}{\small\textbf{Status of this document.} This preprint describes a benchmark design and an \emph{exploratory development run}. The hypothesis thresholds were written down before the run but were not publicly preregistered; all results must therefore be read as exploratory. Any future confirmatory study will use a separately frozen and publicly timestamped protocol (Section~\ref{sec:future}).}}
 \end{center}
 
 \begin{abstract}
@@ -52,7 +52,7 @@ These safeguards embody different assumptions about where failures come from. A 
   \item \textbf{A comparison of five auditing strategies} on detection, false-positive rate, stage localisation and runtime (Sections~\ref{sec:auditors}--\ref{sec:results}).
   \item \textbf{Three empirically discovered invariances} in which a plausible ``breaking'' change does not alter results, motivating harder controls for future auditors (Section~\ref{sec:invariances}).
 \end{enumerate}
-All artifacts are released under open licences (Section~\ref{sec:availability}).
+All artifacts are publicly released under open licences (Section~\ref{sec:availability}).
 
 \section{Related work}
 \label{sec:related}
@@ -76,7 +76,7 @@ Two realistic failure patterns are built into the runner on purpose. First, keys
 
 \subsection{Baseline experiments}
 
-Table~\ref{tab:experiments} lists the 28 baseline experiments. All data are generated with scikit-learn \citep{pedregosa2011sklearn} generators (400 samples), with per-feature random rescaling so that preprocessing matters. Every seed is derived as the first four bytes of $\mathrm{SHA256}(\text{``20261108/}\langle\text{experiment}\rangle\text{/}\langle\text{role}\rangle\text{''})$, so any seed can be recomputed from the experiment name. All 28 baselines were verified to be bit-for-bit deterministic across repeated runs.
+Table~\ref{tab:experiments} lists the 28 baseline experiments. All data are generated with scikit-learn \citep{pedregosa2011sklearn} generators (400 samples), with per-feature random rescaling so that preprocessing matters. Every seed is derived as the first four bytes of $\mathrm{SHA256}(\text{``20261108/}\langle\text{experiment}\rangle\text{/}\langle\text{role}\rangle\text{''})$, so any seed can be recomputed from the experiment name. All 28 baselines were verified to repeat within $\texttt{atol}=\texttt{rtol}=10^{-12}$; this tolerance avoids treating last-bit differences from floating-point reduction order as scientific divergence.
 
 \begin{table}[t]
 \centering\small
@@ -239,11 +239,11 @@ Items 1 and 2 are natural \emph{hard controls}: intermediate artifacts change wh
 
 \section{Planned work}
 \label{sec:future}
-Before v0.1.0 we plan to: (i) publicly preregister the hypothesis and analysis plan and run the frozen benchmark as the confirmatory study; (ii) add two-fault interactions and the hard controls of Section~\ref{sec:invariances}; (iii) run the benchmark across operating systems and library versions; and (iv) conduct a systematic literature review. Later versions will apply the operators to an independently sampled set of real research repositories under a predefined inclusion protocol.
+For a future confirmatory study we plan to: (i) publicly preregister the hypothesis and analysis plan before executing a separately frozen benchmark; (ii) add two-fault interactions and the hard controls of Section~\ref{sec:invariances}; (iii) run the benchmark across operating systems and library versions; and (iv) conduct a systematic literature review. Later versions will apply the operators to an independently sampled set of real research repositories under a predefined inclusion protocol.
 
 \section{Availability}
 \label{sec:availability}
-Source code, experiment generators, mutation operators, auditors, oracle, tests and the raw case-level results (\texttt{results/dev-2026-11-08/cases.jsonl}, SHA-256 \texttt{a33dcec9\ldots 2828}) are available at \url{https://github.com/Hamjeth68/repromut}. Reproduce with \texttt{pip install -e ".[test]" \&\& pytest -q \&\& repromut bench --out results/full}; a full run takes under one minute on a laptop CPU. Code is released under the Apache License 2.0, documentation under CC BY 4.0 and generated fixtures under CC0.
+Source code, experiment generators, mutation operators, auditors, oracle, tests and the raw case-level results (\texttt{results/dev-2026-11-08/cases.jsonl}, SHA-256 \texttt{a33dcec9\ldots 2828}) are available at \url{https://github.com/Hamjeth68/repromut}. The archived preprint is available at \url{https://doi.org/10.5281/zenodo.24048006}. Reproduce with \texttt{pip install -e ".[test]" \&\& pytest -q \&\& repromut bench --out results/full}; a full run takes under one minute on a laptop CPU. Code is released under the Apache License 2.0, documentation under CC BY 4.0 and generated fixtures under CC0.
 
 \section*{Declarations}
 \paragraph{AI assistance.} Substantial parts of the software and of this manuscript were produced with an AI assistant (Claude, Anthropic) under the author's direction. All numerical results are produced by the released scripts, and the author takes responsibility for the content.

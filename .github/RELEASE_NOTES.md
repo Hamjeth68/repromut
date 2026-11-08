@@ -21,4 +21,4 @@ repromut bench --smoke --out results/smoke
 
 ## Status
 
-This is a development release. The results are exploratory and not yet from the preregistered confirmatory run. See `docs/limitations.md`.
+This is an exploratory release. The reported run was not preregistered and is not a confirmatory study. A future confirmatory evaluation will use a separately frozen and publicly timestamped protocol. See `docs/limitations.md`.
