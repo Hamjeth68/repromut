@@ -66,6 +66,10 @@ The static manifest checker misses everything not written in the config: stale c
 - Stability across future library versions.
 - Scientific correctness of any audited experiment. **Passing ReproMut does not mean an experiment is correct.**
 
+## Preprint
+
+A draft preprint is in [`paper/repromut-preprint.pdf`](paper/repromut-preprint.pdf), with its source in `paper/`. Rebuild the figures with `python paper/make_figures.py results/dev-2026-11-08 paper/figures`, then compile with `latexmk -pdf paper/repromut-preprint.tex`.
+
 ## Repository map
 
 | Path | Contents |
