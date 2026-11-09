@@ -16,14 +16,7 @@
    "outputs/models_explanations.parquet"
   ]
  },
- "images": {
-  "base": "sha256:5b59c34b2982ae2a73d6ac38f451a27a63707b532484c9823ea5da277b2c315f",
-  "dep_patch": "sha256:f2ab4d700b3d2ec36b8a928807081c712de462c3bc714b39d99cdf28e03d7a71"
- },
- "packages": {
-  "base": "~/repromut-e2-work/build/fmind/packages_base.txt",
-  "dep_patch": "~/repromut-e2-work/build/fmind/packages_dep_patch.txt"
- },
+ "images": "from_build",
  "artifacts": {},
  "cases": [
   {
@@ -91,6 +84,14 @@
  ],
  "notes": [
   "M-DEP not applicable: lock requires scikit-learn >=1.9, past every registered default-change boundary",
-  "artifacts prepared by e2/harness/prep_fmind.py before outcome runs"
- ]
+  "artifacts prepared by e2/harness/prep_fmind.py before outcome runs",
+  "D13: re-run under the frozen harness (D9 added after the pilot); images rebuilt from the same recipes"
+ ],
+ "build": {
+  "mode": "uvlock",
+  "python": "3.14",
+  "variants": {
+   "dep_patch": "scikit-learn==1.9.0"
+  }
+ }
 }

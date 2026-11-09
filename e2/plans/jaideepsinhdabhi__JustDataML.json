@@ -6,6 +6,9 @@
  "build": {
   "mode": "uvlock",
   "python": "3.10",
+  "extras": [
+   "plots"
+  ],
   "variants": {
    "dep_patch": "auto_patch",
    "m_dep": "scikit-learn==1.5.2"

@@ -89,7 +89,7 @@ P["roodriigoooo/clustering_the_vrp"] = dict(
 
 P["jaideepsinhdabhi/JustDataML"] = dict(
     source_tree=tree("screening_p3", "jaideepsinhdabhi__JustDataML"),
-    build={"mode": "uvlock", "python": "3.10",
+    build={"mode": "uvlock", "python": "3.10", "extras": ["plots"],
            "variants": {"dep_patch": "auto_patch", "m_dep": "scikit-learn==1.5.2"}},
     argv=["JDML", "train", "-C", "config_clf.yaml"], cwd_rel="examples", adapter={"stdout": True},
     artifacts={"iris_p90.data": {"from": "examples/Data/bezdekIris.data", "method": "perturb_rows", "header": False},

@@ -189,7 +189,7 @@ ARG SKLEARN_OVERRIDE=""
 COPY src_snapshot /build
 WORKDIR /build
 ENV UV_PROJECT_ENVIRONMENT=/opt/venv UV_PYTHON_DOWNLOADS=never UV_LINK_MODE=copy PIP_DEFAULT_TIMEOUT=60 PIP_RETRIES=5 UV_HTTP_TIMEOUT=120
-RUN pip install -q "{UV}" && uv sync --frozen --no-dev --no-editable --python /usr/local/bin/python{v} \\
+RUN pip install -q "{UV}" && uv sync --frozen --no-dev --no-editable {" ".join("--extra " + e for e in bc.get("extras", []))} --python /usr/local/bin/python{v} \\
  && if [ -n "$SKLEARN_OVERRIDE" ]; then uv pip install --python /opt/venv/bin/python --no-deps "scikit-learn==$SKLEARN_OVERRIDE"; fi \\
  && uv pip freeze --python /opt/venv/bin/python > /opt/packages.txt{nltk_cmd} && cd / && rm -rf /build /root/.cache
 ENV PATH=/opt/venv/bin:$PATH NLTK_DATA=/usr/share/nltk_data

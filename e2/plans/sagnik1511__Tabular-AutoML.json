@@ -12,12 +12,7 @@
   "stdout": true,
   "files": []
  },
- "images": {
-  "base": "sha256:57962ffff39fb3e5aa82ab24300ae234d0f583d866e6fde8ddc0099de617b3a2"
- },
- "packages": {
-  "base": "~/repromut-e2-work/build/tabular/packages_base.txt"
- },
+ "images": "from_build",
  "artifacts": {
   "iris_p90.csv": {
    "from": "tab_automl/datasets/Iris.csv",
@@ -79,6 +74,15 @@
  "notes": [
   "C-DEP not constructible: no scikit-learn 1.0.0/1.0.1 binary wheel for cp310 aarch64 (checked with pip download --only-binary on 2026-11-09)",
   "M-DEP not applicable: no registered default-change estimator on the computation path; requirements pin scikit-learn 1.0.2",
-  "requirements.txt is UTF-16; converted to UTF-8 requirements.in without content change"
- ]
+  "requirements.txt is UTF-16; converted to UTF-8 requirements.in without content change",
+  "D13: re-run under the frozen harness (D9 added after the pilot); images rebuilt from the same recipes"
+ ],
+ "build": {
+  "mode": "requirements",
+  "python": "3.10",
+  "requirements": "requirements.txt",
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ }
 }
