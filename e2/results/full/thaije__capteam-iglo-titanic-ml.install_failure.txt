@@ -1,0 +1,1 @@
+declared requirements unsatisfiable on the registered Python 3.10 (resolver error in build/thaije__capteam-iglo-titanic-ml.build.log); network verified working; protocol section 10: install_failure, repository excluded

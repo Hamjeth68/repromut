@@ -1,0 +1,47 @@
++ docker run --rm -v /Users/mac/repromut-e2-work/build/thaije__capteam-iglo-titanic-ml:/b -w /b python@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d sh -c pip install -q --timeout 60 --retries 5 uv==0.13.7 && uv --version > uv_version.txt && uv pip compile requirements.in --generate-hashes --exclude-newer 2026-11-01 --python-version 3.10 --python-platform aarch64-unknown-linux-gnu  -o lock.txt -q
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 23.0.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+error: No solution found when resolving dependencies
+  cause: Because pandas==0.20.2 has invalid metadata and you require pandas==0.20.2, we can conclude that your requirements are unsatisfiable.
+
+hint: Metadata for `pandas` (v0.20.2) could not be parsed:
+  after parsing `2011`, found `k`, which is not part of a valid version
+  pytz (>=2011k)
+        ^^^^^^^
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 23.0.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+error: No solution found when resolving dependencies
+  cause: Because pandas==0.20.2 has invalid metadata and you require pandas==0.20.2, we can conclude that your requirements are unsatisfiable.
+
+hint: Metadata for `pandas` (v0.20.2) could not be parsed:
+  after parsing `2011`, found `k`, which is not part of a valid version
+  pytz (>=2011k)
+        ^^^^^^^
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 23.0.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+error: No solution found when resolving dependencies
+  cause: Because pandas==0.20.2 has invalid metadata and you require pandas==0.20.2, we can conclude that your requirements are unsatisfiable.
+
+hint: Metadata for `pandas` (v0.20.2) could not be parsed:
+  after parsing `2011`, found `k`, which is not part of a valid version
+  pytz (>=2011k)
+        ^^^^^^^
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/build_image.py", line 223, in <module>
+    main(sys.argv[1])
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/build_image.py", line 141, in main
+    compile_lock(b, img, v, "requirements.in", "lock.txt")
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/build_image.py", line 74, in compile_lock
+    sh(["docker", "run", "--rm", "-v", f"{b}:/b", "-w", "/b", img, "sh", "-c",
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/build_image.py", line 38, in sh
+    return subprocess.run(cmd, shell=isinstance(cmd, str), check=True, text=True, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '-v', '/Users/mac/repromut-e2-work/build/thaije__capteam-iglo-titanic-ml:/b', '-w', '/b', 'python@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d', 'sh', '-c', 'pip install -q --timeout 60 --retries 5 uv==0.13.7 && uv --version > uv_version.txt && uv pip compile requirements.in --generate-hashes --exclude-newer 2026-11-01 --python-version 3.10 --python-platform aarch64-unknown-linux-gnu  -o lock.txt -q']' returned non-zero exit status 1.

@@ -1,0 +1,89 @@
+=== ARUNAGIRINATHAN-K__Text-Classifier-using-NLP_Techniques build 14:39
+{
+ "base": "sha256:974cc056208648c0a29a5065b7af06fc9063cbd6e80b8af3d9a309950ed88be7",
+ "dep_patch": "sha256:2723652e1c4d2b248a70f6180ab726425c8a59a4919244c56387b8c9e1078a2e"
+}=== ARUNAGIRINATHAN-K__Text-Classifier-using-NLP_Techniques run 14:39
+M-PATH-1 stable_change {'S1': False, 'S2': True, 'D': True, 'C1': True, 'C2': True, 'D_k1': True, 'D_k3': True} numeric_change
+C-ENV unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-CACHE unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-PATH unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-DEP unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+DONE ARUNAGIRINATHAN-K__Text-Classifier-using-NLP_Techniques 14:40 free=28Gi
+=== youngcoder45__Student-Performance-Predictor build 14:40
+{
+ "base": "sha256:707adfe87b4626c695be4d9414747d8ab839c5e587aecd3ea811e5384c6a7753",
+ "dep_patch": "sha256:0f723bbc097c45ce933fd8ac7892340820738752cda719336f27cd599245101e"
+}=== youngcoder45__Student-Performance-Predictor run 14:49
+M-CACHE-1 unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-ENV unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-CACHE unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-PATH unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+C-DEP unchanged {'S1': False, 'S2': True, 'D': False, 'C1': False, 'C2': True, 'D_k1': False, 'D_k3': False} none
+DONE youngcoder45__Student-Performance-Predictor 15:22 free=37Gi
+=== AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar build 15:22
+BUILD SCRIPT ERROR AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar
+=== AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar run 15:24
+RUN ERROR AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar
+    main(sys.argv[1], sys.argv[2], "--prep-only" in sys.argv)
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 133, in main
+    images, packages = resolve_images(plan, slug)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 120, in resolve_images
+    images = {k: v for k, v in json.loads((b / "images.json").read_text()).items() if v}
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mac/repromut-e2-work/build/AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar/images.json'
+DONE AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar 15:24 free=37Gi
+=== roodriigoooo__clustering_the_vrp build 15:24
+BUILD SCRIPT ERROR roodriigoooo__clustering_the_vrp
+=== roodriigoooo__clustering_the_vrp run 15:26
+RUN ERROR roodriigoooo__clustering_the_vrp
+    main(sys.argv[1], sys.argv[2], "--prep-only" in sys.argv)
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 133, in main
+    images, packages = resolve_images(plan, slug)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 120, in resolve_images
+    images = {k: v for k, v in json.loads((b / "images.json").read_text()).items() if v}
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mac/repromut-e2-work/build/roodriigoooo__clustering_the_vrp/images.json'
+DONE roodriigoooo__clustering_the_vrp 15:26 free=37Gi
+=== jaideepsinhdabhi__JustDataML build 15:26
+{
+ "base": null,
+ "dep_patch": null,
+ "m_dep": null
+}=== jaideepsinhdabhi__JustDataML run 15:38
+not constructible (image build or prep failed): ['M-PATH-1', 'M-DEP-1', 'C-ENV', 'C-CACHE', 'C-PATH', 'C-DEP']
+BASE IMAGE BUILD FAILED: install_failure (repository excluded, protocol section 10)
+DONE jaideepsinhdabhi__JustDataML 15:38 free=36Gi
+=== Bruce-Lee-LY__machine_learning build 15:38
+BUILD SCRIPT ERROR Bruce-Lee-LY__machine_learning
+=== Bruce-Lee-LY__machine_learning run 15:40
+RUN ERROR Bruce-Lee-LY__machine_learning
+    main(sys.argv[1], sys.argv[2], "--prep-only" in sys.argv)
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 133, in main
+    images, packages = resolve_images(plan, slug)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 120, in resolve_images
+    images = {k: v for k, v in json.loads((b / "images.json").read_text()).items() if v}
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mac/repromut-e2-work/build/Bruce-Lee-LY__machine_learning/images.json'
+DONE Bruce-Lee-LY__machine_learning 15:40 free=36Gi
+=== nazmul-1117__bangladesh-air-pollution-pattern-mining build 15:40

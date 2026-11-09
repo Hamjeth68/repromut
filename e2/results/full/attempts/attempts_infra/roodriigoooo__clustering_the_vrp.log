@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 170, in <module>
+    main(sys.argv[1], sys.argv[2], "--prep-only" in sys.argv)
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 133, in main
+    images, packages = resolve_images(plan, slug)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/dev/repromut/e2/harness/run_plan.py", line 120, in resolve_images
+    images = {k: v for k, v in json.loads((b / "images.json").read_text()).items() if v}
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mac/repromut-e2-work/build/roodriigoooo__clustering_the_vrp/images.json'

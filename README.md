@@ -150,3 +150,7 @@ Preprint (draft v0.2, latest): Misree, H. (2026). *ReproMut: A Controlled Mutati
 Draft v0.1: https://doi.org/10.5281/zenodo.24048006
 
 To cite all versions, use the concept DOI 10.5281/zenodo.24048005. Machine-readable metadata is in `CITATION.cff`.
+
+## E2: pre-registered test on independently written ML repositories
+
+Protocol, deviations, case plans and raw records are in [`e2/`](e2/). Results: [`e2/RESULTS-REPORT.md`](e2/RESULTS-REPORT.md). The pre-registered verdict is **inconclusive** (10 result-changing cases against 12 required). Descriptively, re-execution detected 10/10 and declared-configuration comparison 0/10, with 1 dynamic false alarm in 34 controls.
