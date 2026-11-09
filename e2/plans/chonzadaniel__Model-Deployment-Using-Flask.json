@@ -1,0 +1,61 @@
+{
+ "repo": "chonzadaniel/Model-Deployment-Using-Flask",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/chonzadaniel__Model-Deployment-Using-Flask/chonzadaniel-Model-Deployment-Using-Flask-0a27f45",
+ "build": {
+  "mode": "imports",
+  "python": "3.10",
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "python",
+  "training.py"
+ ],
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "salary_p90.csv": {
+   "from": "salaryprediction_data.csv",
+   "method": "perturb_rows"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "salaryprediction_data.csv": "salary_p90.csv"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "repo": "NHLOCAL/is-this-bible",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/NHLOCAL__is-this-bible/NHLOCAL-is-this-bible-b9ef58d",
+ "build": {
+  "mode": "imports",
+  "python": "3.10",
+  "extra": [
+   "nltk"
+  ],
+  "nltk": [
+   "stopwords",
+   "punkt",
+   "punkt_tab"
+  ],
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "python",
+  "creat_model_bible.py"
+ ],
+ "cwd_rel": "data_creation",
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "bible_p90.csv": {
+   "from": "data_creation/bible_data.csv",
+   "method": "perturb_rows"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "data_creation/bible_data.csv": "bible_p90.csv"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

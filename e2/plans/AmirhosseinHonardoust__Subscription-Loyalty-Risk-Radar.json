@@ -1,0 +1,93 @@
+{
+ "repo": "AmirhosseinHonardoust/Subscription-Loyalty-Risk-Radar",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening/src/AmirhosseinHonardoust__Subscription-Loyalty-Risk-Radar/AmirhosseinHonardoust-Subscription-Loyalty-Risk-Radar-497b35a",
+ "build": {
+  "mode": "requirements",
+  "python": "3.10",
+  "requirements": "requirements.txt",
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "sh",
+  "-c",
+  "python -m src.cli prepare-data && python -m src.cli train-all && python -m src.cli evaluate"
+ ],
+ "adapter": {
+  "stdout": true,
+  "files": [
+   "reports/metrics/subscription_metrics.json",
+   "reports/metrics/frequency_metrics.json",
+   "reports/metrics/subscription_metrics_eval.json",
+   "reports/metrics/frequency_metrics_eval.json"
+  ]
+ },
+ "artifacts": {
+  "raw_p90.csv": {
+   "from": "data/raw/shopping_behavior.csv",
+   "method": "perturb_rows"
+  }
+ },
+ "prep": [
+  {
+   "name": "stale",
+   "argv": [
+    "python",
+    "-m",
+    "src.cli",
+    "prepare-data"
+   ],
+   "pre_files": {
+    "data/raw/shopping_behavior.csv": "raw_p90.csv"
+   },
+   "remove": [
+    "data/processed/shopping_behavior_clean.parquet"
+   ],
+   "capture": {
+    "data/processed/shopping_behavior_clean.parquet": "stale_clean.parquet"
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case_id": "M-CACHE-1",
+   "family": "M-CACHE",
+   "intent": "positive",
+   "pre_files": {
+    "data/processed/shopping_behavior_clean.parquet": "stale_clean.parquet"
+   },
+   "note": "load_clean() reuses this file if present; stale version built by the repository from 90% of raw rows"
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ],
+ "notes": [
+  "README pipeline (prepare-data, train-all, evaluate) run as one declared invocation",
+  "M-PATH not applicable: python -m entry and __file__-anchored paths"
+ ]
+}

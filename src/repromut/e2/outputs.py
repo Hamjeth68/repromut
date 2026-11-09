@@ -24,10 +24,13 @@ CLOCK_RE = re.compile(r"\b\d{1,2}:\d{2}:\d{2}\b")
 # Pilot adapter fix (DEVIATIONS D5): lines reporting registry/run identifiers ("Model version: 2",
 # "run_id ...") carry bookkeeping numbers, not experiment results.
 IDENT_RE = re.compile(r"(?i)\bversion\b|\brun[_ ]?id\b")
+# D9 (registered before the remaining repositories' outcome runs): calendar date stamps, e.g. run folders
+# named "20261109-101010" or log dates "2026-11-09", are bookkeeping, not results.
+DATE_RE = re.compile(r"\b20\d{2}-?[01]\d-?[0-3]\d[-_T]\d{6}\b|\b20\d{2}-[01]\d-[0-3]\d\b")
 
 
 def extract_numbers(text: str) -> list[float]:
-    keep = (l for l in text.splitlines() if not CLOCK_RE.search(l) and not IDENT_RE.search(l))
+    keep = (l for l in text.splitlines() if not (CLOCK_RE.search(l) or IDENT_RE.search(l) or DATE_RE.search(l)))
     return _e1_extract_numbers("\n".join(keep))
 
 RTOL = 1e-6

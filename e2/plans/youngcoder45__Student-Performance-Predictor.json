@@ -1,0 +1,94 @@
+{
+ "repo": "youngcoder45/Student-Performance-Predictor",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening/src/youngcoder45__Student-Performance-Predictor/youngcoder45-Student-Performance-Predictor-4191a1b",
+ "build": {
+  "mode": "requirements",
+  "python": "3.12",
+  "requirements": "requirements.txt",
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "setup": {
+  "add_files": {
+   "data/raw/student.zip": "student.zip"
+  }
+ },
+ "argv": [
+  "python",
+  "-m",
+  "src.train"
+ ],
+ "adapter": {
+  "stdout": true,
+  "files": [
+   "models/metrics.json",
+   "reports/figures/regression_model_comparison.csv",
+   "reports/figures/classification_model_comparison.csv"
+  ]
+ },
+ "artifacts": {
+  "student_p90.zip": {
+   "from_artifact": "student.zip",
+   "method": "zip_member_perturb",
+   "member": "student-mat.csv"
+  }
+ },
+ "prep": [
+  {
+   "name": "stale",
+   "argv": [
+    "python",
+    "-m",
+    "src.train"
+   ],
+   "pre_files": {
+    "data/raw/student.zip": "student_p90.zip"
+   },
+   "capture": {
+    "data/raw/student_performance.csv": "stale_student_performance.csv"
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case_id": "M-CACHE-1",
+   "family": "M-CACHE",
+   "intent": "positive",
+   "pre_files": {
+    "data/raw/student_performance.csv": "stale_student_performance.csv"
+   },
+   "note": "standardised CSV produced by the repository's own code from the first 90% of student-mat.csv rows"
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ],
+ "notes": [
+  "M-PATH not applicable: python -m entry and __file__-anchored paths",
+  "student.zip (UCI 320, CC BY 4.0) fetched in a networked build container; SHA-256 in e2/env/datasets.json"
+ ]
+}

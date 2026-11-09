@@ -47,6 +47,11 @@ def test_identifier_lines_are_excluded():
     assert outs["stdout"].tolist() == [0.76]
 
 
+def test_date_stamped_lines_are_excluded():
+    outs = O.collect(O.AdapterSpec(), "Saved run 20261109-101010\nlog 2026-11-09 ok\nacc 0.9\n", {})
+    assert outs["stdout"].tolist() == [0.9]
+
+
 def test_first_difference_and_tolerance():
     a = {"stdout": np.array([1.0]), "f": np.array([2.0])}
     assert O.first_difference(a, {"stdout": np.array([1.0 + 1e-12]), "f": np.array([2.0])}) is None

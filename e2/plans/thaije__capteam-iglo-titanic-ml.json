@@ -1,0 +1,86 @@
+{
+ "repo": "thaije/capteam-iglo-titanic-ml",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/thaije__capteam-iglo-titanic-ml/thaije-capteam-iglo-titanic-ml-6b1c724",
+ "build": {
+  "mode": "requirements",
+  "python": "3.10",
+  "requirements": "requirements.txt",
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "python",
+  "main.py"
+ ],
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "Data_copy": {
+   "from": "Data",
+   "method": "copy_tree"
+  },
+  "train_p90.csv": {
+   "from": "Data/train.csv",
+   "method": "perturb_rows"
+  },
+  "test_p90.csv": {
+   "from": "Data/test.csv",
+   "method": "perturb_rows"
+  },
+  "empty": {
+   "method": "empty"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-train",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "Data": "Data_copy",
+    "Data/train.csv": "train_p90.csv",
+    "predictions/.keep": "empty"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "M-PATH-test",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "Data": "Data_copy",
+    "Data/test.csv": "test_p90.csv",
+    "predictions/.keep": "empty"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

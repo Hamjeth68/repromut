@@ -1,0 +1,78 @@
+{
+ "repo": "jaideepsinhdabhi/JustDataML",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/jaideepsinhdabhi__JustDataML/jaideepsinhdabhi-JustDataML-0a9b24c",
+ "build": {
+  "mode": "uvlock",
+  "python": "3.10",
+  "variants": {
+   "dep_patch": "auto_patch",
+   "m_dep": "scikit-learn==1.5.2"
+  }
+ },
+ "argv": [
+  "JDML",
+  "train",
+  "-C",
+  "config_clf.yaml"
+ ],
+ "cwd_rel": "examples",
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "iris_p90.data": {
+   "from": "examples/Data/bezdekIris.data",
+   "method": "perturb_rows",
+   "header": false
+  },
+  "config_clf.yaml": {
+   "from": "examples/config_clf.yaml",
+   "method": "copy"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "examples/config_clf.yaml": "config_clf.yaml",
+    "examples/Data/bezdekIris.data": "iris_p90.data"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "M-DEP-1",
+   "family": "M-DEP",
+   "intent": "positive",
+   "image_key": "m_dep",
+   "note": "scikit-learn 1.7.2 -> 1.5.2 (AdaBoostClassifier algorithm default before 1.6); only scikit-learn changes"
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

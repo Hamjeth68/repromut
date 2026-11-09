@@ -122,12 +122,23 @@ def run_repo(plan: RepoPlan, out_jsonl: Path, work_base: Path, execute: Executor
                             "statuses": [o.status for o in base_obs],
                             "outputs": [O.to_jsonable(o.outputs) if o.outputs is not None else None for o in base_obs],
                             "stable": baseline_stable(base_obs), "s1": base_s1, "s2": base_s2,
-                            "seconds": [r.raw.seconds for r in runs]})
+                            "seconds": [r.raw.seconds for r in runs],
+                            "stderr_tail_failed": [r.raw.stderr[-1500:] for r in runs if r.raw.status != "ok"][:1]})
     base_fp = O.fingerprint(base_obs[0].outputs) if base_obs[0].outputs is not None else None
+    baseline_failed = all(o.status != "ok" for o in base_obs)
     records = []
     for case in plan.cases:
         if case.case_id in done:
             records.append(done[case.case_id])
+            continue
+        if baseline_failed:
+            # D8: nothing measurable if the unchanged repository never runs; no case runs are spent.
+            rec = {"repo": plan.repo, "case_id": case.case_id, "family": case.family, "intent": case.intent,
+                   "label": "indeterminate", "first_divergence": None,
+                   "flags": {k: False for k in ("S1", "S2", "D", "C1", "C2", "D_k1", "D_k3")},
+                   "d_reason": "not_run", "note": "baseline failed in all runs; case not executed", "seconds": 0.0}
+            _append(out_jsonl, rec)
+            records.append(rec)
             continue
         t0 = time.perf_counter()
         orc = [_execute_once(plan, case, work_base / slug / f"{case.case_id}-o{i}", execute) for i in range(N_ORACLE)]

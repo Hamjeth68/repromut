@@ -1,0 +1,72 @@
+{
+ "repo": "roodriigoooo/clustering_the_vrp",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/roodriigoooo__clustering_the_vrp/roodriigoooo-clustering_the_vrp-e5ad4a4",
+ "build": {
+  "mode": "imports",
+  "python": "3.10",
+  "extra": [
+   "networkx",
+   "seaborn"
+  ],
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "python",
+  "main.py"
+ ],
+ "cwd_rel": "src/core",
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "data_copy": {
+   "from": "data",
+   "method": "copy_tree"
+  },
+  "A-n32-k5_input_nodes_p90.txt": {
+   "from": "data/A-n32-k5_input_nodes.txt",
+   "method": "perturb_rows",
+   "header": false
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "data": "data_copy",
+    "data/A-n32-k5_input_nodes.txt": "A-n32-k5_input_nodes_p90.txt"
+   },
+   "note": "instance files read via cwd-relative ../../data and data/ paths"
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "repo": "andi611/Naive-Bayes-and-Decision-Tree-Classifiers",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/andi611__Naive-Bayes-and-Decision-Tree-Classifiers/andi611-Naive-Bayes-and-Decision-Tree-Classifiers-d0311cb",
+ "build": {
+  "mode": "imports",
+  "python": "3.10",
+  "extra": [
+   "tqdm",
+   "graphviz"
+  ],
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "setup": {
+  "extract_zips": [
+   "data.zip"
+  ]
+ },
+ "argv": [
+  "python",
+  "runner.py",
+  "--naive_bayes",
+  "--data_mushroom"
+ ],
+ "cwd_rel": "src",
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "train_p90.csv": {
+   "from": "data/mushroom/mushroom_train.csv",
+   "method": "perturb_rows"
+  },
+  "train.csv": {
+   "from": "data/mushroom/mushroom_train.csv",
+   "method": "copy"
+  },
+  "test_p90.csv": {
+   "from": "data/mushroom/mushroom_test.csv",
+   "method": "perturb_rows"
+  },
+  "test.csv": {
+   "from": "data/mushroom/mushroom_test.csv",
+   "method": "copy"
+  },
+  "empty": {
+   "method": "empty"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-train",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "data/mushroom/mushroom_train.csv": "train_p90.csv",
+    "data/mushroom/mushroom_test.csv": "test.csv",
+    "result/.keep": "empty"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "M-PATH-test",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "data/mushroom/mushroom_train.csv": "train.csv",
+    "data/mushroom/mushroom_test.csv": "test_p90.csv",
+    "result/.keep": "empty"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

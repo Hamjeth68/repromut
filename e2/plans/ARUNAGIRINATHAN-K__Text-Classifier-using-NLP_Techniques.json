@@ -1,0 +1,71 @@
+{
+ "repo": "ARUNAGIRINATHAN-K/Text-Classifier-using-NLP_Techniques",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening/src/ARUNAGIRINATHAN-K__Text-Classifier-using-NLP_Techniques/ARUNAGIRINATHAN-K-Text-Classifier-using-NLP_Techniques-fd45b93",
+ "build": {
+  "mode": "requirements",
+  "python": "3.10",
+  "requirements": "requirements.txt",
+  "nltk": [
+   "punkt",
+   "punkt_tab",
+   "stopwords"
+  ],
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "python",
+  "train.py"
+ ],
+ "adapter": {
+  "stdout": true
+ },
+ "artifacts": {
+  "sample_p90.csv": {
+   "from": "data/sample_data.csv",
+   "method": "perturb_rows"
+  },
+  "empty": {
+   "method": "empty"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "data/sample_data.csv": "sample_p90.csv",
+    "model/.keep": "empty"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

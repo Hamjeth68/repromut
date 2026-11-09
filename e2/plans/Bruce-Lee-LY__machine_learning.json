@@ -1,0 +1,86 @@
+{
+ "repo": "Bruce-Lee-LY/machine_learning",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/Bruce-Lee-LY__machine_learning/Bruce-Lee-LY-machine_learning-473f3ef",
+ "build": {
+  "mode": "requirements",
+  "python": "3.10",
+  "requirements": "requirements.txt",
+  "variants": {
+   "dep_patch": "auto_patch",
+   "m_dep": "scikit-learn==1.4.2"
+  }
+ },
+ "argv": [
+  "python",
+  "unsupervised_learning/KMeans.py"
+ ],
+ "adapter": {
+  "stdout": true
+ },
+ "prep": [
+  {
+   "name": "stale",
+   "image_key": "m_dep",
+   "argv": [
+    "python",
+    "unsupervised_learning/KMeans.py"
+   ],
+   "capture": {
+    "model/KMeans/KMeans_blobs.pkl": "stale_KMeans_blobs.pkl"
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case_id": "M-DEP-1",
+   "family": "M-DEP",
+   "intent": "positive",
+   "image_key": "m_dep",
+   "note": "KMeans n_init default (10 before 1.4, 'auto' from 1.4); declared pin is 0.22.2"
+  },
+  {
+   "case_id": "M-CACHE-1",
+   "family": "M-CACHE",
+   "intent": "positive",
+   "pre_files": {
+    "model/KMeans/KMeans_blobs.pkl": "stale_KMeans_blobs.pkl"
+   },
+   "note": "model cache reused if present; stale model produced by the same script under the other scikit-learn version"
+  },
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "model/KMeans/KMeans_blobs.pkl": "stale_KMeans_blobs.pkl"
+   },
+   "note": "cwd-relative model cache path"
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "repo": "nazmul-1117/bangladesh-air-pollution-pattern-mining",
+ "images": "from_build",
+ "timeout_s": 600,
+ "source_tree": "~/repromut-e2-work/screening_p3/src/nazmul-1117__bangladesh-air-pollution-pattern-mining/nazmul-1117-bangladesh-air-pollution-pattern-mining-e20fb6b",
+ "build": {
+  "mode": "uvlock",
+  "python": "3.14",
+  "variants": {
+   "dep_patch": "auto_patch"
+  }
+ },
+ "argv": [
+  "python",
+  "main.py"
+ ],
+ "adapter": {
+  "stdout": true,
+  "files": [
+   "outputs/results/cluster_summary.csv",
+   "outputs/results/association_rules.csv",
+   "outputs/results/feature_importance.csv"
+  ]
+ },
+ "artifacts": {
+  "raw_p90.csv": {
+   "from": "data/raw/air_quality.csv",
+   "method": "perturb_rows"
+  },
+  "cleaned_p90.csv": {
+   "from": "data/processed/air_quality_cleaned.csv",
+   "method": "perturb_rows"
+  }
+ },
+ "prep": [
+  {
+   "name": "stale",
+   "argv": [
+    "python",
+    "preprocess.py"
+   ],
+   "pre_files": {
+    "data/raw/air_quality.csv": "raw_p90.csv"
+   },
+   "capture": {
+    "data/processed/air_quality_cleaned.csv": "stale_cleaned.csv"
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case_id": "M-CACHE-1",
+   "family": "M-CACHE",
+   "intent": "positive",
+   "pre_files": {
+    "data/processed/air_quality_cleaned.csv": "stale_cleaned.csv"
+   },
+   "note": "cleaned CSV produced by preprocess.py from the first 90% of raw rows"
+  },
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "data/processed/air_quality_cleaned.csv": "cleaned_p90.csv"
+   },
+   "note": ""
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch"
+  }
+ ]
+}
