@@ -1,0 +1,15 @@
+{
+ "student.zip": {
+  "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip",
+  "fetched_utc": "2026-11-09T07:23Z",
+  "fetched_in": "networked build container (python:3.10-slim), not on the host",
+  "bytes": 20478,
+  "sha256": "4f671ae4598c20bb4e64de0f65931c98a609a52e383604e2601bd8f7e3822427",
+  "members": ["student-mat.csv", "student-por.csv", "student-merge.R", "student.txt"],
+  "licence": "CC BY 4.0 (UCI dataset 320, DOI 10.24432/C5TG7T; checked on the UCI page 2026-11-09)",
+  "used_by": "youngcoder45/Student-Performance-Predictor"
+ },
+ "nltk_data": {
+  "note": "NLTK packages downloaded at image build time; per-archive SHA-256 in /opt/nltk_sha256.txt inside each image and copied to e2/env/builds/<slug>/ after the build"
+ }
+}

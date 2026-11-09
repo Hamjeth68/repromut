@@ -125,6 +125,7 @@ def resolve_images(plan: dict, slug: str) -> tuple[dict, dict]:
 
 def main(plan_path: str, results_dir: str, prep_only: bool = False) -> None:
     plan = json.loads(Path(plan_path).read_text())
+    Path(results_dir).mkdir(parents=True, exist_ok=True)
     snapshot = Path(plan["source_tree"]).expanduser()
     slug = plan["repo"].replace("/", "__")
     art = WORK / "artifacts" / slug
@@ -132,14 +133,27 @@ def main(plan_path: str, results_dir: str, prep_only: bool = False) -> None:
     images, packages = resolve_images(plan, slug)
     tree = build_tree(plan, snapshot, art, slug)
     prepare_artifacts(plan, tree, art)
-    run_prep(plan, tree, art, images, slug)
+    try:
+        run_prep(plan, tree, art, images, slug)
+    except (RuntimeError, KeyError) as e:          # recorded; dependent cases become not constructible
+        print("PREP FAILED:", str(e)[-1500:], flush=True)
+        (Path(results_dir) / f"{slug}.prep_error.txt").write_text(str(e))
     if prep_only:
         print("prep done:", sorted(p.name for p in art.iterdir()))
         return
-    cases = [CaseSpec.from_dict(c) for c in plan["cases"] if c.get("image_key", "base") in images]
-    skipped = [c["case_id"] for c in plan["cases"] if c.get("image_key", "base") not in images]
+    def constructible(c):
+        arts = list(c.get("pre_files", {}).values()) + list(c.get("shadow_files", {}).values())
+        return c.get("image_key", "base") in images and all((art / a).exists() for a in arts)
+    cases = [CaseSpec.from_dict(c) for c in plan["cases"] if constructible(c)]
+    skipped = [c["case_id"] for c in plan["cases"] if not constructible(c)]
     if skipped:
-        print("not constructible (image build failed):", skipped, flush=True)
+        print("not constructible (image build or prep failed):", skipped, flush=True)
+        Path(results_dir).mkdir(parents=True, exist_ok=True)
+        (Path(results_dir) / f"{slug}.not_constructible.json").write_text(json.dumps(skipped))
+    if "base" not in images:
+        print("BASE IMAGE BUILD FAILED: install_failure (repository excluded, protocol section 10)", flush=True)
+        (Path(results_dir) / f"{slug}.install_failure.txt").write_text("base image build failed\n")
+        return
     rp = RepoPlan(repo=plan["repo"], source_tree=tree, argv=plan["argv"],
                   adapter=O.AdapterSpec.from_dict(plan["adapter"]), tracked=tracked_files(tree),
                   images=images, packages=packages, cases=cases, artifacts=art,
