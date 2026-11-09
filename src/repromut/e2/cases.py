@@ -62,6 +62,15 @@ def perturb_rows(data: bytes, fraction: float = 0.9, header: bool = True) -> byt
     return b"".join(head + body[:keep])
 
 
+def _place(src: Path, dst: Path) -> None:
+    """Copy an artifact file or directory tree (symlinks copied as links, never followed)."""
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    if src.is_dir():
+        shutil.copytree(src, dst, symlinks=True)
+    else:
+        shutil.copyfile(src, dst)
+
+
 def _safe_rel(rel: str) -> Path:
     p = Path(rel)
     if p.is_absolute() or ".." in p.parts:
@@ -83,9 +92,7 @@ def materialise(case: CaseSpec, source_tree: Path, run_root: Path, artifacts: Pa
     repo_host.parent.mkdir(parents=True, exist_ok=True)
     prepare_work_copy(source_tree, repo_host)
     for rel, art in case.pre_files.items():
-        dst = repo_host / _safe_rel(rel)
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(artifacts / _safe_rel(art), dst)
+        _place(artifacts / _safe_rel(art), repo_host / _safe_rel(rel))
     if case.family == "C-CACHE":
         (repo_host / UNUSED_CACHE).write_bytes(b"repromut unused control artifact\n")
     cwd = f"/work/{repo_rel}" + (f"/{cwd_rel}" if cwd_rel else "")
@@ -93,16 +100,16 @@ def materialise(case: CaseSpec, source_tree: Path, run_root: Path, artifacts: Pa
         sib = run_root / SIBLING_DIR
         sib.mkdir()
         for rel, art in case.shadow_files.items():
-            dst = sib / _safe_rel(rel)
-            dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(artifacts / _safe_rel(art), dst)
+            _place(artifacts / _safe_rel(art), sib / _safe_rel(rel))
         argv = absolutise_entry(argv, f"/work/{repo_rel}" + (f"/{cwd_rel}" if cwd_rel else ""))
         # The sibling cwd mirrors the registered cwd depth, so relative paths such as ../../data
         # resolve inside the sibling tree (shadow paths are relative to the sibling root).
         cwd = f"/work/{SIBLING_DIR}" + (f"/{cwd_rel}" if cwd_rel else "")
         (sib / cwd_rel).mkdir(parents=True, exist_ok=True)
-    for d in [run_root, *[p for p in run_root.rglob("*") if p.is_dir() and not p.is_symlink()]]:
-        d.chmod(0o777)
+    run_root.chmod(0o777)
+    for p in run_root.rglob("*"):          # writable by the unprivileged container user (10001)
+        if not p.is_symlink():
+            p.chmod(0o777 if p.is_dir() else 0o666)
     return cwd, argv, repo_host
 
 

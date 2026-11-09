@@ -1,0 +1,84 @@
+{
+ "repo": "sagnik1511/Tabular-AutoML",
+ "commit": "cada595b6c11821697970f7f6986bfa2dab187e0",
+ "source_tree": "/Users/mac/repromut-e2-work/screening/src/sagnik1511__Tabular-AutoML/sagnik1511-Tabular-AutoML-cada595",
+ "argv": [
+  "python",
+  "test.py"
+ ],
+ "cwd_rel": "",
+ "timeout_s": 600,
+ "adapter": {
+  "stdout": true,
+  "files": []
+ },
+ "images": {
+  "base": "sha256:57962ffff39fb3e5aa82ab24300ae234d0f583d866e6fde8ddc0099de617b3a2"
+ },
+ "packages": {
+  "base": "~/repromut-e2-work/build/tabular/packages_base.txt"
+ },
+ "artifacts": {
+  "iris_p90.csv": {
+   "from": "tab_automl/datasets/Iris.csv",
+   "method": "perturb_rows",
+   "fraction": 0.9
+  },
+  "iris_copy.csv": {
+   "from": "tab_automl/datasets/Iris.csv",
+   "method": "copy"
+  },
+  "wine_p90.csv": {
+   "from": "tab_automl/datasets/wine.csv",
+   "method": "perturb_rows",
+   "fraction": 0.9
+  },
+  "wine_copy.csv": {
+   "from": "tab_automl/datasets/wine.csv",
+   "method": "copy"
+  }
+ },
+ "cases": [
+  {
+   "case_id": "M-PATH-iris",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "tab_automl/datasets/Iris.csv": "iris_p90.csv",
+    "tab_automl/datasets/wine.csv": "wine_copy.csv"
+   }
+  },
+  {
+   "case_id": "M-PATH-wine",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "tab_automl/datasets/Iris.csv": "iris_copy.csv",
+    "tab_automl/datasets/wine.csv": "wine_p90.csv"
+   }
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  }
+ ],
+ "notes": [
+  "C-DEP not constructible: no scikit-learn 1.0.0/1.0.1 binary wheel for cp310 aarch64 (checked with pip download --only-binary on 2026-11-09)",
+  "M-DEP not applicable: no registered default-change estimator on the computation path; requirements pin scikit-learn 1.0.2",
+  "requirements.txt is UTF-16; converted to UTF-8 requirements.in without content change"
+ ]
+}

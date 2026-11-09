@@ -22,8 +22,11 @@ def _sha(b: bytes) -> str:
 
 
 def _ast_hash(src: bytes) -> str:
+    import warnings
     try:
-        return _sha(ast.dump(ast.parse(src)).encode())
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")     # third-party sources may contain invalid escapes etc.
+            return _sha(ast.dump(ast.parse(src)).encode())
     except (SyntaxError, ValueError):
         return "raw:" + _sha(src)
 

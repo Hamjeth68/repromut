@@ -1,0 +1,96 @@
+{
+ "repo": "fmind/mlops-python-package",
+ "commit": "see REPOSITORY-MANIFEST.json",
+ "source_tree": "/Users/mac/repromut-e2-work/screening/src/fmind__mlops-python-package/fmind-mlops-python-package-1dcea8d",
+ "argv": [
+  "bikes",
+  "confs/pipeline.yaml"
+ ],
+ "cwd_rel": "",
+ "timeout_s": 600,
+ "adapter": {
+  "stdout": true,
+  "files": [],
+  "convert": [
+   "outputs/outputs.parquet",
+   "outputs/models_explanations.parquet"
+  ]
+ },
+ "images": {
+  "base": "sha256:5b59c34b2982ae2a73d6ac38f451a27a63707b532484c9823ea5da277b2c315f",
+  "dep_patch": "sha256:cb0aa115c6f01922d9f67a6867d744002bf28e0f14bbd6728238d4a20d911750"
+ },
+ "packages": {
+  "base": "~/repromut-e2-work/build/fmind/packages_base.txt",
+  "dep_patch": "~/repromut-e2-work/build/fmind/packages_dep_patch.txt"
+ },
+ "artifacts": {},
+ "cases": [
+  {
+   "case_id": "M-CACHE-1",
+   "family": "M-CACHE",
+   "intent": "positive",
+   "pre_files": {
+    "mlflow.db": "stale__mlflow.db",
+    "mlruns": "stale__mlruns"
+   },
+   "note": "stale local MLflow store produced by the repository's own pipeline on the first 90% of training rows"
+  },
+  {
+   "case_id": "M-ENV-1",
+   "family": "M-ENV",
+   "intent": "positive",
+   "env": {
+    "MLFLOW_TRACKING_URI": "sqlite:///stale_store.db"
+   },
+   "pre_files": {
+    "stale_store.db": "stale__mlflow.db",
+    "mlruns": "stale__mlruns"
+   },
+   "note": "documented variable pointed at a pre-populated (stale) store"
+  },
+  {
+   "case_id": "M-PATH-1",
+   "family": "M-PATH",
+   "intent": "positive",
+   "shadow_files": {
+    "confs/pipeline.yaml": "copy__confs__pipeline.yaml",
+    "data/inputs_train.parquet": "p90__data__inputs_train.parquet",
+    "data/targets_train.parquet": "p90__data__targets_train.parquet",
+    "data/inputs_test.parquet": "copy__data__inputs_test.parquet",
+    "data/targets_test.parquet": "copy__data__targets_test.parquet",
+    "outputs/.gitkeep": "empty__gitkeep"
+   },
+   "note": "config path argument and data paths resolve against the working directory"
+  },
+  {
+   "case_id": "C-ENV",
+   "family": "C-ENV",
+   "intent": "control",
+   "env": {
+    "REPROMUT_UNUSED_VAR": "1"
+   }
+  },
+  {
+   "case_id": "C-CACHE",
+   "family": "C-CACHE",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-PATH",
+   "family": "C-PATH",
+   "intent": "control"
+  },
+  {
+   "case_id": "C-DEP",
+   "family": "C-DEP",
+   "intent": "control",
+   "image_key": "dep_patch",
+   "note": "scikit-learn 1.9.1 -> 1.9.0 only"
+  }
+ ],
+ "notes": [
+  "M-DEP not applicable: lock requires scikit-learn >=1.9, past every registered default-change boundary",
+  "artifacts prepared by e2/harness/prep_fmind.py before outcome runs"
+ ]
+}

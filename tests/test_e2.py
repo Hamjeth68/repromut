@@ -37,6 +37,16 @@ def test_collect_marks_missing_files_and_excludes_timing_lines():
     assert np.isnan(outs["out.json:<missing>"]).all()
 
 
+def test_clock_stamped_lines_are_excluded():
+    outs = O.collect(O.AdapterSpec(), "[03:49:44] WARNING: learner.cc:1115 note\nacc 0.5\n", {})
+    assert outs["stdout"].tolist() == [0.5]
+
+
+def test_identifier_lines_are_excluded():
+    outs = O.collect(O.AdapterSpec(), "Training Job Finished: Model version: 2\nrun_id 7\nr2 0.76\n", {})
+    assert outs["stdout"].tolist() == [0.76]
+
+
 def test_first_difference_and_tolerance():
     a = {"stdout": np.array([1.0]), "f": np.array([2.0])}
     assert O.first_difference(a, {"stdout": np.array([1.0 + 1e-12]), "f": np.array([2.0])}) is None

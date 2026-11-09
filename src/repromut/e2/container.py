@@ -7,6 +7,7 @@ resolve outside the work copy are refused, so a run cannot make the host read ot
 from __future__ import annotations
 
 import os
+import re
 import shutil
 import subprocess
 import time
@@ -55,7 +56,8 @@ class RunResult:
 
 
 def build_docker_argv(spec: ContainerSpec, name: str, docker: str = "docker") -> list[str]:
-    if "@sha256:" not in spec.image:
+    # Registry images are pinned as name@sha256:...; locally built images by their full content ID.
+    if "@sha256:" not in spec.image and not re.fullmatch(r"sha256:[0-9a-f]{64}", spec.image):
         raise ValueError("image must be pinned by digest")
     if not (spec.cwd == "/work" or spec.cwd.startswith("/work/")):
         raise ValueError("cwd must be inside /work")

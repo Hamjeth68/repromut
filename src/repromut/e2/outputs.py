@@ -14,7 +14,21 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-from repromut.external import extract_numbers
+import re
+
+from repromut.external import extract_numbers as _e1_extract_numbers
+
+# Pilot adapter fix (DEVIATIONS D1): lines carrying a wall-clock time stamp (e.g. "[03:49:44] WARNING")
+# are excluded in addition to E1's TIMING_RE lines. A clock reading is not an experiment result.
+CLOCK_RE = re.compile(r"\b\d{1,2}:\d{2}:\d{2}\b")
+# Pilot adapter fix (DEVIATIONS D5): lines reporting registry/run identifiers ("Model version: 2",
+# "run_id ...") carry bookkeeping numbers, not experiment results.
+IDENT_RE = re.compile(r"(?i)\bversion\b|\brun[_ ]?id\b")
+
+
+def extract_numbers(text: str) -> list[float]:
+    keep = (l for l in text.splitlines() if not CLOCK_RE.search(l) and not IDENT_RE.search(l))
+    return _e1_extract_numbers("\n".join(keep))
 
 RTOL = 1e-6
 ATOL = 1e-9
@@ -27,12 +41,12 @@ class AdapterSpec:
     """Registered per repository before outcome runs (protocol section 6)."""
     stdout: bool = True
     files: list[str] = field(default_factory=list)      # declared output paths, relative to the work copy
-    pickles: list[str] = field(default_factory=list)    # summarised in-container, never loaded on the host
+    convert: list[str] = field(default_factory=list)    # parquet/pickle: converted in-container, never loaded on the host
 
     @classmethod
     def from_dict(cls, d: dict) -> "AdapterSpec":
         return cls(stdout=d.get("stdout", True), files=list(d.get("files", [])),
-                   pickles=list(d.get("pickles", [])))
+                   convert=list(d.get("convert", [])) + list(d.get("pickles", [])))
 
 
 def _canon(a) -> np.ndarray:
@@ -86,7 +100,7 @@ def parse_file(name: str, data: bytes) -> dict[str, np.ndarray]:
 
 
 def collect(spec: AdapterSpec, stdout: str, files: dict[str, bytes],
-            pickle_summaries: dict[str, list[float]] | None = None) -> dict[str, np.ndarray]:
+            converted: dict[str, list | None] | None = None) -> dict[str, np.ndarray]:
     """Normalised outputs in the adapter's declared order. A missing declared file is an explicit NaN marker."""
     out: dict[str, np.ndarray] = {}
     if spec.stdout:
@@ -96,9 +110,9 @@ def collect(spec: AdapterSpec, stdout: str, files: dict[str, bytes],
             out.update(parse_file(name, files[name]))
         else:
             out[f"{name}:<missing>"] = np.array([np.nan])
-    for name in spec.pickles:
-        vals = (pickle_summaries or {}).get(name)
-        out[f"{name}:<pickle>"] = _canon(vals if vals is not None else [np.nan])
+    for name in spec.convert:
+        vals = (converted or {}).get(name)
+        out[f"{name}:<converted>"] = _canon([np.nan if v is None else v for v in vals] if vals is not None else [np.nan])
     return out
 
 

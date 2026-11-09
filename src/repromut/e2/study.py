@@ -67,9 +67,31 @@ def _execute_once(plan: RepoPlan, case: CaseSpec, run_root: Path, execute: Execu
         if res.status != "infra_failure":
             break
     files = {Path(k).relative_to(cwd_rel_root).as_posix(): v for k, v in res.files.items()}
-    outs = O.collect(plan.adapter, res.stdout, files) if res.status == "ok" else None
+    converted = _convert(plan, case, run_root, cwd, execute) if res.status == "ok" and plan.adapter.convert else None
+    outs = O.collect(plan.adapter, res.stdout, files, converted) if res.status == "ok" else None
     shutil.rmtree(run_root, ignore_errors=True)
     return _Run(Observed(res.status, outs), res, s1, s2)
+
+
+def _convert(plan: RepoPlan, case: CaseSpec, run_root: Path, cwd: str, execute: Executor) -> dict:
+    """Second, offline container run of our own converter (parquet/pickle -> JSON numbers)."""
+    tool = run_root / ".repromut"
+    tool.mkdir(exist_ok=True)
+    shutil.copyfile(Path(__file__).with_name("convert_in_container.py"), tool / "convert.py")
+    tool.chmod(0o777)
+    names = list(plan.adapter.convert)
+    outs = [f".repromut/out/{n.replace('/', '__')}.json" for n in names]
+    spec = C.ContainerSpec(plan.images[case.image_key], run_root, "/work",
+                           ["python", "-I", "/work/.repromut/convert.py", cwd, *names], {}, 300)
+    res = execute(spec, outs)
+    result = {}
+    for n, o in zip(names, outs):
+        try:
+            d = json.loads(res.files[o]) if o in res.files else {"ok": False}
+        except ValueError:
+            d = {"ok": False}
+        result[n] = d.get("values") if d.get("ok") else None
+    return result
 
 
 def _done(path: Path) -> dict[str, dict]:
@@ -126,6 +148,10 @@ def run_repo(plan: RepoPlan, out_jsonl: Path, work_base: Path, execute: Executor
                          "D_k1": dres[1].flag if dres else True, "D_k3": dres[3].flag if dres else True},
                "d_reason": d.reason, "c1_source": c1_src, "c2_source": c2_src,
                "oracle_statuses": [r.raw.status for r in orc], "dynamic_statuses": [r.raw.status for r in dyn],
+               # D6: keep every run's normalised outputs so labels can be audited and the pre-declared
+               # tolerance sensitivity analyses can be recomputed without re-running containers.
+               "oracle_outputs": [O.to_jsonable(r.obs.outputs) if r.obs.outputs is not None else None for r in orc],
+               "dynamic_outputs": [O.to_jsonable(r.obs.outputs) if r.obs.outputs is not None else None for r in dyn],
                "seconds": time.perf_counter() - t0, "note": case.note}
         _append(out_jsonl, rec)
         records.append(rec)
