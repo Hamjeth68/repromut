@@ -7,7 +7,7 @@
 
 **A controlled mutation benchmark for dynamic reproducibility testing of small machine-learning experiments.**
 
-> **Headline finding (exploratory):** seed checks and config-manifest checks missed **every** stale cache, hidden `.env` override and dependency drift we planted. Overall, seed checks caught 29% of the planted faults and config-manifest checks 73%; re-running the experiment caught all of them. [Read the preprint →](https://doi.org/10.5281/zenodo.24048206)
+> **Headline finding (exploratory):** seed checks and config-manifest checks missed **every** stale cache, hidden `.env` override and dependency drift we planted. Overall, seed checks caught 29% of the planted faults and config-manifest checks 73%; re-running the experiment caught all of them. [Read the preprint →](https://doi.org/10.5281/zenodo.24090849)
 
 ![Recall by mutation family](paper/figures/recall_by_family.png)
 
@@ -145,9 +145,9 @@ See `INDEPENDENCE.md` for the project's provenance and separation record. That r
 
 ## Citation
 
-Preprint (draft v0.2, latest): Misree, H. (2026). *ReproMut: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments.* Zenodo. https://doi.org/10.5281/zenodo.24048206
+Preprint (draft v0.3, latest): Misree, H. (2026). *ReproMut: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments.* Zenodo. https://doi.org/10.5281/zenodo.24090849
 
-Draft v0.1: https://doi.org/10.5281/zenodo.24048006
+Earlier drafts: v0.2 https://doi.org/10.5281/zenodo.24048206 · v0.1 https://doi.org/10.5281/zenodo.24048006
 
 To cite all versions, use the concept DOI 10.5281/zenodo.24048005. Machine-readable metadata is in `CITATION.cff`.
 

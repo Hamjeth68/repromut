@@ -11,7 +11,7 @@ authors:
 repository-code: https://github.com/Hamjeth68/repromut
 preferred-citation:
   type: article
-  title: "ReproMut: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments (Preprint, draft v0.2)"
+  title: "ReproMut: A Controlled Mutation Benchmark for Comparing Reproducibility Auditors on Small Machine-Learning Experiments (Preprint, draft v0.3)"
   authors:
     - family-names: Misree
       given-names: Hamjeth
@@ -19,8 +19,8 @@ preferred-citation:
   year: 2026
   publisher:
     name: Zenodo
-  doi: 10.5281/zenodo.24048206
-  url: https://zenodo.org/records/24048206
+  doi: 10.5281/zenodo.24090849
+  url: https://zenodo.org/records/24090849
 keywords:
   - computational reproducibility
   - machine learning testing
