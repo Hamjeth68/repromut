@@ -15,6 +15,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 WORK = Path.home() / "repromut-e2-work"
@@ -26,9 +27,37 @@ DEFAULT_MAP = ["numpy", "scipy", "scikit-learn", "pandas", "matplotlib", "joblib
 CUTOFF = "2026-11-01"
 
 
-def sh(cmd, **kw):
+NET_EXIT = 3          # build-stage network unavailable: infrastructure, never an install failure (D11)
+
+
+def sh(cmd, attempts=3, **kw):
+    """Run a build-stage command; retry (network flakiness is infrastructure, not the repository)."""
     print("+", cmd if isinstance(cmd, str) else " ".join(cmd), flush=True)
-    return subprocess.run(cmd, shell=isinstance(cmd, str), check=True, text=True, **kw)
+    for i in range(attempts):
+        try:
+            return subprocess.run(cmd, shell=isinstance(cmd, str), check=True, text=True, **kw)
+        except subprocess.CalledProcessError:
+            if i == attempts - 1:
+                raise
+            wait_for_network()
+
+
+def net_ok(img=None) -> bool:
+    img = img or PY["3.10"]
+    r = subprocess.run(["docker", "run", "--rm", img, "python", "-c",
+                        "import urllib.request;urllib.request.urlopen('https://pypi.org/simple/uv/',timeout=30).read(2000)"],
+                       capture_output=True, text=True)
+    return r.returncode == 0
+
+
+def wait_for_network(max_wait_min=60):
+    for _ in range(max_wait_min // 5 + 1):
+        if net_ok():
+            return
+        print("build-stage network unavailable; waiting 5 min", flush=True)
+        time.sleep(300)
+    print("NETWORK DOWN: aborting without classifying any repository", flush=True)
+    sys.exit(NET_EXIT)
 
 
 def base_image(v):
@@ -43,7 +72,7 @@ def base_image(v):
 
 def compile_lock(b: Path, img: str, v: str, src: str, dst: str, extra_flags: str = ""):
     sh(["docker", "run", "--rm", "-v", f"{b}:/b", "-w", "/b", img, "sh", "-c",
-        f"pip install -q {UV} 2>/dev/null; uv --version > uv_version.txt; "
+        f"pip install -q --timeout 60 --retries 5 {UV} && uv --version > uv_version.txt && "
         f"uv pip compile {src} --generate-hashes --exclude-newer {CUTOFF} --python-version {v} "
         f"--python-platform aarch64-unknown-linux-gnu {extra_flags} -o {dst} -q"])
 
@@ -51,6 +80,16 @@ def compile_lock(b: Path, img: str, v: str, src: str, dst: str, extra_flags: str
 def block(txt, name):
     m = re.search(rf"(?ms)^{re.escape(name)}==.*?(?=^\S|\Z)", txt)
     return m.group(0) if m else None
+
+
+def docker_build(args, attempts=3):
+    """Up to 3 attempts; before each retry the build-stage network is checked (D11)."""
+    for i in range(attempts):
+        r = subprocess.run(["docker", "build", "-q", *args], capture_output=True, text=True)
+        if r.returncode == 0:
+            return r
+        wait_for_network()
+    return r
 
 
 def sk_version(lock_text):
@@ -78,6 +117,7 @@ def auto_patch(b, img, v, ver):
 
 def main(plan_path):
     plan = json.loads(Path(plan_path).read_text())
+    wait_for_network()
     bc = plan["build"]
     slug = plan["repo"].replace("/", "__")
     tree = Path(plan["source_tree"]).expanduser()
@@ -124,6 +164,7 @@ FROM {img}
 ARG LOCK=lock.txt
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential cmake libgomp1 && rm -rf /var/lib/apt/lists/*
 COPY ${{LOCK}} /opt/lock.txt
+ENV PIP_DEFAULT_TIMEOUT=60 PIP_RETRIES=5 UV_HTTP_TIMEOUT=120
 RUN python -m venv /opt/venv && /opt/venv/bin/pip install -q --upgrade "pip==25.3" "setuptools==80.9.0" "wheel==0.45.1" "Cython<3.2" \\
  && /opt/venv/bin/pip install -q --no-build-isolation --require-hashes --no-deps -r /opt/lock.txt \\
  && /opt/venv/bin/pip freeze > /opt/packages.txt{nltk_cmd}
@@ -134,8 +175,7 @@ USER 10001:10001
             if key in images and images[key] is None:
                 continue
             tag = f"repromut-e2/{slug.lower()}:{key}"
-            r = subprocess.run(["docker", "build", "-q", "--build-arg", f"LOCK={lock}", "-t", tag, str(b)],
-                               capture_output=True, text=True)
+            r = docker_build(["--build-arg", f"LOCK={lock}", "-t", tag, str(b)])
             images[key] = r.stdout.strip().splitlines()[-1] if r.returncode == 0 else None
             (b / f"build_{key}.log").write_text(r.stdout + r.stderr)
     elif bc["mode"] == "uvlock":
@@ -148,7 +188,7 @@ FROM {img}
 ARG SKLEARN_OVERRIDE=""
 COPY src_snapshot /build
 WORKDIR /build
-ENV UV_PROJECT_ENVIRONMENT=/opt/venv UV_PYTHON_DOWNLOADS=never UV_LINK_MODE=copy
+ENV UV_PROJECT_ENVIRONMENT=/opt/venv UV_PYTHON_DOWNLOADS=never UV_LINK_MODE=copy PIP_DEFAULT_TIMEOUT=60 PIP_RETRIES=5 UV_HTTP_TIMEOUT=120
 RUN pip install -q "{UV}" && uv sync --frozen --no-dev --no-editable --python /usr/local/bin/python{v} \\
  && if [ -n "$SKLEARN_OVERRIDE" ]; then uv pip install --python /opt/venv/bin/python --no-deps "scikit-learn==$SKLEARN_OVERRIDE"; fi \\
  && uv pip freeze --python /opt/venv/bin/python > /opt/packages.txt{nltk_cmd} && cd / && rm -rf /build /root/.cache
@@ -165,8 +205,7 @@ USER 10001:10001
                 images[key] = None
                 continue
             tag = f"repromut-e2/{slug.lower()}:{key}"
-            r = subprocess.run(["docker", "build", "-q", "--build-arg", f"SKLEARN_OVERRIDE={ver}", "-t", tag, str(b)],
-                               capture_output=True, text=True)
+            r = docker_build(["--build-arg", f"SKLEARN_OVERRIDE={ver}", "-t", tag, str(b)])
             images[key] = r.stdout.strip().splitlines()[-1] if r.returncode == 0 else None
             (b / f"build_{key}.log").write_text(r.stdout + r.stderr)
     else:
