@@ -25,6 +25,10 @@ These are not deviations from a registered protocol. They are recorded for trans
 | S15 | 2026-11-09 | **Approved by the author (delegated decision), applied before registration: per-repository Python.** Section 3 names `python:3.10-slim`, but 2 eligible repositories declare `requires-python >= 3.14`. Proposal: the base image is the official `python:<X.Y>-slim`, pinned by digest, where X.Y is the lowest version that satisfies the repository's declared Python constraint (default 3.10). |
 | S16 | 2026-11-09 | **A1 omission corrected.** ARUNAGIRINATHAN-K/Text-Classifier-using-NLP_Techniques (P1 order 79) had been excluded under X6 before A1 was approved, and was missed in the A1 review because its automated record had passed static screening (S5). It was re-reviewed under M1–M7 with M2′ and is eligible. No execution has taken place. |
 
+## Registration
+
+The protocol was registered by local commit `5dbf0875d677561962661466f423e4a213d3146d` on 2026-11-09, before any third-party code ran. It has not been pushed.
+
 ## Post-registration deviations
 
 None yet.
