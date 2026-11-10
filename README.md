@@ -26,6 +26,8 @@ ReproMut deliberately breaks small, fully synthetic, CPU-only experiments in kno
 - **5 audit methods:** none, seed-only, static manifest, dynamic (repeated execution plus stage fingerprints), and static + dynamic combined.
 - **An independent oracle:** it compares full arrays at a fixed tolerance, with more repeats than any auditor. The test suite checks every declared label and stage against it.
 
+**Related work.** ReproMut is a separate project from **MLReproMutate** (Shulepov, [arXiv:2608.27100](https://arxiv.org/abs/2608.27100), August 2026), despite the similar names. MLReproMutate applies four kinds of reproducibility mutation to real ML repositories and asks whether each repository's *existing* validation workflow catches them. ReproMut instead compares *types of check* (seed-only, static manifest, re-execution) against an independent execution oracle, using semantics-preserving controls to measure false alarms. The preprint discusses the relationship between the two.
+
 ## Download
 
 Ready-made downloads are on the [Releases page](https://github.com/Hamjeth68/repromut/releases):
