@@ -235,6 +235,7 @@ def test_sha256_file(tmp_path):
     assert RI.sha256_file(f) == "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
 
 
+@pytest.mark.skipif(not RI.HAS_DATA_FILTER, reason="tarfile 'data' filter needs Python 3.12+ / 3.10.12+ / 3.11.4+")
 def test_extract_tarball_skips_unsafe_members(tmp_path):
     buf = _io.BytesIO()
     with _tarfile.open(fileobj=buf, mode="w:gz") as tf:
@@ -251,7 +252,18 @@ def test_extract_tarball_skips_unsafe_members(tmp_path):
     assert skipped == 2
 
 
-def test_restore_dry_run_touches_nothing(capsys):
-    assert RI.main(["--dry-run"]) == 0
+def test_extract_tarball_refuses_without_data_filter(monkeypatch):
+    monkeypatch.setattr(RI, "HAS_DATA_FILTER", False)
+    with pytest.raises(RuntimeError, match="data' filter"):
+        RI.extract_tarball(b"", Path("."))
+
+
+@pytest.mark.parametrize("has_filter,code", [(True, 0), (False, 2)])
+def test_restore_dry_run_touches_nothing(monkeypatch, capsys, has_filter, code):
+    """Runs on every Python: the dry run lists the plan, and refuses (exit 2) where the
+    tarfile 'data' filter is missing, because the real restore would refuse there too."""
+    monkeypatch.setattr(RI, "HAS_DATA_FILTER", has_filter)
+    assert RI.main(["--dry-run"]) == code
     out = capsys.readouterr().out
     assert "uvlock" in out and "student.zip" in out
+    assert ("NOT READY" in out) is (not has_filter)

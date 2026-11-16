@@ -38,6 +38,9 @@ import pilotlib as PL  # noqa: E402
 ROOT = PL.REPO_ROOT
 BUILD_SRC_DIR = {"fmind/mlops-python-package": "fmind"}   # committed under a short name; others use the slug
 CONTEXT = "colima-repromut-e2"
+# The restore relies on tarfile's 'data' filter (Python 3.12+, 3.10.12+, 3.11.4+) and refuses to run
+# without it rather than extracting downloaded archives without that protection.
+HAS_DATA_FILTER = hasattr(tarfile, "data_filter")
 
 
 def pilot_repos() -> list[str]:
@@ -77,6 +80,8 @@ def compare_packages(expected: str, actual: str) -> tuple[bool, list[str]]:
 def extract_tarball(blob: bytes, dest: Path) -> int:
     """Extract with the 'data' filter (no absolute paths, no escapes, no device files).
     Unsafe members are skipped, never extracted. Returns the number skipped."""
+    if not HAS_DATA_FILTER:
+        raise RuntimeError("this Python has no tarfile 'data' filter; use Python 3.12+ (or 3.10.12+/3.11.4+)")
     skipped = 0
     with tarfile.open(fileobj=io.BytesIO(blob), mode="r:gz") as tf:
         for m in tf.getmembers():
@@ -195,7 +200,7 @@ def main(argv: list[str] | None = None) -> int:
         p = plans[r]
         print(f"  {r}: commit {commit_of(r)[:7]}, build mode {p['build']['mode']}, python {p['build']['python']}, "
               f"build files {build_src(r).relative_to(ROOT)}, setup data {list((p.get('setup') or {}).get('add_files', {}).values())}")
-    if not hasattr(tarfile, "data_filter"):
+    if not HAS_DATA_FILTER:
         print("NOT READY: this Python has no tarfile 'data' filter; use Python 3.12+ (or 3.10.12+/3.11.4+).")
         return 2
     if args.dry_run:
