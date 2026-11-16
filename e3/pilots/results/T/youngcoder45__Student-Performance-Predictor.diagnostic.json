@@ -1,0 +1,57 @@
+{
+  "baseline": {
+    "status": "ok",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.34.106.0",
+        "num_threads": 4
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.31.dev",
+        "num_threads": 4
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "prefix": "libgomp",
+        "version": null,
+        "num_threads": 4
+      }
+    ],
+    "stderr_tail": ""
+  },
+  "threads_1": {
+    "status": "ok",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.34.106.0",
+        "num_threads": 1
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.31.dev",
+        "num_threads": 1
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "prefix": "libgomp",
+        "version": null,
+        "num_threads": 1
+      }
+    ],
+    "stderr_tail": ""
+  },
+  "differs": true
+}

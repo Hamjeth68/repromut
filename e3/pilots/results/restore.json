@@ -1,0 +1,81 @@
+{
+  "reason": "~/repromut-e2-work was lost; pilot inputs rebuilt from committed E2 records",
+  "repositories": {
+    "fmind/mlops-python-package": {
+      "snapshot": {
+        "snapshot": "/Users/mac/repromut-e2-work/screening/src/fmind__mlops-python-package/fmind-mlops-python-package-1dcea8d",
+        "commit": "1dcea8db13352acec10636b11794db04f35d9d1d",
+        "archive_members_skipped": 0,
+        "status": "downloaded"
+      },
+      "image": {
+        "image_tag": "repromut-e2/fmind__mlops-python-package:base",
+        "image_id": "sha256:2c9c2a7cf4767608ef101d9e83c8eb3cb6def0080e3d5894078fd5c814ee8c91",
+        "e2_image_id": null,
+        "packages_match_e2": true,
+        "packages_diff": []
+      },
+      "setup_data": []
+    },
+    "ARUNAGIRINATHAN-K/Text-Classifier-using-NLP_Techniques": {
+      "snapshot": {
+        "snapshot": "/Users/mac/repromut-e2-work/screening/src/ARUNAGIRINATHAN-K__Text-Classifier-using-NLP_Techniques/ARUNAGIRINATHAN-K-Text-Classifier-using-NLP_Techniques-fd45b93",
+        "commit": "fd45b93e51a84b263c3ba2d7c9d0327e71c1a142",
+        "archive_members_skipped": 0,
+        "status": "downloaded"
+      },
+      "image": {
+        "image_tag": "repromut-e2/arunagirinathan-k__text-classifier-using-nlp_techniques:base",
+        "image_id": "sha256:5bdbb51743fdc2c0a95d72af80a8c81563ba1735f949c3c235d483296ccaa597",
+        "e2_image_id": "sha256:974cc056208648c0a29a5065b7af06fc9063cbd6e80b8af3d9a309950ed88be7",
+        "packages_match_e2": true,
+        "packages_diff": [],
+        "nltk_sha256": [
+          "48c0e52d8b52546e827f53761fb30300c0ab94f70660d28bd65ba0a86270946b  /usr/share/nltk_data/corpora/stopwords.zip",
+          "51c3078994aeaf650bfc8e028be4fb42b4a0d177d41c012b6a983979653660ec  /usr/share/nltk_data/tokenizers/punkt.zip",
+          "e57f64187974277726a3417ca6f181ec5403676c717672eef6a748a7b20e0106  /usr/share/nltk_data/tokenizers/punkt_tab.zip"
+        ]
+      },
+      "setup_data": []
+    },
+    "youngcoder45/Student-Performance-Predictor": {
+      "snapshot": {
+        "snapshot": "/Users/mac/repromut-e2-work/screening/src/youngcoder45__Student-Performance-Predictor/youngcoder45-Student-Performance-Predictor-4191a1b",
+        "commit": "4191a1bf433bc2291058fa9166471bfaf5673025",
+        "archive_members_skipped": 0,
+        "status": "downloaded"
+      },
+      "image": {
+        "image_tag": "repromut-e2/youngcoder45__student-performance-predictor:base",
+        "image_id": "sha256:ca925dd144efd1087644aeec1fec1f40f22678961e95234974a175db9880c6c1",
+        "e2_image_id": "sha256:707adfe87b4626c695be4d9414747d8ab839c5e587aecd3ea811e5384c6a7753",
+        "packages_match_e2": true,
+        "packages_diff": []
+      },
+      "setup_data": [
+        {
+          "file": "student.zip",
+          "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip",
+          "sha256": "4f671ae4598c20bb4e64de0f65931c98a609a52e383604e2601bd8f7e3822427",
+          "verified": true
+        }
+      ]
+    },
+    "sagnik1511/Tabular-AutoML": {
+      "snapshot": {
+        "snapshot": "/Users/mac/repromut-e2-work/screening/src/sagnik1511__Tabular-AutoML/sagnik1511-Tabular-AutoML-cada595",
+        "commit": "cada595b6c11821697970f7f6986bfa2dab187e0",
+        "archive_members_skipped": 0,
+        "status": "downloaded"
+      },
+      "image": {
+        "image_tag": "repromut-e2/sagnik1511__tabular-automl:base",
+        "image_id": "sha256:bb4d800cd459daac1e2d53184079530cbfc3b21aab42ffb6f6373b838b258be7",
+        "e2_image_id": "sha256:614eb4c78e9c707dc3bd73ec87bb413a2848639426c337c72ebba3bf3a0a946d",
+        "packages_match_e2": true,
+        "packages_diff": []
+      },
+      "setup_data": []
+    }
+  }
+}

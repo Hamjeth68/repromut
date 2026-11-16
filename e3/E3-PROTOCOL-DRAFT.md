@@ -5,7 +5,7 @@
 - Author: Hamjeth Misree (ORCID 0009-0008-2548-6920)
 - Execution resources: personal Mac, personal GitHub account, Colima VM (see `e2/THREAT-MODEL.md`), under `INDEPENDENCE.md`
 - Section 2 decisions approved by the author on 2026-11-14: target size, rule M8, fallback population P5, seed text, pooled secondary analysis.
-- **Open until the pilots in Appendix A finish:** whether the thread-count family (§4) and the nondeterministic-baseline group (§5b) are included. Each section states what happens either way.
+- **Pilots T and N ran on 2026-11-14,** after commit `271e39d` fixed their rules. Both additions met their adoption rules and are included: the thread-count family (§4) and the nondeterministic-baseline group (§5b). See `e3/PILOT-REPORT.md`. The pilots used E2 repositories only, so no E3 repository has been run.
 
 ## 0. Relationship to E2
 
@@ -14,7 +14,7 @@ E2 was inconclusive on case count, not on direction: 10 positives against a mini
 1. **The population** (§2): new, larger, and fixed in advance, with a registered fallback.
 2. **The sample size**: 24 eligible repositories instead of 15.
 3. **Harness rules** that E2 added as deviations (D1–D13, S13, S15). These are registered from the start (§3–§6).
-4. **Up to two additions**, depending on the pilots: a thread-count mutation family (M-THREADS) and a descriptive analysis of repositories whose baselines are nondeterministic.
+4. **Two additions, both adopted after pilots T and N** (Appendix A): a thread-count mutation family (M-THREADS) and a descriptive analysis of repositories whose baselines are nondeterministic.
 
 E2's results are already known, so they never enter E3's primary analysis.
 
@@ -158,7 +158,7 @@ Every case runs the **unchanged declared invocation**. Only hidden state differs
 **Case plans** are generated per repository by `make_plans.py` and committed before that repository's first outcome run (E2 D10):
 - one M-PATH case per working-directory-relative input file on the computation path;
 - M-ENV, M-CACHE and M-DEP where a registered channel applies;
-- M-THREADS if adopted;
+- one M-THREADS case;
 - four controls.
 
 README setup steps and A1 data are applied in every run, baseline included.
@@ -178,14 +178,14 @@ A new candidate needs the same verification first.
 
 Stale artifacts for M-CACHE and shadow files for M-PATH are produced beforehand by each repository's own code on 90%-row inputs, in the offline container.
 
-**M-THREADS: thread-count environment. Included only if pilot T adopts it (Appendix A.1).**
+**M-THREADS: thread-count environment. Adopted by pilot T (Appendix A.1, `e3/PILOT-REPORT.md`).**
 - Applies to every repository, since all of them use numpy and scikit-learn (X12).
 - **Baseline:** `OMP_NUM_THREADS`, `OPENBLAS_NUM_THREADS` and `MKL_NUM_THREADS` unset, which is the repository's default.
 - **Mutant:** all three set to `1`.
 - **Check:** a diagnostic run in the same image, not an outcome run, records `threadpoolctl.threadpool_info()` for baseline and mutant. If the reported thread counts do not differ, the case is "not applicable" for that repository.
 - This is hidden state: S1 cannot see it, and S2 sees it through the full environment map.
 
-If pilot T does not adopt M-THREADS, this family is removed before registration and nothing else changes.
+In pilot T the setting took effect in all 3 repositories (OpenBLAS and OpenMP went from 4 threads to 1), and all 3 cases were labelled `unchanged`. M-THREADS is therefore expected to add mostly equivalent mutations rather than positives. That expectation is stated here so it cannot be read as a finding later.
 
 ### Controls (expected not to change results; the oracle decides)
 
@@ -211,7 +211,7 @@ Unchanged from E2 §5:
 
 Cases from baseline-nondeterministic repositories are excluded from the primary analysis, as in E2.
 
-## 5b. Nondeterministic-baseline group (secondary, descriptive). Included only if pilot N adopts it (Appendix A.2)
+## 5b. Nondeterministic-baseline group (secondary, descriptive). Adopted by pilot N (Appendix A.2, `e3/PILOT-REPORT.md`)
 
 **Purpose:** to show, without confirmatory claims, what re-running tells you when the unchanged code does not give the same answer twice. These cases **never count toward the minimum evidence or the primary analysis.**
 
@@ -228,8 +228,9 @@ Cases from baseline-nondeterministic repositories are excluded from the primary 
   - how often plain D, S1 and S2 flag these cases. D is expected to flag almost all of them, and that is the finding;
   - run-to-run spread per repository.
 - **Budget:** 6 hours per repository instead of 3. Cases that do not fit in the budget are recorded as `not_run` and reported.
+- **Constant metrics:** for each metric, the report states whether it varied across baseline runs. A metric that never varies at baseline can only detect a case that moves it off that value. A `no_detected_change` label that rests only on constant metrics is reported as such. (In pilot N, the classification accuracy was 1.0 in every run.)
 
-If pilot N does not adopt this group, E2's behaviour applies: such repositories are `indeterminate`, reported, and included only in sensitivity analysis 5.
+Sensitivity analysis 5 still applies to these repositories, using the oracle's per-run comparison.
 
 ## 6. Output adapters and tolerances
 
@@ -271,8 +272,8 @@ D's runs are separate from the oracle's runs.
 
 **Secondary outcomes (descriptive):** everything in E2 §8, plus:
 - results by population (P4 vs P5) and by creation-date slice;
-- M-THREADS results, if adopted;
-- the §5b group, if adopted;
+- M-THREADS results;
+- the §5b group;
 - **pooled E2 + E3:** the same quantities computed on both studies together, labelled secondary and descriptive, with no verdict attached. E2's outcomes were known when E3 was designed.
 
 ## 9. Decision rules (fixed before any run)
@@ -308,7 +309,7 @@ E2's six analyses, unchanged:
 Added for E3:
 
 7. Excluding P5 repositories.
-8. Excluding M-THREADS cases, if adopted.
+8. Excluding M-THREADS cases.
 9. Excluding the 2 pilot repositories.
 10. Excluding repositories created in 2026 Q2 (slice P4-g).
 
@@ -350,6 +351,8 @@ Both pilots use **E2 repositories only**. Those repositories cannot be in E3's s
   - in at least 2 of the 3 repositories, the diagnostic shows different thread counts between baseline and mutant;
   - every pilot case receives a decidable label (`stable_change`, `intermittent_change` or `unchanged`) with no infrastructure failures left after retries.
 
+**Outcome:** adopted. The setting took effect in 3 of 3 repositories, and all 3 labels were decidable (all `unchanged`).
+
 ### A.2 Pilot N (nondeterministic-baseline group)
 
 - **Repository:** `sagnik1511/Tabular-AutoML`, the only baseline-nondeterministic repository in E2.
@@ -365,11 +368,13 @@ Both pilots use **E2 repositories only**. Those repositories cannot be in E3's s
   - every run completes within the per-run limits;
   - the two repeats give the same label for every case.
 
+**Outcome:** adopted. All 120 runs completed, and both repeats gave the same label for all 5 cases.
+
 ## Appendix B. Order of operations
 
 1. **Author review of this draft.** Commit it as `e3/E3-PROTOCOL-DRAFT.md`, which timestamps the plan.
 2. **VM preflight.** Free host disk, create `repromut-e3`, then run the E2 preflight checks.
-3. **Pilots T and N.** Write `e3/PILOT-REPORT.md`, then keep or remove §4's M-THREADS and §5b.
+3. **Pilots T and N.** Done on 2026-11-14: both adopted (`e3/PILOT-REPORT.md`).
 4. **Snapshot and static screening** (§2.5–§2.6). This only reads code, so it can happen before registration, as in E2.
 5. **Registration.** Commit the final `e3/E3-PROTOCOL.md` and push it for a public timestamp.
 6. **Manual review in seeded order** until the §2.7 stop.

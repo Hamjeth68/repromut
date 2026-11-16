@@ -1,0 +1,58 @@
+{
+  "pilot": "T",
+  "rule": "first 3 E2-eligible repositories in E2 review order (P1, P2, P3 by seeded order) whose registered E2 baseline was stable",
+  "repositories": [
+    {
+      "repo": "fmind/mlops-python-package",
+      "diag_differs": true,
+      "label": "unchanged",
+      "flags": {
+        "S1": false,
+        "S2": true,
+        "D": false,
+        "C1": false,
+        "C2": true,
+        "D_k1": false,
+        "D_k3": false
+      },
+      "d_reason": "none",
+      "first_divergence": null
+    },
+    {
+      "repo": "ARUNAGIRINATHAN-K/Text-Classifier-using-NLP_Techniques",
+      "diag_differs": true,
+      "label": "unchanged",
+      "flags": {
+        "S1": false,
+        "S2": true,
+        "D": false,
+        "C1": false,
+        "C2": true,
+        "D_k1": false,
+        "D_k3": false
+      },
+      "d_reason": "none",
+      "first_divergence": null
+    },
+    {
+      "repo": "youngcoder45/Student-Performance-Predictor",
+      "diag_differs": true,
+      "label": "unchanged",
+      "flags": {
+        "S1": false,
+        "S2": true,
+        "D": false,
+        "C1": false,
+        "C2": true,
+        "D_k1": false,
+        "D_k3": false
+      },
+      "d_reason": "none",
+      "first_divergence": null
+    }
+  ],
+  "adopt": true,
+  "n_setting_took_effect": 3,
+  "all_labels_decidable": true,
+  "n_repositories": 3
+}
