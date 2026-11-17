@@ -1,0 +1,5333 @@
+{
+ "population": "P4",
+ "slice": "P4-c",
+ "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2024-01-01..2024-12-31",
+ "created": [
+  "2024-01-01",
+  "2024-12-31"
+ ],
+ "fetched_utc": "2026-11-17T00:29:32Z",
+ "total_count": 180,
+ "reached_search_cap": false,
+ "n_items": 180,
+ "verified": true,
+ "parts": [
+  {
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2024-01-01..2024-07-01",
+   "created": [
+    "2024-01-01",
+    "2024-07-01"
+   ],
+   "total_count": 69,
+   "fits_one_page": true,
+   "n_items": 69,
+   "incomplete_results": false,
+   "attempts": 1,
+   "verified": true
+  },
+  {
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2024-07-02..2024-10-01",
+   "created": [
+    "2024-07-02",
+    "2024-10-01"
+   ],
+   "total_count": 52,
+   "fits_one_page": true,
+   "n_items": 52,
+   "incomplete_results": false,
+   "attempts": 1,
+   "verified": true
+  },
+  {
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2024-10-02..2024-12-31",
+   "created": [
+    "2024-10-02",
+    "2024-12-31"
+   ],
+   "total_count": 59,
+   "fits_one_page": true,
+   "n_items": 59,
+   "incomplete_results": false,
+   "attempts": 1,
+   "verified": true
+  }
+ ],
+ "items": [
+  {
+   "id": 779362061,
+   "fullName": "abinaya25138/nltk-retrieval-chatbot",
+   "url": "https://github.com/abinaya25138/nltk-retrieval-chatbot",
+   "description": "A retrieval-based chatbot using NLTK + TF-IDF/cosine similarity, with greeting detection, typo correction, and NER",
+   "createdAt": "2024-03-29T16:56:39Z",
+   "pushedAt": "2026-10-14T19:31:23Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6,
+   "stargazersCount": 0,
+   "topics": [
+    "chatbot",
+    "nlp",
+    "nltk",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 808096295,
+   "fullName": "ActurialCapital/blocks",
+   "url": "https://github.com/ActurialCapital/blocks",
+   "description": "Extra blocks for scikit-learn features.",
+   "createdAt": "2024-05-30T11:27:49Z",
+   "pushedAt": "2024-07-11T14:18:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 3239,
+   "stargazersCount": 0,
+   "topics": [
+    "estimators",
+    "pipeline",
+    "scikit-learn",
+    "transformers"
+   ]
+  },
+  {
+   "id": 808574409,
+   "fullName": "ActurialCapital/statespace",
+   "url": "https://github.com/ActurialCapital/statespace",
+   "description": "Enhance your portfolio construction process using advanced optuna fine-tuning techniques.",
+   "createdAt": "2024-05-31T10:56:23Z",
+   "pushedAt": "2024-06-21T12:27:40Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 1216,
+   "stargazersCount": 0,
+   "topics": [
+    "hyperparameter-tuning",
+    "optuna",
+    "pipeline",
+    "portfolio-management",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 879762179,
+   "fullName": "aleksibovellan/ai-image-recognition-for-finnish-trees",
+   "url": "https://github.com/aleksibovellan/ai-image-recognition-for-finnish-trees",
+   "description": "AI/ML Trained Image Recognition for Finnish trees in Python with Gradio Web Interface",
+   "createdAt": "2024-10-28T14:02:36Z",
+   "pushedAt": "2024-10-29T00:22:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 63,
+   "stargazersCount": 0,
+   "topics": [
+    "ai",
+    "finnish",
+    "gradio",
+    "image",
+    "ml",
+    "numpy",
+    "opencv-python",
+    "python",
+    "python3",
+    "pytorch",
+    "recognition",
+    "resnet-18",
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "torchvision-transforms",
+    "tree",
+    "trees"
+   ]
+  },
+  {
+   "id": 837639624,
+   "fullName": "alexliap/sk_serve",
+   "url": "https://github.com/alexliap/sk_serve",
+   "description": "Deployment of a Scikit-Learn Pipeline made easy.",
+   "createdAt": "2024-08-03T15:13:07Z",
+   "pushedAt": "2026-11-16T17:12:22Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5417,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "mlops",
+    "model-deployment",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 830855474,
+   "fullName": "Anitha-Chava/MovieSentimentAnalysis",
+   "url": "https://github.com/Anitha-Chava/MovieSentimentAnalysis",
+   "description": "NLP-based movie review classifier using Scikit-learn and text preprocessing pipeline",
+   "createdAt": "2024-07-19T06:27:29Z",
+   "pushedAt": "2024-07-19T06:28:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4,
+   "stargazersCount": 2,
+   "topics": [
+    "machine-learning",
+    "nlp",
+    "scikit-learn",
+    "sentiment-analysis"
+   ]
+  },
+  {
+   "id": 807850144,
+   "fullName": "anna-st-40/image_tiling",
+   "url": "https://github.com/anna-st-40/image_tiling",
+   "description": "Processes images by pixelating them and reducing their color palette to a set of user-specified colors using KMeans clustering and Euclidean distance within the RGB space. The goal is to transform any image into a pattern that can be laid out with different colored tiles.",
+   "createdAt": "2024-05-29T22:32:48Z",
+   "pushedAt": "2025-01-23T04:32:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4113,
+   "stargazersCount": 5,
+   "topics": [
+    "flask",
+    "image-processing",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 849476598,
+   "fullName": "ansh-info/Incognito",
+   "url": "https://github.com/ansh-info/Incognito",
+   "description": "Inspired by Google's Foobar challenge. It automates secretive candidate selection based on online activity, provides timed coding challenges, and allows hiring managers to evaluate submissions",
+   "createdAt": "2024-08-29T17:03:01Z",
+   "pushedAt": "2024-10-28T10:25:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 9217,
+   "stargazersCount": 1,
+   "topics": [
+    "api",
+    "docker",
+    "docker-compose",
+    "javascript",
+    "jupyter-notebook",
+    "kmeans",
+    "leetcode",
+    "logistic-regression",
+    "machine-learning",
+    "machinelearning",
+    "mysql",
+    "python3",
+    "react",
+    "reactjs",
+    "scikit-learn",
+    "selection-algorithms",
+    "supervised-learning",
+    "webdevelopment"
+   ]
+  },
+  {
+   "id": 836284137,
+   "fullName": "Arittra-Bag/Disease-Predictor",
+   "url": "https://github.com/Arittra-Bag/Disease-Predictor",
+   "description": "Disease Predictor!",
+   "createdAt": "2024-07-31T14:19:39Z",
+   "pushedAt": "2024-07-31T16:12:49Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 47,
+   "stargazersCount": 0,
+   "topics": [
+    "disease-prediction",
+    "gradio",
+    "logistic-regression",
+    "machine-learning",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 845021710,
+   "fullName": "Arpeet-Bhaisare/Diabetes-Prediction-Model",
+   "url": "https://github.com/Arpeet-Bhaisare/Diabetes-Prediction-Model",
+   "description": "Machine Learning project for predicting diabetes using Python, Scikit-Learn, data visualization, and logistic regression developed during Exposys Data Labs internship.",
+   "createdAt": "2024-08-20T12:34:40Z",
+   "pushedAt": "2026-06-21T08:44:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2398,
+   "stargazersCount": 1,
+   "topics": [
+    "data-analysis",
+    "data-science",
+    "diabetes-prediction",
+    "healthcare-analytics",
+    "logistic-regression",
+    "machine-learning",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 879972414,
+   "fullName": "aserron/nvidia-workshop-accelerated-ml",
+   "url": "https://github.com/aserron/nvidia-workshop-accelerated-ml",
+   "description": "Practice exercise files from NVidia's amazing workshop on hardware accelerated ML.",
+   "createdAt": "2024-10-28T22:05:27Z",
+   "pushedAt": "2025-01-21T13:20:58Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 70,
+   "stargazersCount": 1,
+   "topics": [
+    "calms",
+    "data",
+    "data-engineering",
+    "data-science",
+    "machine",
+    "machine-learning",
+    "nvidia",
+    "nvidia-cuda",
+    "nvml",
+    "panda",
+    "pandas",
+    "rapids",
+    "scientific-computing",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 896036175,
+   "fullName": "ashankgupta/wine_classifer",
+   "url": "https://github.com/ashankgupta/wine_classifer",
+   "description": "This project implements a Wine Quality Classifier using an Artificial Neural Network (ANN) to predict the quality of wine based on its chemical properties. The model is trained with a dataset containing 11 features, such as acidity, alcohol content, and sulfur levels. Achieving 84% training accuracy and 82% accuracy on the test set.",
+   "createdAt": "2024-11-29T12:17:32Z",
+   "pushedAt": "2025-06-30T07:07:10Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2287,
+   "stargazersCount": 0,
+   "topics": [
+    "ann",
+    "artificial-neural-network",
+    "classification",
+    "data-science",
+    "deep-learning",
+    "keras",
+    "machine-learning",
+    "ml-project",
+    "open-source",
+    "predictive-modeling",
+    "python",
+    "scikit-learn",
+    "streamlit",
+    "tensorflow",
+    "wine-quality"
+   ]
+  },
+  {
+   "id": 813591133,
+   "fullName": "avasileios/Machine-Learning-Classifier-Comparison",
+   "url": "https://github.com/avasileios/Machine-Learning-Classifier-Comparison",
+   "description": "Scikit-learn classifier comparison \u2014 accuracy, F1, AUC with resampling and scaling for imbalanced data.",
+   "createdAt": "2024-06-11T11:15:36Z",
+   "pushedAt": "2026-08-04T20:32:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 924,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 897822395,
+   "fullName": "Axiomaa/breast-cancer-prediction",
+   "url": "https://github.com/Axiomaa/breast-cancer-prediction",
+   "description": "This repository contains implementations of machine learning models for predicting cancer diagnoses. It includes Decision Tree and Support Vector Machine (SVM) classifiers with hyperparameter tuning, PCA-based dimensionality reduction, and decision boundary visualizations.",
+   "createdAt": "2024-12-03T09:53:36Z",
+   "pushedAt": "2024-12-03T10:02:03Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13,
+   "stargazersCount": 0,
+   "topics": [
+    "bioinformatics",
+    "machine-learning",
+    "pca-analysis",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 806193953,
+   "fullName": "AyoubDjellaoui/Extreme-Weather-Prediction",
+   "url": "https://github.com/AyoubDjellaoui/Extreme-Weather-Prediction",
+   "description": "Tornado prediction from 68,693 NOAA records (1950-2022). Parallel API ingestion, Random Forest imputation, and an MLP classifier reaching 96.6% accuracy, delivered as a Streamlit app. BSc dissertation / Tekkolab internship.",
+   "createdAt": "2024-05-26T16:27:54Z",
+   "pushedAt": "2026-09-01T02:36:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12610,
+   "stargazersCount": 0,
+   "topics": [
+    "data-science",
+    "machine-learning",
+    "neural-network",
+    "noaa",
+    "python",
+    "scikit-learn",
+    "streamlit",
+    "weather-prediction"
+   ]
+  },
+  {
+   "id": 875574267,
+   "fullName": "BackendArchitectX/networksecurity",
+   "url": "https://github.com/BackendArchitectX/networksecurity",
+   "description": "Production-minded Python backend for versioned threat scoring, durable training orchestration, immutable model promotion and observable failure handling.",
+   "createdAt": "2024-10-20T10:57:42Z",
+   "pushedAt": "2026-09-11T12:42:10Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 192,
+   "stargazersCount": 2,
+   "topics": [
+    "aws-ec2",
+    "aws-ecr",
+    "aws-s3",
+    "dagshub",
+    "docker",
+    "etl-pipelines",
+    "fastapi",
+    "github-actions",
+    "mlflow",
+    "mlops",
+    "mongodb-atlas",
+    "network-security",
+    "numpy",
+    "pandas",
+    "python",
+    "pytorch",
+    "scikit-learn",
+    "tensorflow",
+    "vscode"
+   ]
+  },
+  {
+   "id": 842226718,
+   "fullName": "blakeziegler/Binary-Classification-Competition",
+   "url": "https://github.com/blakeziegler/Binary-Classification-Competition",
+   "description": "Binary Classification of Insurance Crosselling Kaggle Competition",
+   "createdAt": "2024-08-13T23:40:59Z",
+   "pushedAt": "2024-08-13T23:53:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6,
+   "stargazersCount": 0,
+   "topics": [
+    "data-analysis",
+    "data-science",
+    "database",
+    "kaggle",
+    "kaggle-competition",
+    "machine-learning",
+    "python",
+    "rstudio",
+    "scikit-learn",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 907055796,
+   "fullName": "ClxpI/ML-WhoSurvivedTheTitanic",
+   "url": "https://github.com/ClxpI/ML-WhoSurvivedTheTitanic",
+   "description": "Predicting Titanic passenger survival using machine learning, EDA, feature engineering, and model evaluation techniques.",
+   "createdAt": "2024-12-22T17:27:07Z",
+   "pushedAt": "2026-10-29T05:58:50Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6584,
+   "stargazersCount": 0,
+   "topics": [
+    "data-science",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 830469666,
+   "fullName": "cnoret/retail-data-analysis",
+   "url": "https://github.com/cnoret/retail-data-analysis",
+   "description": "Predicting weekly retail sales across 45 Walmart stores using machine learning - Streamlit app + Jupyter notebook",
+   "createdAt": "2024-07-18T10:35:45Z",
+   "pushedAt": "2026-11-10T00:07:10Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 19289,
+   "stargazersCount": 0,
+   "topics": [
+    "data-science",
+    "data-visualization",
+    "machine-learning",
+    "pandas",
+    "plotly",
+    "python",
+    "random-forest",
+    "retail",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 896364252,
+   "fullName": "CodeNexa/Nairobi",
+   "url": "https://github.com/CodeNexa/Nairobi",
+   "description": "Quantifying Integrity in the Digital Age  Misinformation spreads rapidly, accountability often falters, and the lines between transparency and manipulation blur",
+   "createdAt": "2024-11-30T06:48:42Z",
+   "pushedAt": "2024-11-30T06:52:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 8628,
+   "stargazersCount": 1,
+   "topics": [
+    "csv",
+    "ipynb-jupyter-notebook",
+    "matpotlib",
+    "pkl-model",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 825541316,
+   "fullName": "ColinWu0403/heartBPMusic",
+   "url": "https://github.com/ColinWu0403/heartBPMusic",
+   "description": "Music discovery platform that recommends you a song based on your heart's BPM and your mood using Machine Learning.",
+   "createdAt": "2024-07-08T03:31:38Z",
+   "pushedAt": "2024-08-13T05:24:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3910,
+   "stargazersCount": 1,
+   "topics": [
+    "django",
+    "neurokit2",
+    "scikit-learn",
+    "spotify-web-api",
+    "vuejs"
+   ]
+  },
+  {
+   "id": 840515146,
+   "fullName": "Criscarr26/product-recommender",
+   "url": "https://github.com/Criscarr26/product-recommender",
+   "description": "Product recommendation system with collaborative filtering: customer-product matrix and cosine similarity (pandas + scikit-learn).",
+   "createdAt": "2024-08-09T22:23:40Z",
+   "pushedAt": "2026-07-28T21:54:27Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6,
+   "stargazersCount": 0,
+   "topics": [
+    "collaborative-filtering",
+    "pandas",
+    "python",
+    "recommender-system",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 894942712,
+   "fullName": "DadvaiahPavan/AI-Data-Scientist-",
+   "url": "https://github.com/DadvaiahPavan/AI-Data-Scientist-",
+   "description": " AI-powered tool for dataset analysis, featuring data preprocessing, classification, regression, anomaly detection, and text analysis. Built with scikit-learn, pandas, and Plotly for visualization. Includes an interactive Streamlit web interface for real-time data analysis.",
+   "createdAt": "2024-11-27T09:28:18Z",
+   "pushedAt": "2024-12-19T11:49:55Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 76,
+   "stargazersCount": 0,
+   "topics": [
+    "ai",
+    "anomaly-detection",
+    "classification",
+    "data-analysis",
+    "data-science",
+    "machine-learning",
+    "panda",
+    "plotu",
+    "regression",
+    "scikit-learn",
+    "sentiment-analysis",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 808901791,
+   "fullName": "davipythonweb/price_api",
+   "url": "https://github.com/davipythonweb/price_api",
+   "description": "API de Previs\u00e3o de Pre\u00e7o de casa com python/Machine-Learn",
+   "createdAt": "2024-06-01T05:39:03Z",
+   "pushedAt": "2024-06-01T06:08:23Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2116,
+   "stargazersCount": 0,
+   "topics": [
+    "flask",
+    "machine-learning",
+    "pickle",
+    "python",
+    "python-dotenv",
+    "scikit-learn",
+    "venv"
+   ]
+  },
+  {
+   "id": 880679199,
+   "fullName": "deepikagandla7456/Fake-News-Detection",
+   "url": "https://github.com/deepikagandla7456/Fake-News-Detection",
+   "description": "A Python based NLP classifier trained on 44k+ articles, achieving 98.5% accuracy in detecting fake news and providing a confidence score for each prediction.",
+   "createdAt": "2024-10-30T06:39:02Z",
+   "pushedAt": "2025-08-23T14:42:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2143,
+   "stargazersCount": 1,
+   "topics": [
+    "classification",
+    "data-science",
+    "fake-news-detection",
+    "logistic-regression",
+    "machine-learning",
+    "nlp",
+    "pandas",
+    "python",
+    "real-or-fake",
+    "scikit-learn",
+    "text-classification"
+   ]
+  },
+  {
+   "id": 907589580,
+   "fullName": "deliprofesor/Gaming-Trend-Forecasting-Prophet-ML",
+   "url": "https://github.com/deliprofesor/Gaming-Trend-Forecasting-Prophet-ML",
+   "description": "This repository uses machine learning models like Random Forest, XGBoost, LightGBM, and time-series forecasting with Prophet to predict game search volumes. Additionally, Grid Search is applied for hyperparameter tuning of the LightGBM model.",
+   "createdAt": "2024-12-24T00:10:03Z",
+   "pushedAt": "2024-12-25T19:35:37Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1140,
+   "stargazersCount": 0,
+   "topics": [
+    "data-cleaning",
+    "data-science",
+    "data-visualization",
+    "feature-selection",
+    "forecasting-models",
+    "game-search",
+    "grid-search",
+    "hyperparameter-tuning",
+    "lightgbm",
+    "machine-learning",
+    "pandas",
+    "prophet",
+    "python",
+    "random-forest",
+    "scikit-learn",
+    "time-series-analysis",
+    "time-series-forecasting",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 909804314,
+   "fullName": "deliprofesor/Sales-Forecasting-Polynomial-Ridge-ML",
+   "url": "https://github.com/deliprofesor/Sales-Forecasting-Polynomial-Ridge-ML",
+   "description": "This project builds and optimizes a model on a dataset using Ridge regression and polynomial features. Model accuracy is enhanced through regularization and polynomial transformations. Grid search and cross-validation are used to find the best parameters, and the model's performance is evaluated.",
+   "createdAt": "2024-12-29T20:27:35Z",
+   "pushedAt": "2025-03-30T20:15:28Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 128,
+   "stargazersCount": 1,
+   "topics": [
+    "cross-validation",
+    "data-science",
+    "data-visualization",
+    "grid-search",
+    "machine-learning",
+    "model-optimization",
+    "mse",
+    "overfitting-prevention",
+    "polynomial-regression",
+    "python",
+    "r2-score",
+    "regression-analysis",
+    "regularization",
+    "ridge-regression",
+    "rmse",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 786907647,
+   "fullName": "deusbalatro/positive-negative-detector",
+   "url": "https://github.com/deusbalatro/positive-negative-detector",
+   "description": "Predict sentiment of text as positive or negative using Python's NLTK and scikit-learn.",
+   "createdAt": "2024-04-15T14:26:57Z",
+   "pushedAt": "2024-04-15T14:46:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 14265,
+   "stargazersCount": 0,
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "artificial-intelligence-algorithms",
+    "data-science",
+    "deep-learning",
+    "feature-engineering",
+    "machine-learning",
+    "model-evaluation",
+    "natural-language-processing",
+    "nlp-machine-learning",
+    "nlp-models",
+    "nltk",
+    "open-source",
+    "python",
+    "scikit-learn",
+    "sentiment-analysis",
+    "sentiment-classification",
+    "text-classification",
+    "tokenizer"
+   ]
+  },
+  {
+   "id": 800094441,
+   "fullName": "devm29/music-classifier",
+   "url": "https://github.com/devm29/music-classifier",
+   "description": "Scikit-learn SVM trained on GTZAN features that ranks likely genres for an uploaded track in a Django app",
+   "createdAt": "2024-05-13T17:32:30Z",
+   "pushedAt": "2026-11-09T18:24:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2128,
+   "stargazersCount": 0,
+   "topics": [
+    "audio",
+    "django",
+    "docker",
+    "machine-learning",
+    "music-genre",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 800121739,
+   "fullName": "devpersi/data-analysis-app",
+   "url": "https://github.com/devpersi/data-analysis-app",
+   "description": "A small streamlit web app to showcase different ml algorithms",
+   "createdAt": "2024-05-13T18:34:45Z",
+   "pushedAt": "2025-04-30T17:57:35Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 118,
+   "stargazersCount": 1,
+   "topics": [
+    "docker",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 818122564,
+   "fullName": "dilkushsingh/Iris-Species-Classifier",
+   "url": "https://github.com/dilkushsingh/Iris-Species-Classifier",
+   "description": "Used Random Forest Classifier Algorithm",
+   "createdAt": "2024-06-21T06:36:29Z",
+   "pushedAt": "2024-08-24T11:27:31Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 56,
+   "stargazersCount": 0,
+   "topics": [
+    "huggingface-spaces",
+    "numpy",
+    "pandas",
+    "python",
+    "random-forest-classifier",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 828375418,
+   "fullName": "DiogoRibeiro7/anomalybench",
+   "url": "https://github.com/DiogoRibeiro7/anomalybench",
+   "description": "A comprehensive Python library for anomaly detection with 30+ algorithms, benchmarking tools, and extensible plugin architecture",
+   "createdAt": "2024-07-14T00:27:00Z",
+   "pushedAt": "2026-11-16T05:50:53Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1449,
+   "stargazersCount": 0,
+   "topics": [
+    "anomaly-detection",
+    "autoencoder",
+    "benchmarking",
+    "data-science",
+    "deep-learning",
+    "graph-anomaly",
+    "isolation-forest",
+    "machine-learning",
+    "outlier-detection",
+    "pyod",
+    "python",
+    "pytorch",
+    "scikit-learn",
+    "time-series"
+   ]
+  },
+  {
+   "id": 833148353,
+   "fullName": "dipa09/riot_imgclf",
+   "url": "https://github.com/dipa09/riot_imgclf",
+   "description": "Multi-class image classifier for RIOT-OS",
+   "createdAt": "2024-07-24T12:55:21Z",
+   "pushedAt": "2024-09-18T10:06:19Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 40,
+   "stargazersCount": 1,
+   "topics": [
+    "arduino-mega-2560",
+    "emlearn",
+    "esp32-cam",
+    "m2cgen",
+    "micromlgen",
+    "riot-os",
+    "scikit-learn",
+    "tinyml"
+   ]
+  },
+  {
+   "id": 870155213,
+   "fullName": "docsallover/face-recognition-using-knn",
+   "url": "https://github.com/docsallover/face-recognition-using-knn",
+   "description": "Building a Face Recognition System with the KNN Algorithm",
+   "createdAt": "2024-10-09T14:36:09Z",
+   "pushedAt": "2025-01-01T08:30:27Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 146,
+   "stargazersCount": 3,
+   "topics": [
+    "face-detection",
+    "face-recognition",
+    "knn",
+    "knn-classification",
+    "machine-learning",
+    "num",
+    "ope",
+    "scikit-learn",
+    "scipy"
+   ]
+  },
+  {
+   "id": 905113381,
+   "fullName": "dpradeep42/Stop-Noise-Pollution-App",
+   "url": "https://github.com/dpradeep42/Stop-Noise-Pollution-App",
+   "description": "Streamlit dashboard that predicts honking incidents with a Gradient Boosting model and maps noise levels with Folium",
+   "createdAt": "2024-12-18T07:30:01Z",
+   "pushedAt": "2026-11-04T02:53:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3776,
+   "stargazersCount": 0,
+   "topics": [
+    "data-visualization",
+    "folium",
+    "noise-pollution",
+    "python",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 903448073,
+   "fullName": "Draster2k/TRCC",
+   "url": "https://github.com/Draster2k/TRCC",
+   "description": "Density-peak clustering with path-density mutual-reachability merging. Sub-quadratic O(n log n) via a C++ pybind11/nanoflann kd-tree. 30\u00d7 speedup at n=50k.",
+   "createdAt": "2024-12-14T16:23:24Z",
+   "pushedAt": "2026-04-27T22:35:52Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 99,
+   "stargazersCount": 1,
+   "topics": [
+    "cluster-analysis",
+    "clustering",
+    "cpp",
+    "cytokine",
+    "density-peak",
+    "kdtree",
+    "machine-learning",
+    "nanoflann",
+    "numpy",
+    "pybind11",
+    "python",
+    "scikit-learn",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 797748954,
+   "fullName": "DrReetuSharma/molecular_innovations-for-KPGT-Knowledge-guided-Pre-training-of-Graph-Transformer-",
+   "url": "https://github.com/DrReetuSharma/molecular_innovations-for-KPGT-Knowledge-guided-Pre-training-of-Graph-Transformer-",
+   "description": "Knowledge-guided-Pre-training-of-Graph-Transformer: The primary aim of this project is to leverage knowledge-guided pre-training techniques for enhancing the performance of graph transformers in molecular property prediction and drug discovery.",
+   "createdAt": "2024-05-08T12:48:19Z",
+   "pushedAt": "2024-07-02T07:36:39Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 605,
+   "stargazersCount": 2,
+   "topics": [
+    "machine",
+    "machine-learning",
+    "neural-network",
+    "pytorch",
+    "rdkit",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 756080678,
+   "fullName": "dylan-griffin/emotion-detection-with-CLIP",
+   "url": "https://github.com/dylan-griffin/emotion-detection-with-CLIP",
+   "description": "Trains facial emotion recognition models on FER2013 and visualizes image and text embeddings with t-SNE.",
+   "createdAt": "2024-02-11T22:53:10Z",
+   "pushedAt": "2026-10-16T05:59:46Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3084,
+   "stargazersCount": 1,
+   "topics": [
+    "clip",
+    "computer-vision",
+    "emotion-recognition",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "tsne"
+   ]
+  },
+  {
+   "id": 770382719,
+   "fullName": "edf1101/F1-Analysis",
+   "url": "https://github.com/edf1101/F1-Analysis",
+   "description": "This project analyses and interprets past F1 data in order to predict future race & qualifying pace.",
+   "createdAt": "2024-03-11T13:08:07Z",
+   "pushedAt": "2024-03-11T15:09:11Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 87,
+   "stargazersCount": 0,
+   "topics": [
+    "formula-1",
+    "machine-learning",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 904068422,
+   "fullName": "Eman07/Bias-Aware-Crime-Hotspot-Analysis-in-Los-Angeles",
+   "url": "https://github.com/Eman07/Bias-Aware-Crime-Hotspot-Analysis-in-Los-Angeles",
+   "description": "An unsupervised machine learning pipeline that identifies crime hotspots across Los Angeles using K-means clustering with fairness weighting. ",
+   "createdAt": "2024-12-16T07:37:48Z",
+   "pushedAt": "2026-06-18T01:18:03Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13,
+   "stargazersCount": 1,
+   "topics": [
+    "clustering",
+    "geospatial-analysis",
+    "machine-learning",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 859803390,
+   "fullName": "filipsPL/optuclust",
+   "url": "https://github.com/filipsPL/optuclust",
+   "description": "Optuna-tuned clustering",
+   "createdAt": "2024-09-19T09:59:03Z",
+   "pushedAt": "2026-11-14T08:40:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3535,
+   "stargazersCount": 1,
+   "topics": [
+    "clustering",
+    "hdbscan",
+    "kmeans-clustering",
+    "kmedoids-clustering",
+    "optuna",
+    "parameter-tuning",
+    "python",
+    "scikit-learn",
+    "self-organizing-map",
+    "unsupervised-clustering",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 856230793,
+   "fullName": "filipsPL/optuml",
+   "url": "https://github.com/filipsPL/optuml",
+   "description": "Optuna-optimized ML methods, with scikit-learn like API",
+   "createdAt": "2024-09-12T08:09:13Z",
+   "pushedAt": "2026-11-13T11:41:22Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3749,
+   "stargazersCount": 2,
+   "topics": [
+    "benchmarking",
+    "hyperparameter-optimization",
+    "hyperparameter-tuning",
+    "machine-learning",
+    "ml-benchmark",
+    "ml-benchmarking",
+    "optuna",
+    "python",
+    "python-module",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 894206764,
+   "fullName": "garuyto09/credit-default-models",
+   "url": "https://github.com/garuyto09/credit-default-models",
+   "description": "Credit default prediction benchmark evaluated on KS, Gini, PSI and calibration \u2014 not accuracy. UNICAMP undergraduate research.",
+   "createdAt": "2024-11-26T00:12:05Z",
+   "pushedAt": "2026-08-20T23:18:27Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 328,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "credit-risk",
+    "default-prediction",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 811833462,
+   "fullName": "Gnpd/openmodels",
+   "url": "https://github.com/Gnpd/openmodels",
+   "description": "OpenModels is a flexible and extensible library for serializing and deserializing machine learning models. It's designed to support any serialization format through a plugin-based architecture, providing a safe and transparent solution for exporting and sharing predictive models.",
+   "createdAt": "2024-06-07T11:52:02Z",
+   "pushedAt": "2026-10-29T12:56:34Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 669,
+   "stargazersCount": 5,
+   "topics": [
+    "json",
+    "python",
+    "scikit-learn",
+    "serialization",
+    "sklearn"
+   ]
+  },
+  {
+   "id": 891401644,
+   "fullName": "gozsari/ML-OneDay-Course",
+   "url": "https://github.com/gozsari/ML-OneDay-Course",
+   "description": "This is a one-day machine learning introductory course for beginners",
+   "createdAt": "2024-11-20T09:16:21Z",
+   "pushedAt": "2026-11-04T16:48:50Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5924,
+   "stargazersCount": 1,
+   "topics": [
+    "anomaly-detection",
+    "classification",
+    "clustering",
+    "course",
+    "dimensionality-reduction",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "ml-course",
+    "ml-workflow",
+    "regression",
+    "scikit-learn",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 805521727,
+   "fullName": "gurayalinn/titanic",
+   "url": "https://github.com/gurayalinn/titanic",
+   "description": "Titanic Dataset KNN Algorithm - Confusion Matrix",
+   "createdAt": "2024-05-24T19:03:18Z",
+   "pushedAt": "2024-05-24T19:04:02Z",
+   "defaultBranch": "master",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 603,
+   "stargazersCount": 0,
+   "topics": [
+    "dataset",
+    "knn-classification",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 875626154,
+   "fullName": "haekalsetiawan/banana-quality-ml-analysis",
+   "url": "https://github.com/haekalsetiawan/banana-quality-ml-analysis",
+   "description": "The Banana Quality Analysis ML project classifies the quality of bananas using machine learning. By analyzing banana images and relevant features, the model categorizes bananas into quality tiers. Key stages include data preprocessing, feature extraction, model training, and evaluation, resulting in high accuracy.",
+   "createdAt": "2024-10-20T13:35:34Z",
+   "pushedAt": "2024-10-20T19:11:13Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 346,
+   "stargazersCount": 0,
+   "topics": [
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 747021832,
+   "fullName": "haldersourav/anomaly-detection",
+   "url": "https://github.com/haldersourav/anomaly-detection",
+   "description": "Comparison of various anomaly detection algorithms using scikit-learn and visualization through Plotly Dash",
+   "createdAt": "2024-01-23T05:20:46Z",
+   "pushedAt": "2024-01-23T06:12:55Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 12,
+   "stargazersCount": 0,
+   "topics": [
+    "anomaly-detection",
+    "isolation-forest",
+    "local-outlier-factor",
+    "one-class-svm",
+    "plotly-dash",
+    "python-webapp",
+    "robust-covariance",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 776814566,
+   "fullName": "Harsh902/Car_price_recommendation",
+   "url": "https://github.com/Harsh902/Car_price_recommendation",
+   "description": "This repository provides the source code and guide for my used car price recommendation system made using scikit learn, numpy, pandas and matplotlb. It features a UI with several customizable inputs, and gives predictions dynamically.",
+   "createdAt": "2024-03-24T14:24:19Z",
+   "pushedAt": "2024-03-24T15:08:41Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 404,
+   "stargazersCount": 0,
+   "topics": [
+    "data-analysis",
+    "kaggle",
+    "linear-regression",
+    "machine-learning",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "prediction",
+    "pyqt6",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 865389788,
+   "fullName": "Harshagrawal526/PriceWise",
+   "url": "https://github.com/Harshagrawal526/PriceWise",
+   "description": "House price prediction on the Ames dataset \u2014 leak-free scikit-learn pipeline, metrics in dollars, and model selection that respects its own error bars",
+   "createdAt": "2024-09-30T13:03:16Z",
+   "pushedAt": "2026-08-30T14:43:44Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1766,
+   "stargazersCount": 0,
+   "topics": [
+    "ames-housing",
+    "cross-validation",
+    "data-science",
+    "machine-learning",
+    "ml-pipeline",
+    "pandas",
+    "python",
+    "regression",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 884866359,
+   "fullName": "hmasdev/ssbgm",
+   "url": "https://github.com/hmasdev/ssbgm",
+   "description": "Score Based Generative Model with scikit-learn",
+   "createdAt": "2024-11-07T14:29:01Z",
+   "pushedAt": "2025-04-27T02:24:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 7134,
+   "stargazersCount": 0,
+   "topics": [
+    "generative-model",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 910228365,
+   "fullName": "iakshatgandhi/Fake-News-Classification-Model-main",
+   "url": "https://github.com/iakshatgandhi/Fake-News-Classification-Model-main",
+   "description": "A machine learning-based project designed to classify news articles as real or fake. This system combines advanced natural language processing (NLP), robust machine learning models, and intuitive visualizations to deliver accurate and scalable predictions.",
+   "createdAt": "2024-12-30T18:26:57Z",
+   "pushedAt": "2025-01-17T08:55:19Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 250,
+   "stargazersCount": 1,
+   "topics": [
+    "matplotlib",
+    "nltk",
+    "pickle",
+    "python",
+    "scikit-learn",
+    "seaborn"
+   ]
+  },
+  {
+   "id": 902319084,
+   "fullName": "Infinitode/Scikit-learn-Model-Updater",
+   "url": "https://github.com/Infinitode/Scikit-learn-Model-Updater",
+   "description": "An open-source tool to convert older Scikit-learn models to the newer version.",
+   "createdAt": "2024-12-12T10:36:52Z",
+   "pushedAt": "2026-08-29T07:51:21Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 35,
+   "stargazersCount": 1,
+   "topics": [
+    "ai",
+    "classifier",
+    "cli",
+    "converter",
+    "converters",
+    "decisiontree",
+    "model",
+    "open-source",
+    "python",
+    "scikit-learn",
+    "scikit-learn-python",
+    "scikit-learn-updater",
+    "sklearn",
+    "tools",
+    "updater"
+   ]
+  },
+  {
+   "id": 774599820,
+   "fullName": "inukbaik/covid-bias-audit",
+   "url": "https://github.com/inukbaik/covid-bias-audit",
+   "description": "Auditing how biased data and modelling choices affect machine-learning results on COVID-19 mortality data.",
+   "createdAt": "2024-03-19T20:45:03Z",
+   "pushedAt": "2026-11-08T00:41:37Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13456,
+   "stargazersCount": 0,
+   "topics": [
+    "bias-audit",
+    "covid-19",
+    "fairness",
+    "machine-learning",
+    "public-health",
+    "scikit-learn",
+    "statsmodels"
+   ]
+  },
+  {
+   "id": 821815132,
+   "fullName": "irini-git/projects",
+   "url": "https://github.com/irini-git/projects",
+   "description": "NLP CS124",
+   "createdAt": "2024-06-29T14:09:32Z",
+   "pushedAt": "2025-02-24T15:44:35Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 11440,
+   "stargazersCount": 0,
+   "topics": [
+    "altair",
+    "logging",
+    "matplotlib",
+    "min-edit-distance",
+    "nlp",
+    "nltk",
+    "pandas",
+    "plotly",
+    "regex",
+    "scikit-learn",
+    "sms-spam-classifier",
+    "type-token-ratio",
+    "wordcloud"
+   ]
+  },
+  {
+   "id": 884918966,
+   "fullName": "ironpawa/sklearn-diagnose",
+   "url": "https://github.com/ironpawa/sklearn-diagnose",
+   "description": "\ud83e\ude7a Diagnose model issues in scikit-learn with evidence-based insights and LLM-powered analysis for improved machine learning performance.",
+   "createdAt": "2024-11-07T16:11:40Z",
+   "pushedAt": "2026-10-14T07:03:52Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1959,
+   "stargazersCount": 1,
+   "topics": [
+    "ai",
+    "data-science",
+    "deep-learning",
+    "langchain",
+    "llm",
+    "machine-learning",
+    "mlops",
+    "model-diagnostics",
+    "overfitting",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 749591353,
+   "fullName": "ishanabhandari/NBA_Analytics",
+   "url": "https://github.com/ishanabhandari/NBA_Analytics",
+   "description": "NBA Data Analytics",
+   "createdAt": "2024-01-29T01:39:21Z",
+   "pushedAt": "2026-11-02T18:09:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 14,
+   "stargazersCount": 1,
+   "topics": [
+    "nba-analytics",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 814656056,
+   "fullName": "itkrivoshei/salary-prediction-linear-regression",
+   "url": "https://github.com/itkrivoshei/salary-prediction-linear-regression",
+   "description": "Dockerized Streamlit ML app for salary prediction using pandas, scikit-learn, tests, CI, and a deployable image.",
+   "createdAt": "2024-06-13T12:41:02Z",
+   "pushedAt": "2026-11-09T22:25:17Z",
+   "defaultBranch": "main",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1416,
+   "stargazersCount": 1,
+   "topics": [
+    "ci-cd",
+    "data-visualization",
+    "docker",
+    "github-actions",
+    "machine-learning",
+    "pandas",
+    "pytest",
+    "python",
+    "ruff",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 899092355,
+   "fullName": "JAVI-CC/python-ml-portcanto",
+   "url": "https://github.com/JAVI-CC/python-ml-portcanto",
+   "description": "Portcanto \u00e9s un projecte de simulaci\u00f3 d'un trajecte en bicicleta. S'ha definit 4 tipus de ciclistes que es diferencien en el temps que tarda a fer el trajecte.  L'objectiu \u00e9s descobrir els 4 patrons amb l'algoritme de clustering KMeans.",
+   "createdAt": "2024-12-05T15:54:39Z",
+   "pushedAt": "2024-12-06T07:06:09Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 648,
+   "stargazersCount": 0,
+   "topics": [
+    "clustering",
+    "docker",
+    "docker-compose",
+    "kmeans",
+    "machine-learning",
+    "mlfow",
+    "pydoc",
+    "pylint",
+    "python",
+    "scikit-learn",
+    "testing",
+    "venv"
+   ]
+  },
+  {
+   "id": 793109661,
+   "fullName": "jayanthpotluri5513/ChatViewApp",
+   "url": "https://github.com/jayanthpotluri5513/ChatViewApp",
+   "description": "The ChatView App is an interactive tool for analyzing WhatsApp chat data. Utilizing TensorFlow, Keras, and Streamlit, it allows users to import .txt files, perform sentiment analysis, and visualize chat patterns and keyword trends, enhancing understanding of conversations.",
+   "createdAt": "2024-04-28T13:03:00Z",
+   "pushedAt": "2024-10-28T19:10:53Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 31,
+   "stargazersCount": 0,
+   "topics": [
+    "deep-learning",
+    "keras",
+    "machine-learning",
+    "nlp",
+    "scikit-learn",
+    "tensorflow"
+   ]
+  },
+  {
+   "id": 839082967,
+   "fullName": "jeus0522/7-Explore-Different-Classifier-ML-App",
+   "url": "https://github.com/jeus0522/7-Explore-Different-Classifier-ML-App",
+   "description": "A project exploring various classification algorithms, showcasing their implementation, comparison, and evaluation using Python and scikit-learn.",
+   "createdAt": "2024-08-06T23:56:43Z",
+   "pushedAt": "2024-08-07T00:02:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 8,
+   "stargazersCount": 0,
+   "topics": [
+    "k-nearest-neighbours",
+    "knn",
+    "random-forest",
+    "scikit-learn",
+    "streamlit",
+    "support-vector-machine",
+    "svm"
+   ]
+  },
+  {
+   "id": 877074473,
+   "fullName": "Jmallone/classificador_mestrado",
+   "url": "https://github.com/Jmallone/classificador_mestrado",
+   "description": "Tem como objetivo a classifica\u00e7\u00e3o a partir dos conjuntos de dados DTD e FMD, assim como a avalia\u00e7\u00e3o para diferentes tipos de backbones, a exemplo, resnet, vgg, inception entre outros.",
+   "createdAt": "2024-10-23T03:28:22Z",
+   "pushedAt": "2024-10-23T03:29:47Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 236,
+   "stargazersCount": 0,
+   "topics": [
+    "artificial-intelligence",
+    "classification",
+    "fmd",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 860680097,
+   "fullName": "jordandeklerk/pyGRidge",
+   "url": "https://github.com/jordandeklerk/pyGRidge",
+   "description": "A scikit-learn compatible Python package for data-driven group regularized ridge regression ",
+   "createdAt": "2024-09-20T23:10:13Z",
+   "pushedAt": "2025-05-05T18:37:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 430,
+   "stargazersCount": 1,
+   "topics": [
+    "python",
+    "regression",
+    "regularized-regression",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 891107777,
+   "fullName": "joseph-c-mcguire/webapp-example-backend",
+   "url": "https://github.com/joseph-c-mcguire/webapp-example-backend",
+   "description": "This project is a backend system for a predictive maintenance application. The system is designed for training, serving, and producing diagnostics for a set of models trained on a UCI dataset",
+   "createdAt": "2024-11-19T18:33:54Z",
+   "pushedAt": "2024-12-18T16:25:22Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 2916,
+   "stargazersCount": 0,
+   "topics": [
+    "backend",
+    "machine-learning",
+    "predictive-maintenance",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 772982461,
+   "fullName": "KageRyo/WQSurrogateModels",
+   "url": "https://github.com/KageRyo/WQSurrogateModels",
+   "description": "FastAPI backend and reproducibility repo for WQI5 current-state water quality assessment using direct WQI5 and surrogate regression models.",
+   "createdAt": "2024-03-16T12:18:30Z",
+   "pushedAt": "2026-11-15T02:33:20Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 17141,
+   "stargazersCount": 0,
+   "topics": [
+    "ai",
+    "back-end",
+    "fastapi",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "waterquality"
+   ]
+  },
+  {
+   "id": 863470710,
+   "fullName": "karimosman89/automl-framework",
+   "url": "https://github.com/karimosman89/automl-framework",
+   "description": "Develop a framework that automatically selects the best machine learning model and hyperparameters for a given dataset. Implement techniques like Bayesian optimization for hyperparameter tuning.",
+   "createdAt": "2024-09-26T10:56:54Z",
+   "pushedAt": "2024-10-01T08:47:31Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13,
+   "stargazersCount": 1,
+   "topics": [
+    "deep-learning-models",
+    "hyperopt",
+    "optuna",
+    "possibly",
+    "python",
+    "scikit-learn",
+    "tensorflow"
+   ]
+  },
+  {
+   "id": 881349017,
+   "fullName": "karimosman89/energy-consumption-forecasting",
+   "url": "https://github.com/karimosman89/energy-consumption-forecasting",
+   "description": "Predict future energy consumption based on historical data.Create a model that predicts energy consumption in households or businesses to optimize energy distribution and reduce costs.Assist energy companies in planning and managing supply efficiently.",
+   "createdAt": "2024-10-31T11:56:05Z",
+   "pushedAt": "2024-11-05T15:15:54Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10,
+   "stargazersCount": 0,
+   "topics": [
+    "arima",
+    "lstm",
+    "matplotlib",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 881319798,
+   "fullName": "karimosman89/legal-document-nlp",
+   "url": "https://github.com/karimosman89/legal-document-nlp",
+   "description": "Create a tool that uses NLP to extract key information from legal documents, contracts, or agreements.Use NLP techniques for named entity recognition and text classification.Streamline the review process for legal teams by automating information extraction.",
+   "createdAt": "2024-10-31T10:40:23Z",
+   "pushedAt": "2024-11-07T10:11:56Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 17,
+   "stargazersCount": 1,
+   "topics": [
+    "nltk",
+    "python",
+    "scikit-learn",
+    "spacy"
+   ]
+  },
+  {
+   "id": 863494985,
+   "fullName": "karimosman89/recommendation-system",
+   "url": "https://github.com/karimosman89/recommendation-system",
+   "description": "A recommendation system that combines collaborative filtering and content-based filtering techniques to provide personalized recommendations (e.g., movies, products). Implement it as a web service.",
+   "createdAt": "2024-09-26T11:51:47Z",
+   "pushedAt": "2024-10-01T08:44:07Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13,
+   "stargazersCount": 1,
+   "topics": [
+    "django-framework",
+    "flask",
+    "graphql-api",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 881359944,
+   "fullName": "karimosman89/resume-screening",
+   "url": "https://github.com/karimosman89/resume-screening",
+   "description": "Screen resumes to identify the best candidates.Build a machine learning model that screens resumes and ranks candidates based on job descriptions.Streamline the hiring process for HR departments by automating candidate screening.",
+   "createdAt": "2024-10-31T12:21:42Z",
+   "pushedAt": "2024-11-05T14:31:04Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 14,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning-algorithms",
+    "nlp-machine-learning",
+    "nltk-python",
+    "python",
+    "scikit-learn",
+    "spacy",
+    "text-processing"
+   ]
+  },
+  {
+   "id": 741465882,
+   "fullName": "Kartikdixit2468/Advanced-Jarvis-AI-using-python",
+   "url": "https://github.com/Kartikdixit2468/Advanced-Jarvis-AI-using-python",
+   "description": "An A.I voice assistant in python using simple machine learning algorithms and BardAPI.",
+   "createdAt": "2024-01-10T13:03:54Z",
+   "pushedAt": "2025-02-09T07:14:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12848,
+   "stargazersCount": 1,
+   "topics": [
+    "bard",
+    "bardapi",
+    "jarvis",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "voice-assistant",
+    "voice-recognition"
+   ]
+  },
+  {
+   "id": 813596727,
+   "fullName": "kbinko/bike-shares",
+   "url": "https://github.com/kbinko/bike-shares",
+   "description": "Capital Bikeshare project & Data Analysis",
+   "createdAt": "2024-06-11T11:29:12Z",
+   "pushedAt": "2024-06-17T12:28:00Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6140,
+   "stargazersCount": 0,
+   "topics": [
+    "data-science",
+    "data-visualization",
+    "keras",
+    "machine-learning",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "tenserflow"
+   ]
+  },
+  {
+   "id": 882643777,
+   "fullName": "Kevinjoythomas/Network-Security-Pipeline",
+   "url": "https://github.com/Kevinjoythomas/Network-Security-Pipeline",
+   "description": "End-to-end MLOps pipeline for phishing site detection: MongoDB, drift checks, MLflow, FastAPI and AWS CI/CD.",
+   "createdAt": "2024-11-03T11:30:33Z",
+   "pushedAt": "2026-10-29T14:28:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2254,
+   "stargazersCount": 1,
+   "topics": [
+    "aws",
+    "fastapi",
+    "github-actions",
+    "mlflow",
+    "mlops",
+    "mongodb",
+    "phishing-detection",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 892612094,
+   "fullName": "kfrural/classification_model_evaluation",
+   "url": "https://github.com/kfrural/classification_model_evaluation",
+   "description": "Python project demonstrating classification model evaluation techniques. Includes data generation, model training, and calculation of key metrics like accuracy, precision, recall, and F1 score. Visualizes ROC curves and confusion matrices for comprehensive assessment.",
+   "createdAt": "2024-11-22T12:51:26Z",
+   "pushedAt": "2024-11-22T15:09:25Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 14,
+   "stargazersCount": 2,
+   "topics": [
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 770379498,
+   "fullName": "kingabzpro/GitHub-Actions-For-Machine-Learning-Beginners",
+   "url": "https://github.com/kingabzpro/GitHub-Actions-For-Machine-Learning-Beginners",
+   "description": "A project on automating ML workflow using scikit-learn pipelines, CML, and GitHub actions.",
+   "createdAt": "2024-03-11T13:01:34Z",
+   "pushedAt": "2024-03-12T08:57:19Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 21,
+   "stargazersCount": 4,
+   "topics": [
+    "cml",
+    "github-actions",
+    "machine-learning",
+    "mlops",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 855060395,
+   "fullName": "kingabzpro/MLOps-with-Jenkins",
+   "url": "https://github.com/kingabzpro/MLOps-with-Jenkins",
+   "description": "From data ingestion to deploying the model using Jenkins.",
+   "createdAt": "2024-09-10T08:31:58Z",
+   "pushedAt": "2024-09-11T17:15:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 76,
+   "stargazersCount": 3,
+   "topics": [
+    "classification",
+    "fastapi",
+    "jenkins",
+    "mlops",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 857473423,
+   "fullName": "kingabzpro/Water-Quality-App",
+   "url": "https://github.com/kingabzpro/Water-Quality-App",
+   "description": "Building an Water Quality Classifier Application with o1-preview Model",
+   "createdAt": "2024-09-14T18:49:41Z",
+   "pushedAt": "2024-09-15T08:31:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 6594,
+   "stargazersCount": 3,
+   "topics": [
+    "chatgpt",
+    "docker",
+    "huggingface",
+    "o1-preview",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 830219201,
+   "fullName": "KIRAN-KUMAR-K3/Image-Color-Compression-using-K-Means",
+   "url": "https://github.com/KIRAN-KUMAR-K3/Image-Color-Compression-using-K-Means",
+   "description": "A Python tool that compresses images using K-Means, shows both the original and compressed images, and lets you save the compressed version while displaying file sizes.",
+   "createdAt": "2024-07-17T20:52:01Z",
+   "pushedAt": "2024-08-04T08:34:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2154,
+   "stargazersCount": 2,
+   "topics": [
+    "images",
+    "matplotlib",
+    "numpy",
+    "pillow",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 808348420,
+   "fullName": "kristishqau/SentimentAnalysis_NLP",
+   "url": "https://github.com/kristishqau/SentimentAnalysis_NLP",
+   "description": "A project for sentiment analysis of tweets using various NLP techniques and machine learning models.",
+   "createdAt": "2024-05-30T22:10:35Z",
+   "pushedAt": "2026-11-01T14:39:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4534,
+   "stargazersCount": 0,
+   "topics": [
+    "datascience",
+    "machine-learning",
+    "nlp",
+    "python",
+    "scikit-learn",
+    "sentiment-analysis"
+   ]
+  },
+  {
+   "id": 832707905,
+   "fullName": "kshitijshresth/Real-Estate-Prediction",
+   "url": "https://github.com/kshitijshresth/Real-Estate-Prediction",
+   "description": "Flask application for predicting Real-Estate prices based on various features of the housing data using decision trees.",
+   "createdAt": "2024-07-23T15:01:41Z",
+   "pushedAt": "2024-08-28T15:04:47Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 429,
+   "stargazersCount": 0,
+   "topics": [
+    "decision-tree",
+    "flask",
+    "predictive-modeling",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 835175316,
+   "fullName": "Lakshitalearning/CODSOFT",
+   "url": "https://github.com/Lakshitalearning/CODSOFT",
+   "description": "Machine Learning Projects - CODSOFT Internship: This repository showcases my machine learning projects completed during my internship at Codsoft. It demonstrates my skills in developing innovative solutions using various ML techniques and tools.",
+   "createdAt": "2024-07-29T10:05:38Z",
+   "pushedAt": "2024-10-15T17:26:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 7109,
+   "stargazersCount": 0,
+   "topics": [
+    "churn-prediction",
+    "codsoft",
+    "codsoftinternship",
+    "deep-learning",
+    "handwritten-text-recognition",
+    "internship-project",
+    "keras",
+    "machine-learning",
+    "python",
+    "rnn-tensorflow",
+    "scikit-learn",
+    "spam-detection"
+   ]
+  },
+  {
+   "id": 738673630,
+   "fullName": "lastfirefly/ML_predict_results",
+   "url": "https://github.com/lastfirefly/ML_predict_results",
+   "description": "Projeto pessoal para cria\u00e7\u00e3o de uma Machine Learning para prever probabilidade de resultados de jogos com base em resultados anteriores",
+   "createdAt": "2024-01-03T19:21:37Z",
+   "pushedAt": "2024-01-30T17:16:08Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 243,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning",
+    "machinelearning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 820969972,
+   "fullName": "lazarust/sklx",
+   "url": "https://github.com/lazarust/sklx",
+   "description": "A scikit-learn compatible neural network library that wraps MLX. ",
+   "createdAt": "2024-06-27T14:41:00Z",
+   "pushedAt": "2026-10-07T01:01:13Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 697,
+   "stargazersCount": 9,
+   "topics": [
+    "mlx",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 833992754,
+   "fullName": "Legendary9029/Expense-Tracker",
+   "url": "https://github.com/Legendary9029/Expense-Tracker",
+   "description": "Expense Tracker is a web-based application that helps users manage their finances by tracking expenses, income, and budgets. It supports features like expense categorization, recurring expenses, multi-currency conversion, AI-powered categorization, OCR-based receipt scanning, and smart notifications to ensure efficient financial management.",
+   "createdAt": "2024-07-26T07:40:17Z",
+   "pushedAt": "2025-02-12T09:58:05Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 69,
+   "stargazersCount": 2,
+   "topics": [
+    "forex",
+    "pillow",
+    "pytesseract",
+    "python",
+    "scikit-learn",
+    "sqlite3"
+   ]
+  },
+  {
+   "id": 875191774,
+   "fullName": "Lendrx/analyze_employees",
+   "url": "https://github.com/Lendrx/analyze_employees",
+   "description": "Predictive-HR-Analytics-System zur Vorhersage von Mitarbeiteraustritten und der Performance mit Scikit-learn, XGBoost und Pandas.",
+   "createdAt": "2024-10-19T10:35:15Z",
+   "pushedAt": "2025-01-31T20:05:42Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 53,
+   "stargazersCount": 0,
+   "topics": [
+    "churn-prediction",
+    "feature-engineering",
+    "hr-analytics",
+    "machine-learning",
+    "pandas",
+    "predictive-analytics",
+    "python",
+    "scikit-learn",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 837385050,
+   "fullName": "MahdiBehoftadeh/polynomial-regression-co2-emissions",
+   "url": "https://github.com/MahdiBehoftadeh/polynomial-regression-co2-emissions",
+   "description": "A simple machine learning polynomial regression using a large dataset to learn and predict CO2 emission of a car by its built features like engine size and cylinders",
+   "createdAt": "2024-08-02T21:09:09Z",
+   "pushedAt": "2026-11-12T12:16:35Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 132,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "matplotlib",
+    "numpy",
+    "nural-network",
+    "pandas",
+    "polynomial-regression",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 884992379,
+   "fullName": "Mahdiwav/car-price-prediction",
+   "url": "https://github.com/Mahdiwav/car-price-prediction",
+   "description": "Machine learning project that scrapes car data from Bama.ir and predicts prices using Random Forest and Scikit-learn.",
+   "createdAt": "2024-11-07T18:53:21Z",
+   "pushedAt": "2026-08-14T03:49:45Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 23,
+   "stargazersCount": 0,
+   "topics": [
+    "beautifulsoup",
+    "car-price-prediction",
+    "machine-learning",
+    "machine-learning-projects",
+    "pandas",
+    "postgresql",
+    "price-prediction",
+    "python",
+    "scikit-learn",
+    "web-scraping"
+   ]
+  },
+  {
+   "id": 887597606,
+   "fullName": "marioprieta/WineModelComparison",
+   "url": "https://github.com/marioprieta/WineModelComparison",
+   "description": "Comparative analysis of machine learning models (KNN, SVM, Decision Tree, Random Forest, Neural Network) for classifying wine types using the Wine Dataset. Models are evaluated on accuracy, confusion matrix, and AUC ROC, with visualizations highlighting performance differences across techniques.",
+   "createdAt": "2024-11-13T00:25:15Z",
+   "pushedAt": "2026-03-02T22:19:58Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 61,
+   "stargazersCount": 1,
+   "topics": [
+    "classification",
+    "data-science",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 835757842,
+   "fullName": "MarkNgugi/AnomalyFinder-AI",
+   "url": "https://github.com/MarkNgugi/AnomalyFinder-AI",
+   "description": "AnomalyFinder-AI is an AI tool for detecting and analyzing anomalies in log data from various systems and applications. It identifies irregular patterns, provides descriptions of anomalies, and suggests solutions to prevent issues. ",
+   "createdAt": "2024-07-30T13:25:26Z",
+   "pushedAt": "2025-03-22T19:29:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 152,
+   "stargazersCount": 2,
+   "topics": [
+    "isolation-forest-algorithm",
+    "logs",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "python3",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 881477148,
+   "fullName": "mart-dore/datascience-portfolio",
+   "url": "https://github.com/mart-dore/datascience-portfolio",
+   "description": "End-to-end ML project on the Auto MPG dataset: EDA, modelling (RMSE 2.31), and deployment behind a Flask API",
+   "createdAt": "2024-10-31T16:44:42Z",
+   "pushedAt": "2026-08-05T15:49:47Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1074,
+   "stargazersCount": 1,
+   "topics": [
+    "data-science",
+    "flask",
+    "machine-learning",
+    "python",
+    "regression",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 757896737,
+   "fullName": "martineastwood/featuristic",
+   "url": "https://github.com/martineastwood/featuristic",
+   "description": "Automated, interpretable feature engineering using symbolic regression and genetic programming.",
+   "createdAt": "2024-02-15T08:00:58Z",
+   "pushedAt": "2026-09-03T14:00:58Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10986,
+   "stargazersCount": 7,
+   "topics": [
+    "automated-feature-engineering",
+    "automl",
+    "data-science",
+    "feature-engineering",
+    "feature-selection",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 851972508,
+   "fullName": "matinmonshizadeh/predicting-mobile-prices",
+   "url": "https://github.com/matinmonshizadeh/predicting-mobile-prices",
+   "description": "Used-phone price prediction from divar.ir listings: Selenium scraper, cleaning, linear regression on log-price, Tkinter app",
+   "createdAt": "2024-09-04T02:10:18Z",
+   "pushedAt": "2026-09-08T18:58:15Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13851,
+   "stargazersCount": 1,
+   "topics": [
+    "data-cleaning",
+    "linear-regression",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "selenium",
+    "tkinter",
+    "web-scraping"
+   ]
+  },
+  {
+   "id": 894018937,
+   "fullName": "Mattbusel/Mycelium-Based-AI-Integration",
+   "url": "https://github.com/Mattbusel/Mycelium-Based-AI-Integration",
+   "description": "Concept paper: living mycelium as a self-repairing base for AI.",
+   "createdAt": "2024-11-25T15:55:59Z",
+   "pushedAt": "2026-11-08T03:43:05Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2627,
+   "stargazersCount": 8,
+   "topics": [
+    "biocomputing",
+    "concept",
+    "fastapi",
+    "fungal-computing",
+    "mycelium",
+    "python",
+    "regression",
+    "research-prototype",
+    "scikit-learn",
+    "synthetic-biology",
+    "unconventional-computing"
+   ]
+  },
+  {
+   "id": 880198396,
+   "fullName": "Mattbusel/Project-SEC-Filing-Analyzer-Tool",
+   "url": "https://github.com/Mattbusel/Project-SEC-Filing-Analyzer-Tool",
+   "description": "Financial Data Anomaly Detection and Forecasting Project Overview This project involves the development of a machine learning model to analyze financial data, detect anomalies, and forecast future trends. Using a variety of models from scikit-learn, such as RandomForestRegressor, KMeans, and IsolationForest.",
+   "createdAt": "2024-10-29T09:51:55Z",
+   "pushedAt": "2026-09-25T20:47:12Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2409,
+   "stargazersCount": 2,
+   "topics": [
+    "anomaly-detection",
+    "finance",
+    "financial-analysis",
+    "forecasting",
+    "machine-learning",
+    "python",
+    "random-forest",
+    "scikit-learn",
+    "sec-filings"
+   ]
+  },
+  {
+   "id": 787838278,
+   "fullName": "mdegiulio97/Health-Insurance",
+   "url": "https://github.com/mdegiulio97/Health-Insurance",
+   "description": "University coursework (archived): medical-cost regression with linear and random-forest models vs a baseline",
+   "createdAt": "2024-04-17T09:24:38Z",
+   "pushedAt": "2026-11-11T16:00:25Z",
+   "defaultBranch": "main",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 260,
+   "stargazersCount": 0,
+   "topics": [
+    "clinical-ml",
+    "coursework",
+    "healthcare",
+    "machine-learning",
+    "regression",
+    "reproducible-research",
+    "scikit-learn",
+    "streamlit",
+    "uv"
+   ]
+  },
+  {
+   "id": 859482427,
+   "fullName": "MishraAbhay03/laptop-price-predictor",
+   "url": "https://github.com/MishraAbhay03/laptop-price-predictor",
+   "description": "Laptop price prediction ML model with Streamlit UI \u2014 feature engineering, ensemble methods & interactive dashboard",
+   "createdAt": "2024-09-18T18:28:52Z",
+   "pushedAt": "2026-06-04T07:20:35Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4845,
+   "stargazersCount": 1,
+   "topics": [
+    "data-science",
+    "feature-engineering",
+    "machine-learning",
+    "price-prediction",
+    "python",
+    "random-forest",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 822060926,
+   "fullName": "MitchMedeiros/MLCompare",
+   "url": "https://github.com/MitchMedeiros/MLCompare",
+   "description": "Quickly compare machine learning models across libraries and datasets.",
+   "createdAt": "2024-06-30T07:42:28Z",
+   "pushedAt": "2024-10-22T21:50:33Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 16672,
+   "stargazersCount": 0,
+   "topics": [
+    "huggingface-datasets",
+    "kaggle",
+    "machine-learning",
+    "openml",
+    "pytorch",
+    "scikit-learn",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 778428302,
+   "fullName": "mllite/sklearn2json",
+   "url": "https://github.com/mllite/sklearn2json",
+   "description": "A tool to jsonify some sklearn and xgboost models. A high level serialization that works across programming languages. Used for mllite tests.",
+   "createdAt": "2024-03-27T17:50:31Z",
+   "pushedAt": "2024-03-27T20:18:59Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 120,
+   "stargazersCount": 0,
+   "topics": [
+    "decision-tree",
+    "json",
+    "machine-learning",
+    "mllite",
+    "model-export",
+    "model-import",
+    "multi-layer-perceptron",
+    "random-forest",
+    "ridge-regression",
+    "scikit-learn",
+    "support-vector-machine",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 887553003,
+   "fullName": "MNKanout/MovMet",
+   "url": "https://github.com/MNKanout/MovMet",
+   "description": "AI-powered wearable rehab prototype: wrist IMU (Accel/Gyro) arm-position classification (Close/Mid/Far) for post-stroke motion monitoring. Random Forest model, report + results, CLI demo, tests, CI.",
+   "createdAt": "2024-11-12T21:55:25Z",
+   "pushedAt": "2026-01-29T19:29:02Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3014,
+   "stargazersCount": 0,
+   "topics": [
+    "healthcare",
+    "imu-sensor",
+    "machine-learning",
+    "python3",
+    "random-forest",
+    "rehabilitation",
+    "scikit-learn",
+    "sensor-data"
+   ]
+  },
+  {
+   "id": 818179376,
+   "fullName": "MohammadRoodbari/Color-Recognition",
+   "url": "https://github.com/MohammadRoodbari/Color-Recognition",
+   "description": "Color Detection using  K-means clustering algorithm to detect and recognize dominant color from images.",
+   "createdAt": "2024-06-21T09:13:26Z",
+   "pushedAt": "2024-06-22T18:42:10Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 11,
+   "stargazersCount": 0,
+   "topics": [
+    "computer-vision",
+    "docker",
+    "fastapi",
+    "kmeans",
+    "opencv",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 857804326,
+   "fullName": "MohdAsad2903/Sign-Language",
+   "url": "https://github.com/MohdAsad2903/Sign-Language",
+   "description": "Real-time sign language alphabet recognition using MediaPipe hand landmarks and a scikit-learn classifier, in Python.",
+   "createdAt": "2024-09-15T16:48:23Z",
+   "pushedAt": "2026-08-10T17:24:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 835,
+   "stargazersCount": 0,
+   "topics": [
+    "accessibility",
+    "computer-vision",
+    "hand-gesture-recognition",
+    "machine-learning",
+    "mediapipe",
+    "opencv",
+    "python",
+    "real-time",
+    "scikit-learn",
+    "sign-language-recognition"
+   ]
+  },
+  {
+   "id": 766033134,
+   "fullName": "Mr-Terminal/Brain-cancer-prediction-app",
+   "url": "https://github.com/Mr-Terminal/Brain-cancer-prediction-app",
+   "description": "It is a brain cancer prediction application that predicts if a certain measured cell mass is benign or malignant",
+   "createdAt": "2024-03-02T06:35:49Z",
+   "pushedAt": "2024-03-02T08:35:10Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 231,
+   "stargazersCount": 1,
+   "topics": [
+    "data-preprocessing",
+    "logistic-regression",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 847569396,
+   "fullName": "MRyutaro/spla3clip",
+   "url": "https://github.com/MRyutaro/spla3clip",
+   "description": "spla3clip: \u30ad\u30eb\u30fb\u30c7\u30b9\u3057\u305f\u6642\u523b\u3092\u81ea\u52d5\u3067\u89e3\u6790\u3059\u308b\u30b9\u30d7\u30e9\u30c8\u30a5\u30fc\u30f33\u7528\u30c4\u30fc\u30eb",
+   "createdAt": "2024-08-26T05:51:59Z",
+   "pushedAt": "2025-05-18T17:48:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10593,
+   "stargazersCount": 0,
+   "topics": [
+    "fastapi",
+    "python",
+    "react",
+    "scikit-learn",
+    "typescript"
+   ]
+  },
+  {
+   "id": 818939461,
+   "fullName": "Mulaudzi1/heart-risk-ml-service",
+   "url": "https://github.com/Mulaudzi1/heart-risk-ml-service",
+   "description": "Evaluated scikit-learn heart-disease risk model (Cleveland/HEARTS features) served by FastAPI: CV model selection, model card, tests, Docker, tiny .NET client. Research/demo only \u2014 not a medical device.",
+   "createdAt": "2024-06-23T10:02:07Z",
+   "pushedAt": "2026-10-21T10:39:22Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 268,
+   "stargazersCount": 1,
+   "topics": [
+    "docker",
+    "fastapi",
+    "healthcare",
+    "machine-learning",
+    "model-card",
+    "pytest",
+    "python",
+    "scikit-learn",
+    "south-africa"
+   ]
+  },
+  {
+   "id": 901995048,
+   "fullName": "mzquadri/munich-accident-forecasting",
+   "url": "https://github.com/mzquadri/munich-accident-forecasting",
+   "description": "Monthly forecasts for Munich road accident counts, per accident category, with a temporal split, baseline comparison and a FastAPI service",
+   "createdAt": "2024-12-11T17:44:48Z",
+   "pushedAt": "2026-11-03T23:37:49Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2559,
+   "stargazersCount": 0,
+   "topics": [
+    "coding-challenge",
+    "fastapi",
+    "forecasting",
+    "machine-learning",
+    "munich",
+    "open-data",
+    "prediction-model",
+    "pytest",
+    "python",
+    "rest-api",
+    "scikit-learn",
+    "time-series",
+    "traffic-safety"
+   ]
+  },
+  {
+   "id": 855489381,
+   "fullName": "nathan-lindstedt/student_risk",
+   "url": "https://github.com/nathan-lindstedt/student_risk",
+   "description": "Student Success Model (SSM)",
+   "createdAt": "2024-09-11T00:29:02Z",
+   "pushedAt": "2024-12-30T17:40:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 205,
+   "stargazersCount": 0,
+   "topics": [
+    "fairlearn",
+    "machine-learning",
+    "scikit-learn",
+    "shap",
+    "student-risk",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 763612030,
+   "fullName": "Nayanearaujo/maternal-health-risk-classification",
+   "url": "https://github.com/Nayanearaujo/maternal-health-risk-classification",
+   "description": "Leakage-aware evaluation of maternal health risk classifiers with duplicate control and group-based cross-validation.",
+   "createdAt": "2024-02-26T16:07:41Z",
+   "pushedAt": "2026-07-18T02:48:56Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 377,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "cross-validation",
+    "data-quality",
+    "healthcare-data",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 842777480,
+   "fullName": "neerboo/dpm-ml",
+   "url": "https://github.com/neerboo/dpm-ml",
+   "description": "A Disease Prediction Model Using Machine Learning",
+   "createdAt": "2024-08-15T04:00:54Z",
+   "pushedAt": "2024-10-12T08:32:58Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2297,
+   "stargazersCount": 4,
+   "topics": [
+    "ai",
+    "ai-model",
+    "diseaes",
+    "disease-detection",
+    "disease-prediction",
+    "flask",
+    "flask-application",
+    "machine-learning",
+    "prediction-model",
+    "python-progra",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 759390969,
+   "fullName": "NicolasChagnet/arxiv-recommendations",
+   "url": "https://github.com/NicolasChagnet/arxiv-recommendations",
+   "description": "Contains a content-based recommendation system of scraped arXiv articles.",
+   "createdAt": "2024-02-18T13:19:06Z",
+   "pushedAt": "2024-07-21T08:36:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 8295,
+   "stargazersCount": 1,
+   "topics": [
+    "content-based-recommendation",
+    "data-analysis",
+    "scikit-learn",
+    "topic-clustering",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 850708917,
+   "fullName": "nihalanas/risk-assessment",
+   "url": "https://github.com/nihalanas/risk-assessment",
+   "description": "Streamlit tool for cardiovascular disease and diabetes risk assessment, combining scikit-learn risk models with LLM-generated personalized mitigation measures (Llama 2 via Ollama).",
+   "createdAt": "2024-09-01T15:01:41Z",
+   "pushedAt": "2026-06-14T07:03:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 42,
+   "stargazersCount": 0,
+   "topics": [
+    "healthcare",
+    "llm",
+    "machine-learning",
+    "python",
+    "risk-assessment",
+    "scikit-learn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 890275722,
+   "fullName": "Nikhilsh10/Email-spam_classifier",
+   "url": "https://github.com/Nikhilsh10/Email-spam_classifier",
+   "description": "Classify emails as spam or ham \u2014 and see exactly why. X-Ray mode highlights spam/ham keywords with per-word impact scores powered by Naive Bayes log-probability. Single email, batch upload, and model insights in one Streamlit dashboard.",
+   "createdAt": "2024-11-18T09:48:23Z",
+   "pushedAt": "2026-07-08T17:53:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 108,
+   "stargazersCount": 1,
+   "topics": [
+    "altair",
+    "bag-of-words",
+    "batch-classification",
+    "countvectorizer",
+    "data-visualization",
+    "email-spam",
+    "explainable-ai",
+    "machine-learning",
+    "naive-bayes",
+    "nlp",
+    "python",
+    "scikit-learn",
+    "spam-classifier",
+    "streamlit",
+    "text-classification"
+   ]
+  },
+  {
+   "id": 806768416,
+   "fullName": "NimoKwarkye/stats_tool_repo",
+   "url": "https://github.com/NimoKwarkye/stats_tool_repo",
+   "description": "XploreML is node based application built with dearpygui. This application wraps machine learning algorithms in scikit-learning to provide accelerated ML development.",
+   "createdAt": "2024-05-27T21:32:48Z",
+   "pushedAt": "2026-03-16T21:31:37Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5032,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "decomposition",
+    "graphml",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "regression-models",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 740635953,
+   "fullName": "noorcs39/UA_Projects",
+   "url": "https://github.com/noorcs39/UA_Projects",
+   "description": "University of Aveiro coursework: graph algorithms, streaming counters, and telecom fault detection.",
+   "createdAt": "2024-01-08T18:46:58Z",
+   "pushedAt": "2026-09-11T00:34:12Z",
+   "defaultBranch": "noorcs39",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4412,
+   "stargazersCount": 1,
+   "topics": [
+    "algorithms",
+    "data-structures",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "university-of-aveiro"
+   ]
+  },
+  {
+   "id": 821217407,
+   "fullName": "nordszamora/Emotion-Expression",
+   "url": "https://github.com/nordszamora/Emotion-Expression",
+   "description": "The Machine learning project where user express there emotion and classify at the following (Sad, Joy, Love, Anger, Fear, Surprice).",
+   "createdAt": "2024-06-28T04:21:40Z",
+   "pushedAt": "2024-07-05T05:59:50Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5321,
+   "stargazersCount": 7,
+   "topics": [
+    "machine-learning",
+    "naive-bayes",
+    "natural-language-processing",
+    "pandas",
+    "scikit-learn",
+    "sentiment-analysis",
+    "text-classification"
+   ]
+  },
+  {
+   "id": 759252133,
+   "fullName": "nordszamora/sentiment",
+   "url": "https://github.com/nordszamora/sentiment",
+   "description": "This ML project is used to predict the text sentiment positive, negative or neutral. Its used a Reddit dataset in kaggle to train the model and make a prediction on new/unseen data.",
+   "createdAt": "2024-02-18T04:04:49Z",
+   "pushedAt": "2024-02-18T05:27:49Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 902,
+   "stargazersCount": 1,
+   "topics": [
+    "django",
+    "joblib",
+    "kaggle",
+    "naive-bayes-classifier",
+    "pandas",
+    "python",
+    "redditdata",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 757777738,
+   "fullName": "norenlivingston/Portfolio",
+   "url": "https://github.com/norenlivingston/Portfolio",
+   "description": "End-to-end ML pipeline with leakage-safe preprocessing, MLflow tracking, FastAPI serving, SHAP explainability, and a Claude/MCP agent layer.",
+   "createdAt": "2024-02-15T00:31:48Z",
+   "pushedAt": "2026-11-11T08:49:33Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4308,
+   "stargazersCount": 0,
+   "topics": [
+    "docker",
+    "explainable-ai",
+    "fastapi",
+    "llm-agents",
+    "machine-learning",
+    "mlflow",
+    "mlops",
+    "model-context-protocol",
+    "python",
+    "scikit-learn",
+    "shap"
+   ]
+  },
+  {
+   "id": 811685731,
+   "fullName": "NotShrirang/M2ConneX",
+   "url": "https://github.com/NotShrirang/M2ConneX",
+   "description": "M2ConneX is an all-encompassing platform specifically crafted for MMCOE alumni, enabling seamless communication, networking, and collaboration. It provides tailored recommendations for connections, posts, and job opportunities based on each user's unique skills and experience.",
+   "createdAt": "2024-06-07T05:15:01Z",
+   "pushedAt": "2025-07-29T02:45:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 228,
+   "stargazersCount": 0,
+   "topics": [
+    "django",
+    "django-rest-framework",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 867608073,
+   "fullName": "Nukaze/sentiment-analysis-hotel-reviews",
+   "url": "https://github.com/Nukaze/sentiment-analysis-hotel-reviews",
+   "description": "Building a model designed to analyze customer sentiment in hotel reviews, categorizing sentiments as [positive, neutral, or negative] The project also includes a variant model to enhance classification accuracy and provide diverse analytical perspectives.",
+   "createdAt": "2024-10-04T11:39:40Z",
+   "pushedAt": "2024-10-08T12:24:56Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1070,
+   "stargazersCount": 0,
+   "topics": [
+    "data-analysis",
+    "data-cleaning",
+    "linear-regression",
+    "logistic-regression",
+    "machine-learning",
+    "nlp",
+    "nlp-machine-learning",
+    "nltk",
+    "numpy",
+    "pandas",
+    "python",
+    "random-forest-classifier",
+    "scikit-learn",
+    "supervised-learning",
+    "tf-idf",
+    "vectorization",
+    "xgboost",
+    "xgboost-classifier",
+    "xgboost-regression"
+   ]
+  },
+  {
+   "id": 821824044,
+   "fullName": "Okerew/okrolearn",
+   "url": "https://github.com/Okerew/okrolearn",
+   "description": "A machine learning library created in python by Okerew",
+   "createdAt": "2024-06-29T14:37:38Z",
+   "pushedAt": "2024-08-30T19:30:08Z",
+   "defaultBranch": "main",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 525,
+   "stargazersCount": 2,
+   "topics": [
+    "ai",
+    "analytics",
+    "arrays",
+    "computer-science",
+    "computer-vision",
+    "machine-learning",
+    "machine-learning-python",
+    "neural",
+    "neural-network",
+    "numpy",
+    "okerew",
+    "okrolearn",
+    "python",
+    "pytorch",
+    "scikit-learn",
+    "tensorflow",
+    "tensors"
+   ]
+  },
+  {
+   "id": 807552809,
+   "fullName": "OmNaphade/Stock-Price-Prediction",
+   "url": "https://github.com/OmNaphade/Stock-Price-Prediction",
+   "description": "A Python-based web app using Scikit-Learn & Streamlit for stock forecasting with a Random Forest model trained on BSE & NSE data. Supports real-time analysis (1 min, 2 min, 5 min), secure SQLite authentication, and data visualization with Matplotlib & Pandas. ",
+   "createdAt": "2024-05-29T10:16:56Z",
+   "pushedAt": "2026-08-09T08:47:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1186,
+   "stargazersCount": 0,
+   "topics": [
+    "bse-stock-data",
+    "matplotlib",
+    "nse-stock-data",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 845128513,
+   "fullName": "Orange-OpenSource/mislabeled",
+   "url": "https://github.com/Orange-OpenSource/mislabeled",
+   "description": "Detect mislabeled examples in machine learning datasets",
+   "createdAt": "2024-08-20T16:28:41Z",
+   "pushedAt": "2026-08-12T15:12:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12723,
+   "stargazersCount": 6,
+   "topics": [
+    "data-centric-ai",
+    "data-quality",
+    "label-noise",
+    "machine-learning",
+    "noisy-labels",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 797996930,
+   "fullName": "parth1609/DataMiner",
+   "url": "https://github.com/parth1609/DataMiner",
+   "description": "A RAG Application facilitates communication with web pages and PDF content, extracting information and enabling user interaction with the extracted data. This tool is designed for researchers, content analysts, and anyone needing to process and interact with web and PDF content efficiently.",
+   "createdAt": "2024-05-08T22:20:10Z",
+   "pushedAt": "2025-03-01T13:41:05Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 160,
+   "stargazersCount": 0,
+   "topics": [
+    "python",
+    "scikit-learn",
+    "web-scrapping"
+   ]
+  },
+  {
+   "id": 823876517,
+   "fullName": "patelritiq/AspireNex",
+   "url": "https://github.com/patelritiq/AspireNex",
+   "description": "Project Machine Learning models for fraud detection, customer churn prediction, and spam detection using Python and scikit-learn created during the internship at AspireNex. The datasets were provided by them.",
+   "createdAt": "2024-07-03T23:08:59Z",
+   "pushedAt": "2026-02-09T12:37:40Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 59,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "customer-churn",
+    "data-science",
+    "fraud-detection",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "spam-detection"
+   ]
+  },
+  {
+   "id": 906903375,
+   "fullName": "paulms77/psordinal",
+   "url": "https://github.com/paulms77/psordinal",
+   "description": "Python package implementing ordinal classification as a cascade of binary classifiers, wrapping any scikit-learn-compatible estimator.",
+   "createdAt": "2024-12-22T08:57:46Z",
+   "pushedAt": "2026-11-06T06:14:57Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 132,
+   "stargazersCount": 1,
+   "topics": [
+    "catboost",
+    "lightgbm",
+    "machine-learning",
+    "ordinal-classification",
+    "pypi",
+    "python-package",
+    "scikit-learn",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 884150501,
+   "fullName": "Pedasoft-Consult/Sales-Analysis-and-Prediction",
+   "url": "https://github.com/Pedasoft-Consult/Sales-Analysis-and-Prediction",
+   "description": "This project analyzes sales data and predicts future trends using a Random Forest classifier. The workflow includes data cleaning, visualization, and machine learning. It utilizes PySpark for data processing and Python libraries for analysis and visualization.",
+   "createdAt": "2024-11-06T08:34:58Z",
+   "pushedAt": "2024-12-13T10:33:29Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 4061,
+   "stargazersCount": 0,
+   "topics": [
+    "data-cleaning",
+    "hadoop",
+    "matplotlib",
+    "pandas",
+    "pyspark",
+    "random-forest",
+    "scikit-learn",
+    "seaborn",
+    "visualization"
+   ]
+  },
+  {
+   "id": 838980813,
+   "fullName": "PejperO/Machine_Learning",
+   "url": "https://github.com/PejperO/Machine_Learning",
+   "description": "This repository contains two comprehensive machine learning projects using scikit-learn, demonstrating ensemble learning with a Voting Classifier and the comparison of linear and polynomial regression models on different datasets.",
+   "createdAt": "2024-08-06T18:13:24Z",
+   "pushedAt": "2024-08-14T12:11:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 9,
+   "stargazersCount": 0,
+   "topics": [
+    "ensemble-learning",
+    "linear-regression",
+    "logistic-regression",
+    "machine-learning",
+    "polynomial-regression",
+    "random-forest",
+    "scikit-learn",
+    "svm"
+   ]
+  },
+  {
+   "id": 798751503,
+   "fullName": "pemn/vtk_geostat",
+   "url": "https://github.com/pemn/vtk_geostat",
+   "description": "geostat process using python, vtk, jupyter and your choice of interpolation engine",
+   "createdAt": "2024-05-10T11:50:57Z",
+   "pushedAt": "2024-05-28T17:58:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 110,
+   "stargazersCount": 2,
+   "topics": [
+    "drillholes",
+    "geology",
+    "geostatistics",
+    "mining",
+    "pykrige",
+    "python",
+    "scikit-learn",
+    "vtk"
+   ]
+  },
+  {
+   "id": 826736943,
+   "fullName": "pnhuy/sk-chem",
+   "url": "https://github.com/pnhuy/sk-chem",
+   "description": "Wrapper to leverage cheminformatics tasks within scikit-learn workflows",
+   "createdAt": "2024-07-10T09:24:01Z",
+   "pushedAt": "2024-07-21T16:26:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 121,
+   "stargazersCount": 1,
+   "topics": [
+    "cheminformatics",
+    "chemoinformatics",
+    "machine-learning",
+    "molecule-descriptors",
+    "qsar",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 783567684,
+   "fullName": "qalab-e-hassnain/fake-ad-detection-using-text-classification",
+   "url": "https://github.com/qalab-e-hassnain/fake-ad-detection-using-text-classification",
+   "description": "Text classification model that flags whether a PakWheels car ad was posted by a dealer or a genuine seller.",
+   "createdAt": "2024-04-08T06:35:12Z",
+   "pushedAt": "2024-04-08T08:21:41Z",
+   "defaultBranch": "main",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 657,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning",
+    "nlp",
+    "python",
+    "scikit-learn",
+    "text-classification"
+   ]
+  },
+  {
+   "id": 834269875,
+   "fullName": "Ramy-Badr-Ahmed/Higgs-Dataset-Training",
+   "url": "https://github.com/Ramy-Badr-Ahmed/Higgs-Dataset-Training",
+   "description": "Training Higgs Dataset with Keras - https://doi.org/10.5281/zenodo.13133945",
+   "createdAt": "2024-07-26T20:06:24Z",
+   "pushedAt": "2024-08-12T09:39:49Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 3627,
+   "stargazersCount": 1,
+   "topics": [
+    "binary-classification",
+    "cuda-toolkit",
+    "cupy",
+    "dask",
+    "dask-dataframes",
+    "higgs-boson",
+    "keras",
+    "keras-tensorflow",
+    "matplotlib",
+    "matplotlib-python",
+    "numpy",
+    "pandas",
+    "pandas-dataframe",
+    "scikit-learn",
+    "uci-dataset",
+    "uci-machine-learning"
+   ]
+  },
+  {
+   "id": 828938292,
+   "fullName": "ranauzairahmed/MininetIDS",
+   "url": "https://github.com/ranauzairahmed/MininetIDS",
+   "description": "MininetIDS is an integrated environment for developing and evaluating Machine Learning-based Intrusion Detection Systems in Software-Defined Networks. It combines Mininet for network emulation and Ryu for SDN control, enabling advanced IDS research and deployment.",
+   "createdAt": "2024-07-15T12:33:04Z",
+   "pushedAt": "2024-07-18T02:16:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3534,
+   "stargazersCount": 5,
+   "topics": [
+    "intrusion-detection-system",
+    "machine-learning",
+    "mininet",
+    "ryu",
+    "ryu-sdn-controller",
+    "scikit-learn",
+    "sdn"
+   ]
+  },
+  {
+   "id": 900578339,
+   "fullName": "Raphael-UFRJ/analise_algodao",
+   "url": "https://github.com/Raphael-UFRJ/analise_algodao",
+   "description": "An\u00e1lise hist\u00f3rica de plantio de algod\u00e3o, analise do plantio com base no clima e nos dados hist\u00f3ricos.",
+   "createdAt": "2024-12-09T04:36:04Z",
+   "pushedAt": "2024-12-23T01:00:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 7375,
+   "stargazersCount": 0,
+   "topics": [
+    "analysis",
+    "data-science",
+    "data-visualization",
+    "dataset",
+    "docker",
+    "pandas",
+    "provenance",
+    "python",
+    "python3",
+    "scikit-learn",
+    "seaborn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 785650260,
+   "fullName": "razamehar/Naples-Diaper-Market-Geo-Analytics-for-Potential-Estimation",
+   "url": "https://github.com/razamehar/Naples-Diaper-Market-Geo-Analytics-for-Potential-Estimation",
+   "description": "Analyzing Fater company's diaper market potential and enhancing revenue estimation for Naples stores: A Socio-Demographic, Territorial, and Points of Interest Perspective",
+   "createdAt": "2024-04-12T10:26:29Z",
+   "pushedAt": "2025-03-31T15:25:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4044,
+   "stargazersCount": 1,
+   "topics": [
+    "contingency-table",
+    "decision-trees",
+    "diaper-market",
+    "ensemble-machine-learning",
+    "feature-importance",
+    "geo-analytics",
+    "gridsearchcv",
+    "hyperparameter-tuning",
+    "kruskal-wallis-test",
+    "mann-whitney-u-test",
+    "market-analysis",
+    "pareto-analysis",
+    "python",
+    "random-forest",
+    "revenue-estimation",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 867917463,
+   "fullName": "reeve25/Fake-News-Detector",
+   "url": "https://github.com/reeve25/Fake-News-Detector",
+   "description": "Real vs. fake news classifier: TF-IDF + Logistic Regression, Random Forest, Gradient Boosting (scikit-learn)",
+   "createdAt": "2024-10-05T02:17:41Z",
+   "pushedAt": "2026-09-23T21:30:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4,
+   "stargazersCount": 0,
+   "topics": [
+    "fake-news-detection",
+    "machine-learning",
+    "nlp",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 873145314,
+   "fullName": "rhouhou/vae-reconstruction-scarcity",
+   "url": "https://github.com/rhouhou/vae-reconstruction-scarcity",
+   "description": "Reproducible framework for evaluating VAE and autoencoder reconstruction strategies for X-ray classification under sample scarcity.",
+   "createdAt": "2024-10-15T17:14:03Z",
+   "pushedAt": "2026-07-03T16:06:26Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1518,
+   "stargazersCount": 0,
+   "topics": [
+    "autoencoder",
+    "biomedical-imaging",
+    "deep-learning",
+    "machine-learning",
+    "medical-image-analysis",
+    "reconstruction",
+    "reproducible-research",
+    "sample-scarcity",
+    "scikit-learn",
+    "tensorflow",
+    "variational-autoencoder",
+    "xray-classification"
+   ]
+  },
+  {
+   "id": 797764383,
+   "fullName": "S2thend/BoostedBuidlingProcessForADG",
+   "url": "https://github.com/S2thend/BoostedBuidlingProcessForADG",
+   "description": "Scikit Learn Style API. Implementation of A novel machine learning method for my researches in this field. This method is only for binary classification tasks up until current version.",
+   "createdAt": "2024-05-08T13:22:54Z",
+   "pushedAt": "2026-05-07T08:36:55Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 16,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 836784996,
+   "fullName": "Sai25Hajime/AI-Diagnosis-and-Doctor-Recommendation-System",
+   "url": "https://github.com/Sai25Hajime/AI-Diagnosis-and-Doctor-Recommendation-System",
+   "description": "This is our Sem 6 mini project. An ML system for predicting and diagnosing diabetes and recommending doctors based on the diagnosis.",
+   "createdAt": "2024-08-01T14:51:11Z",
+   "pushedAt": "2025-05-28T11:00:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2339,
+   "stargazersCount": 1,
+   "topics": [
+    "flask",
+    "html-css-javascript",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "scikit-learn",
+    "sqlite"
+   ]
+  },
+  {
+   "id": 764917168,
+   "fullName": "SakethSripada/NBA-OverUnder-Prediction",
+   "url": "https://github.com/SakethSripada/NBA-OverUnder-Prediction",
+   "description": "Simple model using logistic regression in Flask. Users can enter a player, a stat, and a value, and the model will output a prediction for whether the said player will go over or under the value given by the user for the stat. ",
+   "createdAt": "2024-02-29T00:05:26Z",
+   "pushedAt": "2024-07-12T21:23:26Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 71,
+   "stargazersCount": 1,
+   "topics": [
+    "flask",
+    "logistic-regression",
+    "machine-learning",
+    "nba",
+    "nba-stats",
+    "scikit-learn",
+    "web-app"
+   ]
+  },
+  {
+   "id": 844565431,
+   "fullName": "SakshiPatil11/LinuxWorld-Machine-Learning-Project",
+   "url": "https://github.com/SakshiPatil11/LinuxWorld-Machine-Learning-Project",
+   "description": "This project is a comprehensive menu-based Python application that integrates various functionalities, including sending emails and SMS, web scraping, geo-location, text-to-audio conversion, volume control, and more. The project also covers basic machine learning tasks such as data processing and image manipulation.",
+   "createdAt": "2024-08-19T14:15:16Z",
+   "pushedAt": "2024-08-19T14:27:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 27,
+   "stargazersCount": 0,
+   "topics": [
+    "automation",
+    "beginner-project",
+    "computer-vision",
+    "data-preprocessing",
+    "face-detection",
+    "flask",
+    "image-processing",
+    "machine-learning",
+    "opencv",
+    "pandas",
+    "python",
+    "rest-api",
+    "scikit-learn",
+    "twilio-api"
+   ]
+  },
+  {
+   "id": 852953274,
+   "fullName": "samuel-mekala/heart-attack-prediction",
+   "url": "https://github.com/samuel-mekala/heart-attack-prediction",
+   "description": "\ud83e\udec0 Heart attack risk prediction system benchmarking 8 ML models. Random Forest best at 67% accuracy. Deployed as Flask web app with lifestyle recommendations. Scikit-learn \u00b7 SMOTE \u00b7 Power BI",
+   "createdAt": "2024-09-05T18:04:57Z",
+   "pushedAt": "2026-10-05T11:47:51Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4463,
+   "stargazersCount": 0,
+   "topics": [
+    "flask",
+    "healthcare",
+    "machine-learning",
+    "python",
+    "random-forest",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 742758846,
+   "fullName": "sandeepkarmacharya/iris_detection",
+   "url": "https://github.com/sandeepkarmacharya/iris_detection",
+   "description": "Interactive Iris flower species classifier built with Streamlit, scikit-learn, XGBoost, SHAP, Docker, and CI.",
+   "createdAt": "2024-01-13T09:28:20Z",
+   "pushedAt": "2026-05-20T00:42:14Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 61,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "docker",
+    "github-actions",
+    "iris-dataset",
+    "machine-learning",
+    "portfolio-project",
+    "scikit-learn",
+    "shap",
+    "streamlit",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 816788181,
+   "fullName": "sanjaradylov/scikit-fallback",
+   "url": "https://github.com/sanjaradylov/scikit-fallback",
+   "description": "Reliable and Efficient Selective Machine Learning",
+   "createdAt": "2024-06-18T12:05:35Z",
+   "pushedAt": "2026-08-09T16:19:10Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 545,
+   "stargazersCount": 2,
+   "topics": [
+    "abstaining-classifiers",
+    "cascading",
+    "fallback-classification",
+    "machine-learning",
+    "reject-option-classification",
+    "routing",
+    "scikit-learn",
+    "selective-classification"
+   ]
+  },
+  {
+   "id": 800663881,
+   "fullName": "SarahEGood/sf6predictor",
+   "url": "https://github.com/SarahEGood/sf6predictor",
+   "description": "Predict tournament results for Street Figther 6",
+   "createdAt": "2024-05-14T18:58:52Z",
+   "pushedAt": "2026-11-02T06:34:13Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 78,
+   "stargazersCount": 0,
+   "topics": [
+    "prediction-model",
+    "python",
+    "scikit-learn",
+    "webscraping"
+   ]
+  },
+  {
+   "id": 822167542,
+   "fullName": "Sathya-github-del/DeepFake-Detection-using-CNN",
+   "url": "https://github.com/Sathya-github-del/DeepFake-Detection-using-CNN",
+   "description": null,
+   "createdAt": "2024-06-30T13:19:05Z",
+   "pushedAt": "2025-01-03T12:10:28Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 37,
+   "stargazersCount": 1,
+   "topics": [
+    "cnn",
+    "dataset",
+    "deepfake-detection",
+    "deepfakes",
+    "face-forgery-detection",
+    "faceswap",
+    "image",
+    "matplotlib-python",
+    "numpy",
+    "opencv-python",
+    "pandas",
+    "python3",
+    "scikit-learn",
+    "tensorflow2",
+    "urllib3"
+   ]
+  },
+  {
+   "id": 835238490,
+   "fullName": "SavinRazvan/shopping",
+   "url": "https://github.com/SavinRazvan/shopping",
+   "description": "Building a nearest-neighbor classifier to predict online shopping purchase completions based on user browsing behavior. The project uses a dataset of 12,000 sessions, analyzing features like pages visited, session duration, and bounce rates",
+   "createdAt": "2024-07-29T12:42:07Z",
+   "pushedAt": "2024-07-29T12:42:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 244,
+   "stargazersCount": 1,
+   "topics": [
+    "ai",
+    "classification",
+    "cs50",
+    "customer-behavior-analysis",
+    "data-analysis",
+    "data-preprocessing",
+    "k-nearest-neighbors",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "sensitivity",
+    "shopping-prediction",
+    "specificity"
+   ]
+  },
+  {
+   "id": 850471457,
+   "fullName": "SDpDas/SM_Sentiment_Analysis",
+   "url": "https://github.com/SDpDas/SM_Sentiment_Analysis",
+   "description": "Using Natural Language Processing (NLP) and pandas, numpy, scikit-learn for classification and applying logistic regression as it is a supervised model, lastly NLTK. Pickle library used for saving and running the model anywhere.",
+   "createdAt": "2024-08-31T21:33:24Z",
+   "pushedAt": "2024-09-16T16:23:06Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 18753,
+   "stargazersCount": 0,
+   "topics": [
+    "logistic-regression",
+    "machine-learning",
+    "nlp",
+    "scikit-learn",
+    "sentiment-analysis",
+    "stemming",
+    "vectorizer"
+   ]
+  },
+  {
+   "id": 753094053,
+   "fullName": "selcia25/iris-dataset-classification",
+   "url": "https://github.com/selcia25/iris-dataset-classification",
+   "description": "\u2618This repository contains a Python script for classifying the Iris dataset using the Random Forest algorithm.",
+   "createdAt": "2024-02-05T13:10:01Z",
+   "pushedAt": "2024-02-05T13:14:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10,
+   "stargazersCount": 0,
+   "topics": [
+    "data-processing",
+    "iris-classification",
+    "pandas",
+    "random-forest-classifier",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 799133798,
+   "fullName": "Shash976/ECLInterface",
+   "url": "https://github.com/Shash976/ECLInterface",
+   "description": "Desktop app that automates electrochemiluminescence (ECL) biosensor analysis. It measures light from sensor images, trains machine learning models, and predicts sample concentration, replacing slow manual work in ImageJ. Runs live on a Raspberry Pi camera. Built at BITS Pilani's MMNE Lab; published in Computers in Biology and Medicine.",
+   "createdAt": "2024-05-11T09:13:33Z",
+   "pushedAt": "2026-05-18T06:18:00Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 12485,
+   "stargazersCount": 0,
+   "topics": [
+    "biosensor",
+    "computer-vision",
+    "edge-ai",
+    "gui",
+    "numpy",
+    "opencv",
+    "picamera2",
+    "pyqt5",
+    "python",
+    "raspberry-pi",
+    "research",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 903639316,
+   "fullName": "shreyazh/Respire",
+   "url": "https://github.com/shreyazh/Respire",
+   "description": "To deal with Respiratory Challenges",
+   "createdAt": "2024-12-15T06:19:12Z",
+   "pushedAt": "2025-03-08T11:30:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 236,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pillow",
+    "python",
+    "scikit-learn",
+    "seaborn"
+   ]
+  },
+  {
+   "id": 862510254,
+   "fullName": "Shubham-Bendre/Sentiment-Analysis",
+   "url": "https://github.com/Shubham-Bendre/Sentiment-Analysis",
+   "description": "This project utilizes machine learning techniques to analyze and classify the sentiment of movie reviews as positive or negative. The application leverages the NLTK movie reviews dataset and features a user-friendly web interface built with Streamlit.",
+   "createdAt": "2024-09-24T18:08:48Z",
+   "pushedAt": "2024-09-29T07:22:20Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 147,
+   "stargazersCount": 0,
+   "topics": [
+    "matplotlib",
+    "nltk",
+    "scikit-learn",
+    "seaborn",
+    "streamlit"
+   ]
+  },
+  {
+   "id": 896262891,
+   "fullName": "smaddanki/pattern-pursuit-challenge",
+   "url": "https://github.com/smaddanki/pattern-pursuit-challenge",
+   "description": "A personal challenge to build a production-ready trading signal system for S&P 500 stocks using deep learning. This project progresses from basic ML models to a complete trading infrastructure, focusing on 5-day forward return prediction and signal generation.",
+   "createdAt": "2024-11-29T22:54:03Z",
+   "pushedAt": "2024-12-02T11:16:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 42,
+   "stargazersCount": 0,
+   "topics": [
+    "deep-learning",
+    "machine-learning",
+    "pytorch",
+    "quantative-trading",
+    "quantitative-finance",
+    "quantitative-research",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 899077125,
+   "fullName": "SmartPotTech/SmartPot-AI-Python",
+   "url": "https://github.com/SmartPotTech/SmartPot-AI-Python",
+   "description": "Asistente de IA de SmartPot: sistema experto, l\u00f3gica difusa, ML y agente reactivo",
+   "createdAt": "2024-12-05T15:24:24Z",
+   "pushedAt": "2026-11-15T08:03:56Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5635,
+   "stargazersCount": 0,
+   "topics": [
+    "expert-system",
+    "fastapi",
+    "fuzzy-logic",
+    "hydroponics",
+    "machine-learning",
+    "scikit-learn",
+    "smartpot"
+   ]
+  },
+  {
+   "id": 856952091,
+   "fullName": "smresponsibilities/fertilizertypeapi",
+   "url": "https://github.com/smresponsibilities/fertilizertypeapi",
+   "description": "Machine learning microservice using XGBoost to predict optimal agricultural fertilizer types from NPK soil metrics and climate data",
+   "createdAt": "2024-09-13T14:17:38Z",
+   "pushedAt": "2026-10-15T11:40:28Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 42,
+   "stargazersCount": 0,
+   "topics": [
+    "api",
+    "data-science",
+    "flask",
+    "machine-learning",
+    "python",
+    "scikit-learn",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 795707018,
+   "fullName": "soph-k/fertilizer-trade-analysis",
+   "url": "https://github.com/soph-k/fertilizer-trade-analysis",
+   "description": "Data analysis and machine learning exploration of global anhydrous ammonia trade patterns, market concentration, and import/export trends.",
+   "createdAt": "2024-05-03T21:23:05Z",
+   "pushedAt": "2026-08-08T00:48:44Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2014,
+   "stargazersCount": 0,
+   "topics": [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "scipy",
+    "seaborn"
+   ]
+  },
+  {
+   "id": 896232489,
+   "fullName": "sreesadhan7/Data-Clustering-Analysis-and-Visualization-Pipeline",
+   "url": "https://github.com/sreesadhan7/Data-Clustering-Analysis-and-Visualization-Pipeline",
+   "description": "This project involves developing a Python-based application that integrates data visualization with a user-friendly web interface. The application is built to process incident data extracted from PDFs issued by the Norman, Oklahoma Police Department. The goal is to create meaningful insights through clustering and comparison visualizations.",
+   "createdAt": "2024-11-29T20:47:48Z",
+   "pushedAt": "2024-12-08T01:35:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 2057,
+   "stargazersCount": 0,
+   "topics": [
+    "flask",
+    "html",
+    "machine-learning",
+    "matplotlib",
+    "pytest",
+    "python",
+    "scikit-learn",
+    "urllib3",
+    "visualization"
+   ]
+  },
+  {
+   "id": 850686220,
+   "fullName": "stephengardnerd/DataEngineering_MLPipeline",
+   "url": "https://github.com/stephengardnerd/DataEngineering_MLPipeline",
+   "description": "End-to-end ML pipeline for disaster-response message routing: Pandas ETL \u2192 SQLite \u2192 NLTK + TF-IDF \u2192 scikit-learn RandomForest (MultiOutput) \u2192 Flask + Plotly web app. Udacity Data Engineering Nanodegree.",
+   "createdAt": "2024-09-01T13:51:43Z",
+   "pushedAt": "2026-04-20T06:05:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5343,
+   "stargazersCount": 0,
+   "topics": [
+    "data-engineering",
+    "disaster-response",
+    "etl",
+    "flask",
+    "machine-learning",
+    "nlp",
+    "nltk",
+    "pandas",
+    "plotly",
+    "python",
+    "random-forest",
+    "scikit-learn",
+    "sqlite",
+    "tf-idf"
+   ]
+  },
+  {
+   "id": 773608157,
+   "fullName": "StevenMerrill/Linear-Regression",
+   "url": "https://github.com/StevenMerrill/Linear-Regression",
+   "description": "User interface application for running Linear Regression's on CSVs. Relies on Numpy, Tkinter, Pandas, and scikit-learn",
+   "createdAt": "2024-03-18T04:12:01Z",
+   "pushedAt": "2024-03-18T04:14:05Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 5,
+   "stargazersCount": 0,
+   "topics": [
+    "linear-regression",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "tkinter"
+   ]
+  },
+  {
+   "id": 900324784,
+   "fullName": "Stoyan-Zlatev/ClearScan",
+   "url": "https://github.com/Stoyan-Zlatev/ClearScan",
+   "description": "Chest X-Ray pneumonia classification pipeline using TensorFlow/Keras CNNs (95.1% acc) and SIFT feature extraction with Random Forest.",
+   "createdAt": "2024-12-08T13:46:04Z",
+   "pushedAt": "2026-10-03T13:08:42Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 53,
+   "stargazersCount": 1,
+   "topics": [
+    "bag-of-visual-words",
+    "computer-vision",
+    "deep-learning",
+    "keras",
+    "medical-imaging",
+    "opencv",
+    "pneumonia-detection",
+    "python",
+    "random-forest",
+    "scikit-learn",
+    "sift",
+    "tensorflow"
+   ]
+  },
+  {
+   "id": 899000054,
+   "fullName": "sundanc/btcprediction",
+   "url": "https://github.com/sundanc/btcprediction",
+   "description": "Predict Bitcoin prices based on historical data using machine learning techniques",
+   "createdAt": "2024-12-05T12:41:27Z",
+   "pushedAt": "2025-05-18T12:56:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 337,
+   "stargazersCount": 0,
+   "topics": [
+    "bitcoin-prediction",
+    "keras",
+    "machine-learning",
+    "pandas",
+    "python",
+    "python3",
+    "scikit-learn",
+    "scikitlearn-machine-learning"
+   ]
+  },
+  {
+   "id": 898880957,
+   "fullName": "sundanc/movierecommendation",
+   "url": "https://github.com/sundanc/movierecommendation",
+   "description": "Movie recommendation system based on user input. Built with Streamlit",
+   "createdAt": "2024-12-05T08:02:35Z",
+   "pushedAt": "2024-12-13T12:40:15Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6247,
+   "stargazersCount": 0,
+   "topics": [
+    "movie-recommendation-app",
+    "python",
+    "scikit-learn",
+    "scikitlearn-machine-learning",
+    "streamlib"
+   ]
+  },
+  {
+   "id": 895932582,
+   "fullName": "sundanc/weatherprediction",
+   "url": "https://github.com/sundanc/weatherprediction",
+   "description": "This project implements a weather prediction system that predicts the temperature based on real-time weather data, including features like humidity, wind speed, and day-related features (day of the week, month",
+   "createdAt": "2024-11-29T08:00:03Z",
+   "pushedAt": "2024-12-13T12:58:07Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 180,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "machinelearning",
+    "numpy",
+    "pandas",
+    "programming",
+    "python",
+    "scikit-learn",
+    "scikitlearn-machine-learning",
+    "weather-prediction"
+   ]
+  },
+  {
+   "id": 867835061,
+   "fullName": "Super-cod/TrackTempML-Live-Weather-Forecast",
+   "url": "https://github.com/Super-cod/TrackTempML-Live-Weather-Forecast",
+   "description": "Real-time weather prediction from Arduino temperature/humidity sensors using a scikit-learn model.",
+   "createdAt": "2024-10-04T20:18:54Z",
+   "pushedAt": "2024-10-04T21:23:14Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 973,
+   "stargazersCount": 0,
+   "topics": [
+    "arduino",
+    "iot",
+    "machine-learning",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 873203768,
+   "fullName": "Taha-Alami/Churn-Prediction",
+   "url": "https://github.com/Taha-Alami/Churn-Prediction",
+   "description": "Cross-validated, calibrated churn-prediction pipeline (baseline logistic regression vs. XGBoost) with SHAP attribution and MLflow tracking, on a documented synthetic subscription dataset.",
+   "createdAt": "2024-10-15T19:12:53Z",
+   "pushedAt": "2026-09-16T19:32:47Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 360,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "mlflow",
+    "python",
+    "scikit-learn",
+    "shap",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 738626001,
+   "fullName": "thepriben/maitron-40-44-lettres-nlp",
+   "url": "https://github.com/thepriben/maitron-40-44-lettres-nlp",
+   "description": "Analyse NLP des derni\u00e8res lettres de fusill\u00e9s du Maitron 1940-1944 : acquisition, spaCy, K-means, LDA et site de visualisation.",
+   "createdAt": "2024-01-03T16:58:12Z",
+   "pushedAt": "2026-10-11T19:43:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4304,
+   "stargazersCount": 2,
+   "topics": [
+    "2024",
+    "dataset",
+    "digital-humanities",
+    "editions-eni",
+    "french",
+    "kmeans",
+    "lda",
+    "maitron",
+    "named-entity-recognition",
+    "nlp",
+    "nltk",
+    "python",
+    "scikit-learn",
+    "spacy",
+    "text-mining",
+    "topic-modeling",
+    "web-scraping"
+   ]
+  },
+  {
+   "id": 826852221,
+   "fullName": "Tomek4861/CarPriceAnalysisPrediction",
+   "url": "https://github.com/Tomek4861/CarPriceAnalysisPrediction",
+   "description": "Analyzing and predicting prices of Volkswagen Passat B8 cars using data from Otomoto.",
+   "createdAt": "2024-07-10T14:02:07Z",
+   "pushedAt": "2025-02-11T17:58:03Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2107,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "pandas",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 778126554,
+   "fullName": "tosifAN/tosifAN-Whatapp_Chat_Data_Analysis_2024",
+   "url": "https://github.com/tosifAN/tosifAN-Whatapp_Chat_Data_Analysis_2024",
+   "description": "This is Analysis of Whatapp Chat 2024",
+   "createdAt": "2024-03-27T06:01:19Z",
+   "pushedAt": "2024-09-23T05:10:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 29,
+   "stargazersCount": 1,
+   "topics": [
+    "analysis",
+    "data",
+    "machine",
+    "machine-learning",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "seaborn",
+    "streamlit",
+    "url",
+    "wordcloud"
+   ]
+  },
+  {
+   "id": 758420130,
+   "fullName": "TristanLecourtois/endodetect-based-on-symptoms",
+   "url": "https://github.com/TristanLecourtois/endodetect-based-on-symptoms",
+   "description": "This repository focuses on using machine learning (ML) to develop a self-diagnostic endometriosis tool based solely on patient-reported symptoms",
+   "createdAt": "2024-02-16T09:31:14Z",
+   "pushedAt": "2024-07-02T21:43:04Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1127,
+   "stargazersCount": 7,
+   "topics": [
+    "classification",
+    "decision-tree",
+    "endometriosis",
+    "logistic-regression",
+    "machine-learning",
+    "random-forest",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 857382081,
+   "fullName": "Tritonix711/Ai-Content-Verifier",
+   "url": "https://github.com/Tritonix711/Ai-Content-Verifier",
+   "description": "AI Content Verifier is a tool that finds out if text is written by AI or humans. It uses machine learning and natural language processing to give clear results and confidence scores. With an easy-to-use interface, it helps everyone from researchers to content creators check if the content is real or not.",
+   "createdAt": "2024-09-14T14:05:53Z",
+   "pushedAt": "2024-09-28T15:06:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 27,
+   "stargazersCount": 2,
+   "topics": [
+    "git",
+    "machine-learning",
+    "nlp",
+    "nltk",
+    "numpy",
+    "pandas",
+    "python",
+    "scikit-learn",
+    "spacy",
+    "tkinter"
+   ]
+  },
+  {
+   "id": 895128685,
+   "fullName": "udityamerit/Customer-Segmentation-and-Churn-Prediction-Model",
+   "url": "https://github.com/udityamerit/Customer-Segmentation-and-Churn-Prediction-Model",
+   "description": null,
+   "createdAt": "2024-11-27T15:58:26Z",
+   "pushedAt": "2024-11-28T17:14:13Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 158,
+   "stargazersCount": 2,
+   "topics": [
+    "machine-learning",
+    "machine-learning-algorithms",
+    "scikit-learn",
+    "scikitlearn-machine-learning"
+   ]
+  },
+  {
+   "id": 823415522,
+   "fullName": "uhstray-io/pyrizon",
+   "url": "https://github.com/uhstray-io/pyrizon",
+   "description": "Data Collection, Analysis, Mapping, Pipelining & Transformation, & API using Python",
+   "createdAt": "2024-07-03T02:07:01Z",
+   "pushedAt": "2025-03-17T23:03:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 9536,
+   "stargazersCount": 1,
+   "topics": [
+    "api",
+    "data-engineering",
+    "etl",
+    "numpy",
+    "pandas",
+    "plotly",
+    "python",
+    "pytorch",
+    "raw-data",
+    "scikit-learn",
+    "seaborne",
+    "sql",
+    "sqlite",
+    "tensorflow"
+   ]
+  },
+  {
+   "id": 891807842,
+   "fullName": "Vergosss/Thesis",
+   "url": "https://github.com/Vergosss/Thesis",
+   "description": "Leveraging Language Models in the Detection of Cyberattacks. This is the repository of my thesis work, where i fine-tune models like BERT, Longformer, BigBird and RoBERTa on two cybersecurity tasks: Log Anomaly Detection and Network Packet Flow Classification. ",
+   "createdAt": "2024-11-21T01:44:58Z",
+   "pushedAt": "2026-09-13T16:49:50Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 21321,
+   "stargazersCount": 1,
+   "topics": [
+    "anomaly-detection",
+    "bert",
+    "cybersecurity",
+    "dgx",
+    "explainable-ai",
+    "ferret",
+    "huggingface",
+    "huggingface-transformers",
+    "integrated-gradients",
+    "lora",
+    "numpy",
+    "pandas",
+    "python3",
+    "pytorch",
+    "roberta",
+    "scikit-learn",
+    "shap",
+    "tensorflow",
+    "tensorflow2",
+    "transformers"
+   ]
+  },
+  {
+   "id": 830799254,
+   "fullName": "vidya381/weather-insight",
+   "url": "https://github.com/vidya381/weather-insight",
+   "description": "Weather tracking app with ML features - anomaly detection, temperature trends, and pattern analysis. Collects         hourly weather data and runs predictions on historical patterns.",
+   "createdAt": "2024-07-19T03:01:33Z",
+   "pushedAt": "2026-02-05T19:25:22Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 474,
+   "stargazersCount": 0,
+   "topics": [
+    "anomaly-detection",
+    "data-analytics",
+    "fastapi",
+    "full-stack",
+    "machine-learning",
+    "predictive-analytics",
+    "react",
+    "scikit-learn",
+    "trend-analysis",
+    "weather-app"
+   ]
+  },
+  {
+   "id": 892740510,
+   "fullName": "vinicius790/IA-em-Python",
+   "url": "https://github.com/vinicius790/IA-em-Python",
+   "description": "Plataforma de Machine Learning e MLOps com Python",
+   "createdAt": "2024-11-22T17:27:12Z",
+   "pushedAt": "2026-10-29T02:45:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 916,
+   "stargazersCount": 0,
+   "topics": [
+    "fastapi",
+    "machine-learning",
+    "mlops",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 743551688,
+   "fullName": "VoxDroid/NLP-Email-Categorizer",
+   "url": "https://github.com/VoxDroid/NLP-Email-Categorizer",
+   "description": "An efficient text classification pipeline for email subjects, leveraging NLP techniques and Multinomial Naive Bayes. Easily preprocess data, train the model, and categorize new email subjects. Ideal for NLP enthusiasts and those building practical email categorization systems using Python.",
+   "createdAt": "2024-01-15T13:32:29Z",
+   "pushedAt": "2025-05-01T12:37:20Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 102,
+   "stargazersCount": 9,
+   "topics": [
+    "categorization",
+    "classification",
+    "email",
+    "email-classification",
+    "joblib",
+    "jupyter-notebook",
+    "matplotlib",
+    "multinomial-naive-bayes",
+    "naive-bayes",
+    "nlp",
+    "nlp-machine-learning",
+    "nltk",
+    "nltk-python",
+    "numpy",
+    "pipeline",
+    "python",
+    "scikit-learn",
+    "scikitlearn-machine-learning",
+    "seaborn",
+    "text-classification"
+   ]
+  },
+  {
+   "id": 754920219,
+   "fullName": "wlopezm-unal/Titanic_ship-streamlit",
+   "url": "https://github.com/wlopezm-unal/Titanic_ship-streamlit",
+   "description": "Machine Learning model, where using titanic ship data and see if  is be able to predict if a passager was salved or died. This apply use Machien learning (Random Forest, gassianNB and Logistic Regressi\u00f3n) . Further, using streamlit together to FastApi be able to see the predict result",
+   "createdAt": "2024-02-09T02:48:51Z",
+   "pushedAt": "2024-09-26T18:25:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 3055,
+   "stargazersCount": 0,
+   "topics": [
+    "docker",
+    "machine-learning",
+    "optuna",
+    "scikit-learn",
+    "streamlit",
+    "supervised-machine-learning"
+   ]
+  },
+  {
+   "id": 740401864,
+   "fullName": "xuefeng-xu/fedps",
+   "url": "https://github.com/xuefeng-xu/fedps",
+   "description": "[TMLR'26] A framework for preprocessing tabular data in federated learning.",
+   "createdAt": "2024-01-08T09:19:13Z",
+   "pushedAt": "2026-08-24T19:55:27Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 402,
+   "stargazersCount": 5,
+   "topics": [
+    "data-preprocessing",
+    "datasketches",
+    "federated-learning",
+    "python",
+    "scikit-learn",
+    "statistics"
+   ]
+  },
+  {
+   "id": 840184705,
+   "fullName": "Yaswanth1702/Chatbot",
+   "url": "https://github.com/Yaswanth1702/Chatbot",
+   "description": null,
+   "createdAt": "2024-08-09T06:35:52Z",
+   "pushedAt": "2024-08-09T06:43:10Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 8,
+   "stargazersCount": 0,
+   "topics": [
+    "natural-language-processing",
+    "scikit-learn",
+    "tf-idf-vectorization"
+   ]
+  },
+  {
+   "id": 767758106,
+   "fullName": "yberkayinci/Breast-Cancer-Prediction-Comparative-Study",
+   "url": "https://github.com/yberkayinci/Breast-Cancer-Prediction-Comparative-Study",
+   "description": "This repository offers a comparative analysis of CART Decision Tree and Naive Bayes algorithms using the breast cancer dataset. It includes Python code, dataset, ROC visualizations, and a guide for predicting cancer occurrences, highlighting the effectiveness of each algorithm in a concise, impactful manner.",
+   "createdAt": "2024-03-05T21:06:43Z",
+   "pushedAt": "2024-03-05T21:07:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 271,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "data-science",
+    "machine-learning",
+    "python",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": 884976341,
+   "fullName": "yougijain/text-vs-timing",
+   "url": "https://github.com/yougijain/text-vs-timing",
+   "description": "Does posting time predict engagement beyond the text? No: on 20,000 Stack Overflow questions, TF-IDF, frozen MiniLM, fine-tuned BERT and a zero-shot LLM, each with and without the timestamp, all land at the majority baseline. Corpus: Stack Exchange (CC BY-SA).",
+   "createdAt": "2024-11-07T18:15:26Z",
+   "pushedAt": "2026-11-05T04:58:04Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 7586,
+   "stargazersCount": 0,
+   "topics": [
+    "ablation-study",
+    "bert",
+    "llm",
+    "machine-learning",
+    "nlp",
+    "python",
+    "pytorch",
+    "scikit-learn",
+    "stack-overflow",
+    "text-classification",
+    "transformers"
+   ]
+  },
+  {
+   "id": 740073346,
+   "fullName": "yy-trading-bots/sage-bot",
+   "url": "https://github.com/yy-trading-bots/sage-bot",
+   "description": "A cryptocurrency trading bot using Python TensorFlow Library",
+   "createdAt": "2024-01-07T12:56:50Z",
+   "pushedAt": "2025-09-30T16:31:52Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2380,
+   "stargazersCount": 1,
+   "topics": [
+    "artificial-intelligence",
+    "artificial-neural-networks",
+    "automated-trading",
+    "binance",
+    "binance-api",
+    "bitcoin",
+    "bot",
+    "cryptocurrency",
+    "data",
+    "deep-learning",
+    "ethereum",
+    "python",
+    "scikit-learn",
+    "talib",
+    "tensorflow",
+    "trading",
+    "trading-bot"
+   ]
+  }
+ ]
+}

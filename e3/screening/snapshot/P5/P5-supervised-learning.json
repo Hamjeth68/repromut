@@ -1,0 +1,5130 @@
+{
+ "population": "P5",
+ "slice": "P5-supervised-learning",
+ "query": "topic:supervised-learning language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+ "created": [
+  "2018-01-01",
+  "2026-06-30"
+ ],
+ "fetched_utc": "2026-11-17T00:49:04Z",
+ "total_count": 170,
+ "reached_search_cap": false,
+ "n_items": 170,
+ "verified": true,
+ "parts": [
+  {
+   "query": "topic:supervised-learning language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2022-04-01",
+   "created": [
+    "2018-01-01",
+    "2022-04-01"
+   ],
+   "total_count": 68,
+   "fits_one_page": true,
+   "n_items": 68,
+   "incomplete_results": false,
+   "attempts": 1,
+   "verified": true
+  },
+  {
+   "query": "topic:supervised-learning language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2022-04-02..2024-05-16",
+   "created": [
+    "2022-04-02",
+    "2024-05-16"
+   ],
+   "total_count": 36,
+   "fits_one_page": true,
+   "n_items": 36,
+   "incomplete_results": false,
+   "attempts": 1,
+   "verified": true
+  },
+  {
+   "query": "topic:supervised-learning language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2024-05-17..2026-06-30",
+   "created": [
+    "2024-05-17",
+    "2026-06-30"
+   ],
+   "total_count": 66,
+   "fits_one_page": true,
+   "n_items": 66,
+   "incomplete_results": false,
+   "attempts": 1,
+   "verified": true
+  }
+ ],
+ "items": [
+  {
+   "id": 842211992,
+   "fullName": "A-Ahmed-I/ML",
+   "url": "https://github.com/A-Ahmed-I/ML",
+   "description": "Machine learning repository exploring various algorithms.",
+   "createdAt": "2024-08-13T22:44:48Z",
+   "pushedAt": "2026-09-17T15:12:39Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2696,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning",
+    "python3",
+    "r",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 573600557,
+   "fullName": "AboNady/House_Prediction",
+   "url": "https://github.com/AboNady/House_Prediction",
+   "description": "A Kaggle's competition - The main task is to predict the prices of the houses.",
+   "createdAt": "2022-12-02T21:35:44Z",
+   "pushedAt": "2023-02-01T16:28:12Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 233,
+   "stargazersCount": 0,
+   "topics": [
+    "kaggle",
+    "kaggle-competition",
+    "kaggle-dataset",
+    "kaggle-house-prices",
+    "linear-regression",
+    "machine-learning",
+    "python",
+    "random-forest",
+    "regression",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 535139195,
+   "fullName": "AboNady/Simple_Linear_Regression_From_Scratch",
+   "url": "https://github.com/AboNady/Simple_Linear_Regression_From_Scratch",
+   "description": "I have applied the fundamental idea of Linear Regression with Single Variable input. I implemented the Gradian Descent algorithm simply from scratch with no libraries such as Scikit-Learn. I just used NumPy. ",
+   "createdAt": "2022-09-10T23:01:36Z",
+   "pushedAt": "2022-09-13T21:55:54Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 24,
+   "stargazersCount": 1,
+   "topics": [
+    "artificial-intelligence",
+    "artificial-intelligence-algorithms",
+    "data-science",
+    "dataset",
+    "fundementals",
+    "liner-regestion",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "machinelearning",
+    "ml-fundementals",
+    "regression",
+    "regression-analysis",
+    "regression-models",
+    "simple-regression",
+    "supervised-learning",
+    "supervised-machine-learning"
+   ]
+  },
+  {
+   "id": 1184583353,
+   "fullName": "acardenastech/azure-openai-finetune",
+   "url": "https://github.com/acardenastech/azure-openai-finetune",
+   "description": "Modular framework for fine-tuning Azure OpenAI models from structured JSONL datasets.",
+   "createdAt": "2026-03-17T18:19:46Z",
+   "pushedAt": "2026-03-17T18:26:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10,
+   "stargazersCount": 0,
+   "topics": [
+    "azure",
+    "azure-openai",
+    "fine-tuning",
+    "jsonl",
+    "llm",
+    "openai",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1217343090,
+   "fullName": "ai-ml-apps-lab/pytorch-supervised-app",
+   "url": "https://github.com/ai-ml-apps-lab/pytorch-supervised-app",
+   "description": "Streamlit UI for PyTorch supervised learning (classification & regression)",
+   "createdAt": "2026-04-21T19:43:30Z",
+   "pushedAt": "2026-05-09T10:17:08Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 755,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "deep-learning",
+    "pytorch",
+    "regression",
+    "streamlit",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 127126183,
+   "fullName": "ajayarunachalam/Deep-Learning-Cryptocurrency",
+   "url": "https://github.com/ajayarunachalam/Deep-Learning-Cryptocurrency",
+   "description": "Predicting Cryptocurrency prices (Bitcoin & ZCOIN)",
+   "createdAt": "2018-03-28T10:49:40Z",
+   "pushedAt": "2018-03-30T10:36:37Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 68,
+   "stargazersCount": 7,
+   "topics": [
+    "analyzing-crypto",
+    "bitcoin",
+    "coinmarketcap",
+    "cryptocurrency",
+    "deep-learning",
+    "digital-currency",
+    "lstm-neural-networks",
+    "predicting-cryptocurrency-prices",
+    "prediction-model",
+    "python",
+    "stock",
+    "supervised-learning",
+    "zcoin"
+   ]
+  },
+  {
+   "id": 684516400,
+   "fullName": "ajayspatil7/UndergradResearch",
+   "url": "https://github.com/ajayspatil7/UndergradResearch",
+   "description": "This is part of my undergrad research minor. Where I implemented ML algorithms from scratch. Here I have made the resources and my work available to public. Completely open to fix/correct wherever I am wrong.",
+   "createdAt": "2023-08-29T09:42:14Z",
+   "pushedAt": "2024-09-29T09:13:56Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1217,
+   "stargazersCount": 3,
+   "topics": [
+    "learning",
+    "machine-learning-algorithms",
+    "neural-networks",
+    "research",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1192621390,
+   "fullName": "alexrr04/toothbrush-defect-segmentation",
+   "url": "https://github.com/alexrr04/toothbrush-defect-segmentation",
+   "description": "Project about toothbrush defect segmentation made during the Advanced Vision Systems course at AGH university. Our approach uses a U-Net to predict the binary masks showing toothbrush defects based on a given image of a toothbrush.",
+   "createdAt": "2026-03-26T11:56:09Z",
+   "pushedAt": "2026-05-03T18:11:07Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2618,
+   "stargazersCount": 0,
+   "topics": [
+    "computer-vision",
+    "neural-network",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 680236624,
+   "fullName": "alokverma18/Linear-Regression",
+   "url": "https://github.com/alokverma18/Linear-Regression",
+   "description": "Implementation of Simple and Multiple Linear Regression",
+   "createdAt": "2023-08-18T17:19:05Z",
+   "pushedAt": "2023-10-11T17:32:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 27,
+   "stargazersCount": 3,
+   "topics": [
+    "co2-emissions-prediction",
+    "machine-learning",
+    "multiple-linear-regression",
+    "python",
+    "regression",
+    "simple-linear-regression",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1080665133,
+   "fullName": "AminaHanan246/ML_alzheimer_gene_",
+   "url": "https://github.com/AminaHanan246/ML_alzheimer_gene_",
+   "description": "Gene-based classification of Alzheimer's Disease using ML models",
+   "createdAt": "2025-10-21T17:33:15Z",
+   "pushedAt": "2025-12-17T09:49:22Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2959,
+   "stargazersCount": 2,
+   "topics": [
+    "alzheimer-disease-prediction",
+    "gene-based",
+    "gene-expression",
+    "machine-learning",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1080493058,
+   "fullName": "AmirhosseinHonardoust/Fraud-Detection-SQL-Supervised",
+   "url": "https://github.com/AmirhosseinHonardoust/Fraud-Detection-SQL-Supervised",
+   "description": "Detect and classify fraudulent transactions using SQL and Python. Generate behavioral features with SQLite, train a Logistic Regression model, and evaluate performance with AUC, precision, recall, and ROC analysis. A complete supervised fraud detection workflow.",
+   "createdAt": "2025-10-21T12:56:43Z",
+   "pushedAt": "2026-09-06T18:36:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3444,
+   "stargazersCount": 33,
+   "topics": [
+    "data-analysis",
+    "data-science",
+    "financial-analytics",
+    "fraud-detection",
+    "logistic-regression",
+    "machine-learning",
+    "model-evaluation",
+    "portfolio-project",
+    "python",
+    "roc-curve",
+    "sql",
+    "sqlite",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 166569273,
+   "fullName": "andremonaco/xypy",
+   "url": "https://github.com/andremonaco/xypy",
+   "description": "Simulating Supervised Learning Data",
+   "createdAt": "2019-01-19T16:41:17Z",
+   "pushedAt": "2019-03-12T13:57:04Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 137,
+   "stargazersCount": 2,
+   "topics": [
+    "classification",
+    "feature-selection",
+    "machine-learning",
+    "regression",
+    "signal-to-noise",
+    "simulation",
+    "supervised-learning",
+    "variable-importance"
+   ]
+  },
+  {
+   "id": 736028306,
+   "fullName": "aoluwolerotimi/Kickstarter-Success-Prediction",
+   "url": "https://github.com/aoluwolerotimi/Kickstarter-Success-Prediction",
+   "description": "Predicting the success or failure of Kickstarter projects using a gradient boosted random forest classifier.",
+   "createdAt": "2023-12-26T19:23:05Z",
+   "pushedAt": "2023-12-27T05:40:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4721,
+   "stargazersCount": 0,
+   "topics": [
+    "classification-algorithm",
+    "gradient-boosting-classifier",
+    "random-forest-classifier",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 117503813,
+   "fullName": "ApurbaSengupta/Classifying-Tweet-Sentiments",
+   "url": "https://github.com/ApurbaSengupta/Classifying-Tweet-Sentiments",
+   "description": "Classifying sentiments of tweets as positive or negative",
+   "createdAt": "2018-01-15T06:03:08Z",
+   "pushedAt": "2018-05-19T17:05:20Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 17,
+   "stargazersCount": 1,
+   "topics": [
+    "adagrad",
+    "classification",
+    "pegasos",
+    "python",
+    "sentiment-analysis",
+    "supervised-learning",
+    "twitter"
+   ]
+  },
+  {
+   "id": 117506585,
+   "fullName": "ApurbaSengupta/Identifying-SUSY-Particles",
+   "url": "https://github.com/ApurbaSengupta/Identifying-SUSY-Particles",
+   "description": "Classifying particles as supersymmetric or non-supersymmetric",
+   "createdAt": "2018-01-15T06:33:58Z",
+   "pushedAt": "2018-01-15T06:44:54Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 9,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "python",
+    "stochastic-gradient-descent",
+    "supersymmetry",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 722983962,
+   "fullName": "aras-batu/Keyword-Search-for-Sign-Language",
+   "url": "https://github.com/aras-batu/Keyword-Search-for-Sign-Language",
+   "description": "Senior design project titled \"Keyword Search for Sign Language\" for the Special Project (EE 491-492) courses offered by Bo\u011fazi\u00e7i University.",
+   "createdAt": "2023-11-24T12:05:15Z",
+   "pushedAt": "2024-01-15T12:49:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2572,
+   "stargazersCount": 10,
+   "topics": [
+    "computer-vision",
+    "deep-learning",
+    "keyword-detection",
+    "keyword-extraction",
+    "keyword-search",
+    "keyword-spotting",
+    "mediapipe",
+    "pose-detection",
+    "pose-estimation",
+    "senior-design",
+    "senior-project",
+    "sign-language",
+    "sign-language-datasets",
+    "sign-language-interpreter",
+    "sign-language-recognition",
+    "sign-language-recognition-system",
+    "sign-language-recognizer",
+    "sign-language-translation",
+    "supervised-learning",
+    "supervised-machine-learning"
+   ]
+  },
+  {
+   "id": 954082620,
+   "fullName": "ArchitJ6/CancerGuardian",
+   "url": "https://github.com/ArchitJ6/CancerGuardian",
+   "description": "CancerGuardian is a machine learning-powered web app that helps predict breast cancer diagnoses based on cytology measurements. \ud83e\ude7a\u2728 Built with Streamlit, Scikit-Learn, and Plotly, this tool visualizes tumor characteristics and provides predictions using a trained model. \ud83d\ude80",
+   "createdAt": "2025-03-24T14:35:57Z",
+   "pushedAt": "2025-03-24T17:23:47Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 64,
+   "stargazersCount": 0,
+   "topics": [
+    "binary-classification",
+    "breast-cancer-prediction",
+    "classification-models",
+    "data-science",
+    "data-visualization",
+    "deep-learning",
+    "healthcare",
+    "healthcare-ai",
+    "machine-learning",
+    "medical-ai",
+    "medical-diagnostics",
+    "predictive-analytics",
+    "python",
+    "streamlit",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 290807369,
+   "fullName": "ArvindSubramaniam/SVMs-from-Scratch",
+   "url": "https://github.com/ArvindSubramaniam/SVMs-from-Scratch",
+   "description": "Support Vector Machines from scratch using CVXOPT library.",
+   "createdAt": "2020-08-27T15:07:23Z",
+   "pushedAt": "2020-08-27T16:40:32Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 112,
+   "stargazersCount": 0,
+   "topics": [
+    "cvxopt",
+    "machine-learning-algorithms",
+    "supervised-learning",
+    "support-vector-machines"
+   ]
+  },
+  {
+   "id": 1135416615,
+   "fullName": "atahabilder1/FactCheck",
+   "url": "https://github.com/atahabilder1/FactCheck",
+   "description": "FactCheckAI is an automated fake news detection system that uses natural language processing and machine learning to classify news articles as real or fake. The project evaluates traditional ML models and transformer-based architectures to improve accuracy, robustness, and explainability in identifying misinformation.",
+   "createdAt": "2026-01-16T04:13:24Z",
+   "pushedAt": "2026-01-16T06:16:57Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 39,
+   "stargazersCount": 2,
+   "topics": [
+    "fake-news-detection",
+    "information-verification",
+    "machine-learning",
+    "natural-language-processing",
+    "supervised-learning",
+    "text-mining"
+   ]
+  },
+  {
+   "id": 941505737,
+   "fullName": "aviralmeharishi/-Are-You-Depressed-AI-Knows-",
+   "url": "https://github.com/aviralmeharishi/-Are-You-Depressed-AI-Knows-",
+   "description": "\ud83d\ude80\"Are You Depressed? \ud83e\udd14 AI Knows!\"  AI-Powered Depression Prediction App \ud83e\udd16\ud83d\udca1  This Streamlit-powered app predicts the probability of depression using machine learning models and AI insights. \ud83e\udde0\ud83d\udd0d It seamlessly integrates  Google Gemini 2.0 Flash, ensuring reliable results with an automatic fallback mechanism. \u26a1",
+   "createdAt": "2025-03-02T13:08:36Z",
+   "pushedAt": "2026-03-29T19:09:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 141,
+   "stargazersCount": 0,
+   "topics": [
+    "eda",
+    "gemini-api",
+    "generative-ai",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 999557878,
+   "fullName": "aviralmeharishi/BodyScope-Your_AI_Health_Companion",
+   "url": "https://github.com/aviralmeharishi/BodyScope-Your_AI_Health_Companion",
+   "description": "\ud83e\ude7a\u202fBodyScope: Your AI Health Companion is an advanced Streamlit-based web application that predicts obesity risk and delivers hyper-personalized health advice using your basic lifestyle inputs. Powered by a machine learning model and Google Gemini Pro, BodyScope calculates your BMI, categorizes your health status like Underweight, Healthy, Obese",
+   "createdAt": "2025-06-10T12:39:55Z",
+   "pushedAt": "2026-02-01T14:25:33Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 2403,
+   "stargazersCount": 0,
+   "topics": [
+    "accuracy",
+    "eda",
+    "etl",
+    "etl-pipeline",
+    "googlegemini",
+    "mach",
+    "precision",
+    "statistics",
+    "streamlit",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 927658601,
+   "fullName": "aviralmeharishi/Cardiolens-cardiovascular_disease_predictor",
+   "url": "https://github.com/aviralmeharishi/Cardiolens-cardiovascular_disease_predictor",
+   "description": null,
+   "createdAt": "2025-02-05T10:24:32Z",
+   "pushedAt": "2025-05-02T13:40:21Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1364,
+   "stargazersCount": 0,
+   "topics": [
+    "data-science",
+    "gemini-api",
+    "generative-ai",
+    "healthcare",
+    "machine-learning",
+    "predictive-modeling",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 368178437,
+   "fullName": "AyberkYavuz/artificial_neural_network_automation",
+   "url": "https://github.com/AyberkYavuz/artificial_neural_network_automation",
+   "description": "This repository is for automating artificial neural network model creation with tabular data using Keras framework.",
+   "createdAt": "2021-05-17T12:32:06Z",
+   "pushedAt": "2021-07-10T12:18:58Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 290,
+   "stargazersCount": 4,
+   "topics": [
+    "automation",
+    "deep-learning",
+    "easy-to-use",
+    "keras",
+    "machine-learning",
+    "neural-network",
+    "python",
+    "supervised-learning",
+    "tabular-data"
+   ]
+  },
+  {
+   "id": 852238050,
+   "fullName": "Azure99/BlossomData",
+   "url": "https://github.com/Azure99/BlossomData",
+   "description": "A fluent, scalable, and easy-to-use LLM data processing framework.",
+   "createdAt": "2024-09-04T13:17:59Z",
+   "pushedAt": "2026-01-31T07:23:20Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 477,
+   "stargazersCount": 28,
+   "topics": [
+    "data-engineering",
+    "data-science",
+    "fine-tuning",
+    "gpt",
+    "llama",
+    "llm",
+    "nlp",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 637082663,
+   "fullName": "BCImonk/Ideathon_2022",
+   "url": "https://github.com/BCImonk/Ideathon_2022",
+   "description": "Skeleton AI/ML Model that I prepared as a part of our Logistics :train: App in Ideathon_2022 :bulb:",
+   "createdAt": "2023-05-06T13:02:29Z",
+   "pushedAt": "2023-05-13T14:15:37Z",
+   "defaultBranch": "Main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 830,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 665585774,
+   "fullName": "billpsomas/simpool",
+   "url": "https://github.com/billpsomas/simpool",
+   "description": "[ICCV 2023] Official implementation of \"Keep It SimPool: Who Said Supervised Transformers Suffer from Attention Deficit?\".",
+   "createdAt": "2023-07-12T14:26:48Z",
+   "pushedAt": "2023-12-05T14:22:50Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 4843,
+   "stargazersCount": 102,
+   "topics": [
+    "attention-mechanism",
+    "attention-visualization",
+    "computer-vision",
+    "convolutional-neural-networks",
+    "deep-learning",
+    "explainability",
+    "explainable-ai",
+    "neural-networks",
+    "pooling",
+    "self-supervised-learning",
+    "supervised-learning",
+    "vision-transformer"
+   ]
+  },
+  {
+   "id": 364279300,
+   "fullName": "BoyuanChen/label_representations",
+   "url": "https://github.com/BoyuanChen/label_representations",
+   "description": "[ICLR 2021] Beyond Categorical Label Representations for Image Classification",
+   "createdAt": "2021-05-04T14:15:02Z",
+   "pushedAt": "2021-12-12T23:56:06Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10197,
+   "stargazersCount": 26,
+   "topics": [
+    "deep-learning",
+    "image-classification",
+    "label-representation",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 718151168,
+   "fullName": "BrenoFariasdaSilva/Simpsons-Family-Recognizer",
+   "url": "https://github.com/BrenoFariasdaSilva/Simpsons-Family-Recognizer",
+   "description": "Simpsons Members Recognizer Supervised Machine Learning Algorithm.",
+   "createdAt": "2023-11-13T13:45:21Z",
+   "pushedAt": "2026-11-15T18:17:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 5820,
+   "stargazersCount": 3,
+   "topics": [
+    "artificial-intelligence",
+    "dataset",
+    "decision-tree-classifier",
+    "k-nearest-neighbor-classifier",
+    "k-nn",
+    "multilayer-perceptron-network",
+    "python",
+    "random-forest-classifier",
+    "supervised-learning",
+    "support-vector-machine-classifier"
+   ]
+  },
+  {
+   "id": 1088154865,
+   "fullName": "bunuelcreamsauce54/perceptrons",
+   "url": "https://github.com/bunuelcreamsauce54/perceptrons",
+   "description": "\ud83e\udde0 Explore the evolution of neural networks from simple perceptrons to advanced MLPs, enhancing understanding through interactive learning.",
+   "createdAt": "2025-11-02T12:30:00Z",
+   "pushedAt": "2026-10-12T04:27:43Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1964,
+   "stargazersCount": 1,
+   "topics": [
+    "ai",
+    "answers",
+    "backpropagation",
+    "cifar10",
+    "classification",
+    "convolutional-neural-networks",
+    "dense",
+    "esp32",
+    "gesture-recognition",
+    "keras",
+    "learning-from-data",
+    "machine-learning",
+    "micropython",
+    "model",
+    "neurons",
+    "opencv-python",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 122412549,
+   "fullName": "chen0040/keras-audio",
+   "url": "https://github.com/chen0040/keras-audio",
+   "description": "keras project for audio deep learning",
+   "createdAt": "2018-02-22T00:46:12Z",
+   "pushedAt": "2018-04-10T05:13:55Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 18443,
+   "stargazersCount": 40,
+   "topics": [
+    "audio-processing",
+    "classification",
+    "deep-learning",
+    "keras",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 222581270,
+   "fullName": "chkoar/vfi",
+   "url": "https://github.com/chkoar/vfi",
+   "description": "Classification by Voting Feature Intervals in Python",
+   "createdAt": "2019-11-19T01:30:30Z",
+   "pushedAt": "2020-01-21T16:09:31Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 24,
+   "stargazersCount": 0,
+   "topics": [
+    "classifier",
+    "data-mining",
+    "discretization",
+    "machine-learning",
+    "supervised-learning",
+    "vfi"
+   ]
+  },
+  {
+   "id": 1211003454,
+   "fullName": "Code-AldreySandre/GloboAnalysis",
+   "url": "https://github.com/Code-AldreySandre/GloboAnalysis",
+   "description": null,
+   "createdAt": "2026-04-15T01:19:05Z",
+   "pushedAt": "2026-04-15T01:40:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 456,
+   "stargazersCount": 0,
+   "topics": [
+    "eda",
+    "etl",
+    "kdd",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 510380884,
+   "fullName": "code-kern-ai/refinery",
+   "url": "https://github.com/code-kern-ai/refinery",
+   "description": "The data scientist's open-source choice to scale, assess and maintain natural language data. Treat training data like a software artifact.",
+   "createdAt": "2022-07-04T13:58:09Z",
+   "pushedAt": "2024-12-09T12:46:40Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 3714,
+   "stargazersCount": 1473,
+   "topics": [
+    "active-learning",
+    "annotations",
+    "artificial-intelligence",
+    "data-centric-ai",
+    "data-labeling",
+    "data-science",
+    "deep-learning",
+    "human-in-the-loop",
+    "labeling",
+    "labeling-tool",
+    "machine-learning",
+    "natural-language-processing",
+    "neural-search",
+    "nlp",
+    "python",
+    "spacy",
+    "supervised-learning",
+    "text-annotation",
+    "text-classification",
+    "transformers"
+   ]
+  },
+  {
+   "id": 374332384,
+   "fullName": "code-kern-ai/refinery-python-sdk",
+   "url": "https://github.com/code-kern-ai/refinery-python-sdk",
+   "description": "Official Python SDK for Kern AI refinery.",
+   "createdAt": "2021-06-06T10:36:37Z",
+   "pushedAt": "2024-11-14T10:00:21Z",
+   "defaultBranch": "dev",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 175,
+   "stargazersCount": 20,
+   "topics": [
+    "active-learning",
+    "data-centric-ai",
+    "deep-learning",
+    "labeling",
+    "labeling-tool",
+    "machine-learning",
+    "natural-language-processing",
+    "neural-search",
+    "nlp",
+    "python",
+    "sdk",
+    "spacy",
+    "supervised-learning",
+    "text-annotation",
+    "text-classification",
+    "transformer"
+   ]
+  },
+  {
+   "id": 126198661,
+   "fullName": "cperales/pyridge",
+   "url": "https://github.com/cperales/pyridge",
+   "description": "Supervised Ridge classification. Machine learning algorithms applied to classification machine learning problems",
+   "createdAt": "2018-03-21T15:17:26Z",
+   "pushedAt": "2023-07-18T11:43:31Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 7753,
+   "stargazersCount": 12,
+   "topics": [
+    "adaboost",
+    "classifier",
+    "kernel-ridge",
+    "machine-learning",
+    "python",
+    "python3",
+    "regularization",
+    "ridge",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 492353516,
+   "fullName": "cuban-digital-language/nlp-eval-with-n-grams",
+   "url": "https://github.com/cuban-digital-language/nlp-eval-with-n-grams",
+   "description": "Supervised Machine Learning Model to evaluate the percentage of natural language in generates text",
+   "createdAt": "2022-05-15T00:30:12Z",
+   "pushedAt": "2022-05-15T01:30:18Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1734,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "ml",
+    "n-grams",
+    "natural-language-processing",
+    "nlp",
+    "nlp-machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 469750098,
+   "fullName": "CyprienGille/Supervised-Autoencoder",
+   "url": "https://github.com/CyprienGille/Supervised-Autoencoder",
+   "description": "A supervised autoencoder with structured sparsity for efficient and informed clinical prognosis.",
+   "createdAt": "2022-03-14T13:40:47Z",
+   "pushedAt": "2023-07-07T13:27:33Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 19822,
+   "stargazersCount": 5,
+   "topics": [
+    "autoencoder",
+    "feature-selection",
+    "interpretability",
+    "metabolomics",
+    "metabolomics-database",
+    "prognostic-score",
+    "sparsity",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 418393904,
+   "fullName": "dabrze/confidence-planner",
+   "url": "https://github.com/dabrze/confidence-planner",
+   "description": "A Python library for estimating confidence intervals around accuracy and sample sizes for classification experiments.",
+   "createdAt": "2021-10-18T07:37:49Z",
+   "pushedAt": "2023-09-21T07:20:10Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1153,
+   "stargazersCount": 8,
+   "topics": [
+    "confidence-intervals",
+    "data-science",
+    "machine-learning",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 510043267,
+   "fullName": "DanieleMosh/Starcraft-2-Reinforcement-Learning",
+   "url": "https://github.com/DanieleMosh/Starcraft-2-Reinforcement-Learning",
+   "description": "Reinforcement learning on Starcraft 2 using custom StableBaselines3 env ",
+   "createdAt": "2022-07-03T14:16:20Z",
+   "pushedAt": "2024-10-10T09:37:03Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 548,
+   "stargazersCount": 3,
+   "topics": [
+    "deep-learning",
+    "deep-neural-networks",
+    "deep-reinforcement-learning",
+    "gaming",
+    "multi-agent-systems",
+    "pytorch",
+    "reinforcement-learning",
+    "self-playing-bot",
+    "starcraft-ii-bot",
+    "starcraft2",
+    "starcraft2-ai",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 153851234,
+   "fullName": "dembanakh/ATP_prediction",
+   "url": "https://github.com/dembanakh/ATP_prediction",
+   "description": "Exploring the capabilities of some ML models as well as simple Multi Perceptron Neural Net to predict results of the tennis ATP matches .",
+   "createdAt": "2018-10-19T23:15:56Z",
+   "pushedAt": "2018-11-27T20:37:59Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 2117,
+   "stargazersCount": 0,
+   "topics": [
+    "data-analysis",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "neural-networks",
+    "python",
+    "supervised-learning",
+    "tennis"
+   ]
+  },
+  {
+   "id": 1098887238,
+   "fullName": "Diabetic-Research-Group/diabetes-prediction",
+   "url": "https://github.com/Diabetic-Research-Group/diabetes-prediction",
+   "description": "A multiclass ML system predicting Type II diabetes risk from NHANES lab and lifestyle data, published in IEEE. Built a full pipeline with LightGBM, Optuna, MLflow, and feature ablation studies.",
+   "createdAt": "2025-11-18T09:20:32Z",
+   "pushedAt": "2026-05-16T06:13:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 4147,
+   "stargazersCount": 0,
+   "topics": [
+    "diabetes-prediction",
+    "healthcare-ai",
+    "lightgbm",
+    "optuna-optimization",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 869583944,
+   "fullName": "Digitalized-Energy-Systems/opfgym",
+   "url": "https://github.com/Digitalized-Energy-Systems/opfgym",
+   "description": "A gymnasium-compatible framework to create reinforcement learning (RL) environment for solving the optimal power flow (OPF) problem. Contains five OPF benchmark environments for comparable research. ",
+   "createdAt": "2024-10-08T14:37:59Z",
+   "pushedAt": "2025-03-22T14:47:13Z",
+   "defaultBranch": "development",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 540,
+   "stargazersCount": 35,
+   "topics": [
+    "action-shaping",
+    "benchmark",
+    "contextual-bandit",
+    "energy-system",
+    "environment",
+    "environment-design",
+    "gymnasium",
+    "opf",
+    "optimal-power-flow",
+    "pandapower",
+    "power-system",
+    "reinforcement-learning",
+    "reward-design",
+    "reward-shaping",
+    "rl",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 480045654,
+   "fullName": "divyanshkatiyar/Machine-Learning-Hub",
+   "url": "https://github.com/divyanshkatiyar/Machine-Learning-Hub",
+   "description": "A comprehensive repository containing Machine Learning \ud83e\udd16 and Deep Learning \ud83e\udde0 algorithms implemented from scratch in Python \ud83d\udc0d with focus on building a strong understanding of underlying mathematics, optimization techniques, & core concepts through clean, well-documented code, detailed explanations, and practical examples using in-built datasets.",
+   "createdAt": "2022-04-10T14:41:13Z",
+   "pushedAt": "2026-11-06T10:23:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 31,
+   "stargazersCount": 1,
+   "topics": [
+    "artificial-intelligence",
+    "deep-learning",
+    "epistemic-logic",
+    "machine-learning",
+    "neural-network",
+    "python",
+    "regression",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 116659351,
+   "fullName": "DTUComputeStatisticsAndDataAnalysis/MBPLS",
+   "url": "https://github.com/DTUComputeStatisticsAndDataAnalysis/MBPLS",
+   "description": "(Multiblock) Partial Least Squares Regression for Python",
+   "createdAt": "2018-01-08T09:55:21Z",
+   "pushedAt": "2020-01-14T21:19:54Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 17409,
+   "stargazersCount": 33,
+   "topics": [
+    "bioinformatics",
+    "chemometrics",
+    "data-fusion",
+    "data-integration",
+    "data-science",
+    "machine-learning",
+    "metabolomics",
+    "multivariate-analysis",
+    "multivariate-statistics",
+    "pattern-recognition",
+    "subspace-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 942936709,
+   "fullName": "edwardnhw/ML-Statistical-Methods-for-Classification-and-Approximation",
+   "url": "https://github.com/edwardnhw/ML-Statistical-Methods-for-Classification-and-Approximation",
+   "description": "This repository explores statistical and machine learning methods for classification and function approximation. It covers k-NN, Decision Trees, Information Theory, and Convexity, with Python implementations, theoretical explanations, model comparisons, and visualizations, making it a valuable resource for ML research and applications.",
+   "createdAt": "2025-03-04T23:14:45Z",
+   "pushedAt": "2025-03-05T04:25:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1774,
+   "stargazersCount": 0,
+   "topics": [
+    "classification",
+    "climate-data-analysis",
+    "countvectorizer",
+    "data-preprocessing",
+    "data-science",
+    "data-visualization",
+    "decision-trees",
+    "feature-engineering",
+    "k-nearest-neighbors",
+    "machine-learning",
+    "predictive-modeling",
+    "python-ml",
+    "statistical-methods",
+    "supervised-learning",
+    "text-classification"
+   ]
+  },
+  {
+   "id": 177816419,
+   "fullName": "felixriese/susi",
+   "url": "https://github.com/felixriese/susi",
+   "description": "SuSi: Python package for unsupervised, supervised and semi-supervised self-organizing maps (SOM)",
+   "createdAt": "2019-03-26T15:25:38Z",
+   "pushedAt": "2026-11-07T15:07:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 3895,
+   "stargazersCount": 118,
+   "topics": [
+    "data-science",
+    "machine-learning",
+    "opensource",
+    "pypi-package",
+    "python",
+    "self-organizing-map",
+    "semi-supervised-learning",
+    "som",
+    "sphinx-doc",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1229335859,
+   "fullName": "gecapistrano/affective-signal-processing",
+   "url": "https://github.com/gecapistrano/affective-signal-processing",
+   "description": "Multimodal emotion recognition from ECG and GSR signals. 88 handcrafted features + gradient boosting ensembles beat the published CNN-LSTM baseline by over 14 points (80.97% vs 66.64%).",
+   "createdAt": "2026-05-05T00:07:01Z",
+   "pushedAt": "2026-09-18T16:12:09Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3370,
+   "stargazersCount": 0,
+   "topics": [
+    "affective-computing",
+    "catboost",
+    "ecg",
+    "emotion-recognition",
+    "empathic-computing",
+    "ensemble-learning",
+    "feature-extraction",
+    "gradient-boosting",
+    "gsr",
+    "heart-rate-variability",
+    "histogram-gradient-boosting",
+    "lightgbm",
+    "machine-learning",
+    "multimodal",
+    "physiological-signals",
+    "python",
+    "signal-processing",
+    "supervised-learning",
+    "valence-arousal",
+    "yaad-dataset"
+   ]
+  },
+  {
+   "id": 140605814,
+   "fullName": "GT-RIPL/L2C",
+   "url": "https://github.com/GT-RIPL/L2C",
+   "description": "Learning to Cluster. A deep clustering strategy.",
+   "createdAt": "2018-07-11T17:05:48Z",
+   "pushedAt": "2020-01-08T05:10:18Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 441,
+   "stargazersCount": 315,
+   "topics": [
+    "artificial-intelligence",
+    "artificial-neural-networks",
+    "clustering",
+    "deep-learning",
+    "deep-neural-networks",
+    "loss-functions",
+    "semi-supervised-learning",
+    "similarity-metric",
+    "supervised-learning",
+    "transfer-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 653366065,
+   "fullName": "Guilliu/Memento",
+   "url": "https://github.com/Guilliu/Memento",
+   "description": "Scorecard development with Python",
+   "createdAt": "2023-06-13T23:26:46Z",
+   "pushedAt": "2024-04-23T10:03:06Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 1306,
+   "stargazersCount": 1,
+   "topics": [
+    "autogrouping",
+    "logistic-regression",
+    "python",
+    "rating",
+    "scorecard",
+    "scoring",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 428518627,
+   "fullName": "henrylee97/isl",
+   "url": "https://github.com/henrylee97/isl",
+   "description": "Inverse Supervised Learning",
+   "createdAt": "2021-11-16T04:38:57Z",
+   "pushedAt": "2021-12-14T06:31:17Z",
+   "defaultBranch": "main",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 63,
+   "stargazersCount": 1,
+   "topics": [
+    "loss-function",
+    "pytorch",
+    "reinforcement-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 321594480,
+   "fullName": "ituamg/super-k",
+   "url": "https://github.com/ituamg/super-k",
+   "description": "Super-k:  A Piecewise Linear Classifier Based on Voronoi Tessellations",
+   "createdAt": "2020-12-15T07:59:47Z",
+   "pushedAt": "2021-06-18T05:43:33Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 795,
+   "stargazersCount": 1,
+   "topics": [
+    "piecewise-linear-classification",
+    "supervised-learning",
+    "voronoi-tessellations"
+   ]
+  },
+  {
+   "id": 965899081,
+   "fullName": "jager47X/VibeMap",
+   "url": "https://github.com/jager47X/VibeMap",
+   "description": "VibeMap is an open-sourced sentiment-aware tweet visualizer that performs a scalable sentiment analysis tool that visualizes tweet embeddings in 3D using t-SNE and emotional clustering. ",
+   "createdAt": "2025-04-14T05:00:29Z",
+   "pushedAt": "2025-04-17T19:19:34Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4910,
+   "stargazersCount": 0,
+   "topics": [
+    "cosine-similarity",
+    "embedding-vectors",
+    "knn",
+    "labelling",
+    "nearest-neighbor-search",
+    "open-source",
+    "openai",
+    "psychology",
+    "research",
+    "semi-supervised-learning",
+    "sentiment-analysis",
+    "sentiment-classification",
+    "social-media",
+    "supervised-learning",
+    "t-sne-visualization",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 184079225,
+   "fullName": "jakobj/supervised-priority-replay",
+   "url": "https://github.com/jakobj/supervised-priority-replay",
+   "description": "Supervised learning in PyTorch with prioritized memory replay.",
+   "createdAt": "2019-04-29T13:45:35Z",
+   "pushedAt": "2019-04-30T14:25:18Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 376,
+   "stargazersCount": 4,
+   "topics": [
+    "catastrophic-forgetting",
+    "pytorch",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 690601480,
+   "fullName": "JanSkn/machine-learning-library",
+   "url": "https://github.com/JanSkn/machine-learning-library",
+   "description": "Machine learning features from scratch.",
+   "createdAt": "2023-09-12T14:02:50Z",
+   "pushedAt": "2024-11-06T19:06:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 11826,
+   "stargazersCount": 3,
+   "topics": [
+    "machine-learning",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 274035952,
+   "fullName": "Japkeerat/Keyless-Abstracts",
+   "url": "https://github.com/Japkeerat/Keyless-Abstracts",
+   "description": "To implement various algorithms related to keyword extraction using ML as part of NLP learning process",
+   "createdAt": "2020-06-22T04:01:31Z",
+   "pushedAt": "2020-07-02T12:32:36Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 30,
+   "stargazersCount": 0,
+   "topics": [
+    "deep-learning",
+    "machine-learning",
+    "natural-language-processing",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1213564375,
+   "fullName": "jarems421/Beaconing-detection-system",
+   "url": "https://github.com/jarems421/Beaconing-detection-system",
+   "description": "Flow-level behavioural detection of command-and-control beaconing under timing jitter, size variation, burst traffic, hard benign profiles, and CTU-13 public-data domain shift. Includes synthetic benchmarking, interpretable/statistical/anomaly/supervised baselines, minimum-evidence analysis, CTU-native validation, and report-ready results.",
+   "createdAt": "2026-04-17T14:12:33Z",
+   "pushedAt": "2026-04-24T17:08:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 983,
+   "stargazersCount": 1,
+   "topics": [
+    "anomoly-detection",
+    "c2-detection",
+    "ctu13",
+    "cybersecurity",
+    "flow-analysis",
+    "machine-learning",
+    "network-security",
+    "python",
+    "supervised-learning",
+    "traffic-analysis"
+   ]
+  },
+  {
+   "id": 278821412,
+   "fullName": "jaswinder9051998/zoofs",
+   "url": "https://github.com/jaswinder9051998/zoofs",
+   "description": "zoofs is a python library for performing feature selection using a variety of nature-inspired wrapper algorithms. The algorithms range from swarm-intelligence to physics-based to Evolutionary. It's easy to use , flexible and powerful tool to reduce your feature size.",
+   "createdAt": "2020-07-11T08:33:37Z",
+   "pushedAt": "2026-01-09T11:53:08Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 7083,
+   "stargazersCount": 255,
+   "topics": [
+    "evolutionary-algorithms",
+    "feature-selection",
+    "genetic-algorithm",
+    "grey-wolf",
+    "grey-wolf-optimizer",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "machinelearning",
+    "optimization",
+    "optimization-algorithms",
+    "optimization-methods",
+    "optimization-tools",
+    "particle-swarm",
+    "particle-swarm-optimization",
+    "python",
+    "subset-selection",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 253881285,
+   "fullName": "jd509/USC-AME-505-ID3-Intelligent-Defect-Detection-System",
+   "url": "https://github.com/jd509/USC-AME-505-ID3-Intelligent-Defect-Detection-System",
+   "description": "The project was a part of the AME 505 course at USC. the objective of the project is to create an application to defect steel surface defects using supervised and unsupervised learning methods. The team comprises of: Aditi Bhagwat, Bharat Deshkulkarni, Jaineel Desai, Kaitlyn Holmstrom, Omey Manyar and Shahwaz Khan.",
+   "createdAt": "2020-04-07T18:38:10Z",
+   "pushedAt": "2021-08-24T04:02:47Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-2-clause",
+    "name": "BSD 2-Clause \"Simplified\" License",
+    "spdx_id": "BSD-2-Clause"
+   },
+   "size": 3813,
+   "stargazersCount": 5,
+   "topics": [
+    "convolutional-neural-networks",
+    "image-classification",
+    "image-processing",
+    "steel-defect",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 147898008,
+   "fullName": "jesus-a-martinez-v/dermatologist-ai",
+   "url": "https://github.com/jesus-a-martinez-v/dermatologist-ai",
+   "description": null,
+   "createdAt": "2018-09-08T03:34:57Z",
+   "pushedAt": "2019-01-22T15:48:26Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2856,
+   "stargazersCount": 0,
+   "topics": [
+    "ai",
+    "computer-vision",
+    "cv",
+    "deep-learning",
+    "health",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 587064733,
+   "fullName": "JFvdH/SL-for-Int-FC-and-IC",
+   "url": "https://github.com/JFvdH/SL-for-Int-FC-and-IC",
+   "description": "This repository contains code used for the numerical experiments in the Supervised Learning for Integrated Forecasting and Inventory Control paper by Joost F. van der Haar, Arnoud P. Wellens, Robert N. Boute and Rob J.I. Basten.",
+   "createdAt": "2023-01-09T21:52:03Z",
+   "pushedAt": "2024-04-26T15:25:49Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 73,
+   "stargazersCount": 1,
+   "topics": [
+    "custom-loss-functions",
+    "forecasting",
+    "inventory",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1259045458,
+   "fullName": "jhgudleik/scyth_j",
+   "url": "https://github.com/jhgudleik/scyth_j",
+   "description": "SCYTH-J is a neural network-based web application for classifying Japanese texts into user-defined dynamic topics. The system uses a quantized supervised trained deep learning model and natural language processing (NLP) techniques to analyze and categorize texts.",
+   "createdAt": "2026-06-04T06:33:08Z",
+   "pushedAt": "2026-06-22T08:56:16Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 18199,
+   "stargazersCount": 1,
+   "topics": [
+    "cpu",
+    "deep-learning",
+    "embedding",
+    "embedding-model",
+    "embedding-similarity",
+    "embeddings",
+    "gradio",
+    "japanese",
+    "multilabel-classification",
+    "nlp",
+    "quantizations",
+    "semantic-search",
+    "supervised-learning",
+    "tomsk-state-university",
+    "wikipedia",
+    "wikipedia-dump"
+   ]
+  },
+  {
+   "id": 373351085,
+   "fullName": "JIA-Lab-research/Parametric-Contrastive-Learning",
+   "url": "https://github.com/JIA-Lab-research/Parametric-Contrastive-Learning",
+   "description": "Parametric Contrastive Learning (ICCV2021) & GPaCo (TPAMI 2023)",
+   "createdAt": "2021-06-03T01:48:30Z",
+   "pushedAt": "2026-06-11T14:39:25Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 19274,
+   "stargazersCount": 260,
+   "topics": [
+    "class-imbalance",
+    "contrastive-learning",
+    "iccv2021",
+    "image-classification",
+    "imagenet",
+    "imbalanced-data",
+    "imbalanced-learning",
+    "long-tailed-recognition",
+    "parametric-contrastive-learning",
+    "pytorch",
+    "supervised-contrastive-learning",
+    "supervised-learning",
+    "tpami"
+   ]
+  },
+  {
+   "id": 357986721,
+   "fullName": "Jiankun-chen/Supervised-SNN-with-GD",
+   "url": "https://github.com/Jiankun-chen/Supervised-SNN-with-GD",
+   "description": "A supervised learning algorithm of SNN is proposed by using spike sequences with complex spatio-temporal information. We explore an error back-propagation method of SNN based on gradient descent. The chain rule proved mathematically that it is sufficient to update the SNN\u2019s synaptic weights by directly using an optimizer.  Utilizing the TensorFlow framework, a bilayer supervised learning SNN is constructed from scratch. We take the lead in the application of SAR image classification and conduct experiments on the MSTAR dataset.",
+   "createdAt": "2021-04-14T17:23:15Z",
+   "pushedAt": "2022-01-15T11:11:27Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2757,
+   "stargazersCount": 22,
+   "topics": [
+    "gradient-descent",
+    "optimizer",
+    "sar-image-classification",
+    "spike-sequence",
+    "spiking-neural-network",
+    "supervised-learning",
+    "synaptic-weight",
+    "tensorflow"
+   ]
+  },
+  {
+   "id": 284026669,
+   "fullName": "joaquimcampos/DeepSplines",
+   "url": "https://github.com/joaquimcampos/DeepSplines",
+   "description": "Learning Activation Functions in Deep (Spline) Neural Networks",
+   "createdAt": "2020-07-31T12:00:18Z",
+   "pushedAt": "2023-06-17T16:44:07Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 661,
+   "stargazersCount": 29,
+   "topics": [
+    "neural-networks",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 121302556,
+   "fullName": "jordanjoewatson/natural-language-classifier",
+   "url": "https://github.com/jordanjoewatson/natural-language-classifier",
+   "description": "Supervised Learning Binary Classifier for Natural Language",
+   "createdAt": "2018-02-12T21:12:23Z",
+   "pushedAt": "2018-04-22T13:05:36Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 117,
+   "stargazersCount": 1,
+   "topics": [
+    "artificial-intelligence",
+    "machine-learning",
+    "natural-language-processing",
+    "neural-network",
+    "nltk",
+    "perceptron",
+    "python3",
+    "spacy",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 304584293,
+   "fullName": "joris-pries/DutchDraw",
+   "url": "https://github.com/joris-pries/DutchDraw",
+   "description": "The Dutch Draw: Constructing a Universal Baseline for Binary Prediction Models",
+   "createdAt": "2020-10-16T09:44:24Z",
+   "pushedAt": "2023-01-31T20:01:43Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1529,
+   "stargazersCount": 3,
+   "topics": [
+    "baseline",
+    "benchmark",
+    "binary",
+    "binary-classification",
+    "classification",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 906949871,
+   "fullName": "JunaidSalim/ML_Model_Selection",
+   "url": "https://github.com/JunaidSalim/ML_Model_Selection",
+   "description": "A user-friendly web application that simplifies regression and classification model selection with an intuitive, no-code interface for data preprocessing and performance evaluation.",
+   "createdAt": "2024-12-22T11:54:35Z",
+   "pushedAt": "2025-01-05T12:04:22Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 275,
+   "stargazersCount": 0,
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "classification",
+    "data-preprocessing",
+    "machine-learning",
+    "ml",
+    "model-evaluation",
+    "model-selection",
+    "no-code",
+    "no-code-tools",
+    "python",
+    "regression",
+    "streamlit",
+    "supervised-learning",
+    "webapp"
+   ]
+  },
+  {
+   "id": 541193665,
+   "fullName": "jwliao1209/Crop-Image-Recognition",
+   "url": "https://github.com/jwliao1209/Crop-Image-Recognition",
+   "description": "2022 AI CUP Competition on Crop Status Monitoring by Image Recognition",
+   "createdAt": "2022-09-25T14:13:15Z",
+   "pushedAt": "2023-01-28T02:09:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 15167,
+   "stargazersCount": 3,
+   "topics": [
+    "cnn",
+    "image-classification",
+    "supervised-learning",
+    "vision-transformer"
+   ]
+  },
+  {
+   "id": 769079307,
+   "fullName": "Karim-53/pdll",
+   "url": "https://github.com/Karim-53/pdll",
+   "description": "\ud83d\udcc8 scikit-learn compatible meta-learner that boosts tabular classifiers by learning from pairs of points \u2014 turns multiclass into a binary 'same or different?' task. Paper @ Discovery Science 2024.",
+   "createdAt": "2024-03-08T09:53:36Z",
+   "pushedAt": "2026-10-25T21:43:36Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 3304,
+   "stargazersCount": 23,
+   "topics": [
+    "data-science",
+    "machine-learning",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 589823399,
+   "fullName": "Karlmyh/ExtraTree",
+   "url": "https://github.com/Karlmyh/ExtraTree",
+   "description": "Extrapolated Tree",
+   "createdAt": "2023-01-17T02:38:20Z",
+   "pushedAt": "2023-09-25T16:36:11Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1093,
+   "stargazersCount": 2,
+   "topics": [
+    "extrapolation",
+    "supervised-learning",
+    "tree",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 128966301,
+   "fullName": "kcotar/GALAH-survey-Carbon-enhanced-stars",
+   "url": "https://github.com/kcotar/GALAH-survey-Carbon-enhanced-stars",
+   "description": "Code used in the analysis of carbon enhanced stars and production of the acompanying science paper",
+   "createdAt": "2018-04-10T16:49:24Z",
+   "pushedAt": "2019-05-28T09:23:39Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12788,
+   "stargazersCount": 0,
+   "topics": [
+    "analysis",
+    "carbon-enhanced-stars",
+    "galah",
+    "python",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1167518237,
+   "fullName": "kedibey1232/trading-analyzer",
+   "url": "https://github.com/kedibey1232/trading-analyzer",
+   "description": "\ud83d\udcca Analyze trading charts locally using OCR, computer vision, and AI to generate detailed, private technical reports.",
+   "createdAt": "2026-02-26T11:34:01Z",
+   "pushedAt": "2026-10-12T04:43:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 546,
+   "stargazersCount": 1,
+   "topics": [
+    "analytics",
+    "bitcoin",
+    "csharp",
+    "earnings-calendar",
+    "engel-granger-test",
+    "multiple-linear-regression",
+    "python",
+    "python-script",
+    "quant-dev",
+    "quanttrading",
+    "recurrent-neural-networks",
+    "screener",
+    "sec",
+    "supervised-learning",
+    "trading",
+    "trading-algorithms",
+    "trading-analyzer",
+    "trading-strategies"
+   ]
+  },
+  {
+   "id": 1025553691,
+   "fullName": "KhiopsLab/khalib",
+   "url": "https://github.com/KhiopsLab/khalib",
+   "description": "khalib is a classifier calibration algorithm based on Khiops",
+   "createdAt": "2025-07-24T12:35:20Z",
+   "pushedAt": "2026-11-13T13:55:15Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 697,
+   "stargazersCount": 4,
+   "topics": [
+    "automl",
+    "calibration-error",
+    "classifier-calibration",
+    "probability-calibration",
+    "reliability-diagram",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 586720266,
+   "fullName": "KhoaNguyen02/Evaluating-the-efficiency-of-Platt-SMO-algorithm",
+   "url": "https://github.com/KhoaNguyen02/Evaluating-the-efficiency-of-Platt-SMO-algorithm",
+   "description": "This repository contains all necessary files for the implementation Sequential Minimal Optimization (SMO) algorithm. The algorithm is also applied on a practical dataset to study the time complexity.",
+   "createdAt": "2023-01-09T03:57:53Z",
+   "pushedAt": "2024-05-07T06:47:54Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1125,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning-algorithms",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1155718221,
+   "fullName": "Kianmhz/Insurance-Fraud-Detection",
+   "url": "https://github.com/Kianmhz/Insurance-Fraud-Detection",
+   "description": "Insurance fraud detection: comparing supervised, unsupervised, and neural network models under class imbalance.",
+   "createdAt": "2026-02-11T20:33:29Z",
+   "pushedAt": "2026-04-03T22:56:19Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4266,
+   "stargazersCount": 1,
+   "topics": [
+    "anomaly-detection",
+    "fraud-detection",
+    "machine-learning",
+    "neural-networks",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 564816086,
+   "fullName": "KORINZ/housing-price-prediction",
+   "url": "https://github.com/KORINZ/housing-price-prediction",
+   "description": "\ud83c\udfe0 An end-to-end machine learning project that uses California census data (1990) to build a model of housing prices. The data includes population, median income, and median housing price for each district.",
+   "createdAt": "2022-11-11T15:07:44Z",
+   "pushedAt": "2022-12-02T09:27:58Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 4052,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "regression",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 585446667,
+   "fullName": "KorkinLab/DissociativeDisorder-SupervisedLearning",
+   "url": "https://github.com/KorkinLab/DissociativeDisorder-SupervisedLearning",
+   "description": "Data augmentation and supervised learning methods for trauma-related dissociation.",
+   "createdAt": "2023-01-05T07:35:19Z",
+   "pushedAt": "2025-09-03T16:30:55Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 19,
+   "stargazersCount": 1,
+   "topics": [
+    "data-augmentation",
+    "dissociation",
+    "suicide-prevention",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 445236976,
+   "fullName": "Labo-Lacourse/stepmix",
+   "url": "https://github.com/Labo-Lacourse/stepmix",
+   "description": "A Python package following the scikit-learn API for model-based clustering and generalized mixture modeling (latent class/profile analysis) of continuous and categorical data. StepMix handles missing values through Full Information Maximum Likelihood (FIML) and provides multiple stepwise Expectation-Maximization (EM) estimation methods.",
+   "createdAt": "2022-01-06T16:29:31Z",
+   "pushedAt": "2026-05-04T15:09:08Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 540,
+   "stargazersCount": 92,
+   "topics": [
+    "classification",
+    "clustering",
+    "expectation-maximization",
+    "latent-class-analysis",
+    "lca",
+    "machine-learning",
+    "mixture-models",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1232207888,
+   "fullName": "LAMDA-NeSy/OpenAgent",
+   "url": "https://github.com/LAMDA-NeSy/OpenAgent",
+   "description": "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
+   "createdAt": "2026-05-07T17:41:16Z",
+   "pushedAt": "2026-06-03T15:04:58Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2176,
+   "stargazersCount": 13,
+   "topics": [
+    "agent",
+    "generalization",
+    "llm",
+    "natural-language-processing",
+    "reinforcement-learning",
+    "supervised-learning",
+    "tool-use-ai"
+   ]
+  },
+  {
+   "id": 756046241,
+   "fullName": "LaraSousa34/id3-decision-tree-from-scratch",
+   "url": "https://github.com/LaraSousa34/id3-decision-tree-from-scratch",
+   "description": "Python implementation of the ID3 Decision Tree algorithm from scratch, including entropy, information gain, recursive tree induction, and classification of categorical datasets.",
+   "createdAt": "2024-02-11T20:24:11Z",
+   "pushedAt": "2026-07-25T10:29:03Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 829,
+   "stargazersCount": 2,
+   "topics": [
+    "artificial-intelligence",
+    "classification",
+    "decision-trees",
+    "entropy",
+    "from-scratch",
+    "id3",
+    "information-gain",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 308518515,
+   "fullName": "leonkozlowski/wbn",
+   "url": "https://github.com/leonkozlowski/wbn",
+   "description": "Weighted Bayesian Network Multiclass Text Classification Model",
+   "createdAt": "2020-10-30T03:47:35Z",
+   "pushedAt": "2021-01-06T03:03:48Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 320,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning",
+    "supervised-learning",
+    "text-classificaiton",
+    "weighted-graphs"
+   ]
+  },
+  {
+   "id": 250025410,
+   "fullName": "Lightning-Universe/lightning-bolts",
+   "url": "https://github.com/Lightning-Universe/lightning-bolts",
+   "description": "Toolbox of models, callbacks, and datasets for AI/ML researchers.",
+   "createdAt": "2020-03-25T16:03:30Z",
+   "pushedAt": "2026-01-20T04:42:47Z",
+   "defaultBranch": "master",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 5673,
+   "stargazersCount": 1750,
+   "topics": [
+    "ai",
+    "gan",
+    "image-processing",
+    "machine-learning",
+    "natural-language-processing",
+    "pytorch",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 270536773,
+   "fullName": "liqianxi/House-Board-Number-Classifier-Using-CNN",
+   "url": "https://github.com/liqianxi/House-Board-Number-Classifier-Using-CNN",
+   "description": "An application using Convolutional Neural Network to solve Computer Vision Problem",
+   "createdAt": "2020-06-08T05:09:02Z",
+   "pushedAt": "2020-06-19T06:11:24Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 8987,
+   "stargazersCount": 0,
+   "topics": [
+    "computer-vision",
+    "convolutional-neural-network",
+    "python3",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 334684507,
+   "fullName": "liuruoze/mini-AlphaStar",
+   "url": "https://github.com/liuruoze/mini-AlphaStar",
+   "description": "(JAIR'2022) A mini-scale reproduction code of the AlphaStar program. Note: the original AlphaStar is the AI proposed by DeepMind to play StarCraft II. JAIR = Journal of Artificial Intelligence Research.",
+   "createdAt": "2021-01-31T15:12:07Z",
+   "pushedAt": "2026-11-16T12:46:43Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 1852,
+   "stargazersCount": 372,
+   "topics": [
+    "deep-learning",
+    "deep-neural-networks",
+    "deep-reinforcement-learning",
+    "gaming",
+    "imitation-learning",
+    "mini-alphastar",
+    "multi-agent-systems",
+    "pytorch",
+    "reinforcement-learning",
+    "sc2replay",
+    "self-playing-bot",
+    "starcraft-ii-bot",
+    "starcraft2",
+    "starcraft2-ai",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 455523777,
+   "fullName": "lmotte/graph-prediction-with-fused-gromov-wasserstein",
+   "url": "https://github.com/lmotte/graph-prediction-with-fused-gromov-wasserstein",
+   "description": "Python implementation of the supervised graph prediction method proposed in http://arxiv.org/abs/2202.03813 using PyTorch library and POT library (Python Optimal Transport). ",
+   "createdAt": "2022-02-04T11:32:40Z",
+   "pushedAt": "2022-02-25T13:07:07Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1715,
+   "stargazersCount": 15,
+   "topics": [
+    "graph-prediction",
+    "machine-learning",
+    "optimal-transport",
+    "structured-prediction",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 116989092,
+   "fullName": "lrgr/multifactorial-immune-response",
+   "url": "https://github.com/lrgr/multifactorial-immune-response",
+   "description": "Multifactorial modeling of response to checkpoint inhibitor immunotherapy from tumor, immune, and clinical features",
+   "createdAt": "2018-01-10T17:29:23Z",
+   "pushedAt": "2018-06-29T21:34:51Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2228,
+   "stargazersCount": 17,
+   "topics": [
+    "cancer",
+    "immunotherapy",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 144550983,
+   "fullName": "luxinglong/ViZDoom-SL",
+   "url": "https://github.com/luxinglong/ViZDoom-SL",
+   "description": "Playing FPS Game with Supervised Learning",
+   "createdAt": "2018-08-13T08:30:00Z",
+   "pushedAt": "2018-08-15T14:20:56Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13270,
+   "stargazersCount": 0,
+   "topics": [
+    "fps-game",
+    "supervised-learning",
+    "tensorflow",
+    "vizdoom"
+   ]
+  },
+  {
+   "id": 926879984,
+   "fullName": "Mahdi-Shahrezaei/Predictive-Modeling-for-Diabetes-Analysis",
+   "url": "https://github.com/Mahdi-Shahrezaei/Predictive-Modeling-for-Diabetes-Analysis",
+   "description": "\ud83e\ude7a Diabetes Prediction & Patient Stratification: A Machine Learning Approach.",
+   "createdAt": "2025-02-04T02:34:41Z",
+   "pushedAt": "2026-06-23T11:02:59Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 3675,
+   "stargazersCount": 4,
+   "topics": [
+    "classification",
+    "clustering",
+    "data-mining",
+    "diabetes",
+    "machine-learning",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1116417412,
+   "fullName": "MAlshurbaji/Lesion-Net",
+   "url": "https://github.com/MAlshurbaji/Lesion-Net",
+   "description": "Code for \"Lesion-Net: Small Lesion Segmentation in Acute Ischemic Stroke\"",
+   "createdAt": "2025-12-14T20:18:38Z",
+   "pushedAt": "2026-08-29T22:22:02Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 492,
+   "stargazersCount": 1,
+   "topics": [
+    "acute-ischemic-stroke",
+    "attention-mechanism",
+    "brain-lesion-segmentation",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1129878476,
+   "fullName": "mammadow/holbertonschool-machine_learning",
+   "url": "https://github.com/mammadow/holbertonschool-machine_learning",
+   "description": "Machine learning coursework covering mathematical foundations, data pipelines, supervised, and unsupervised learning",
+   "createdAt": "2026-01-07T17:59:50Z",
+   "pushedAt": "2026-11-15T16:40:00Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12979,
+   "stargazersCount": 1,
+   "topics": [
+    "deep-learning",
+    "machine-learning",
+    "numpy",
+    "python",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 347732112,
+   "fullName": "manome/python-silvq",
+   "url": "https://github.com/manome/python-silvq",
+   "description": "This project provides an implementation of self-incremental learning vector quantization. This implementation is based on the below paper. https://www.nature.com/articles/s41598-021-83182-4.",
+   "createdAt": "2021-03-14T19:21:59Z",
+   "pushedAt": "2024-08-16T09:15:05Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause"
+   },
+   "size": 822,
+   "stargazersCount": 0,
+   "topics": [
+    "learning-vector-quantization",
+    "learning-vector-quantization-network",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 907992890,
+   "fullName": "markbakos/ufc-predictor",
+   "url": "https://github.com/markbakos/ufc-predictor",
+   "description": "UFC fight prediction tool built with TensorFlow and Python, UI built with Vue and Tailwind. Uses machine learning to analyze fighter stats and predict match outcomes.",
+   "createdAt": "2024-12-24T20:03:06Z",
+   "pushedAt": "2025-05-12T08:44:23Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 2011,
+   "stargazersCount": 1,
+   "topics": [
+    "betting",
+    "betting-models",
+    "fastapi",
+    "machine-learning",
+    "neural-network",
+    "prediction",
+    "prediction-model",
+    "python",
+    "supervised-learning",
+    "typescript",
+    "ufc",
+    "vue"
+   ]
+  },
+  {
+   "id": 1028829131,
+   "fullName": "maruf-pfc/image_classifier_toolkit",
+   "url": "https://github.com/maruf-pfc/image_classifier_toolkit",
+   "description": "A Django-based web platform that hosts multiple image classification models under one unified interface. Upload an image and get the predicted result instantly.",
+   "createdAt": "2025-07-30T06:01:57Z",
+   "pushedAt": "2025-08-05T13:44:53Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 10988,
+   "stargazersCount": 1,
+   "topics": [
+    "animal-classification",
+    "artificial-intelligence",
+    "computer-vision",
+    "deeplearning",
+    "digit-classification",
+    "digit-recognition",
+    "django",
+    "emotion-detection",
+    "emotion-recognition",
+    "flower-classification",
+    "hacktoberfest",
+    "image-classification",
+    "keras-tensorflow",
+    "machine-learning",
+    "supervised-learning",
+    "tensorflow",
+    "vehicle-classification"
+   ]
+  },
+  {
+   "id": 390050423,
+   "fullName": "matheusfbonfim/DecisionTree-SupervisedLearning-CarEvaluation-DataSet",
+   "url": "https://github.com/matheusfbonfim/DecisionTree-SupervisedLearning-CarEvaluation-DataSet",
+   "description": "Dado a base de dados Car Evaluation, aplica-se um m\u00e9todo de aprendizado supervisionado sobre esta base, especificamente a \u00e1rvore de decis\u00e3o. ",
+   "createdAt": "2021-07-27T16:19:48Z",
+   "pushedAt": "2021-08-31T02:34:32Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 478,
+   "stargazersCount": 2,
+   "topics": [
+    "aprendizado-de-maquina",
+    "arvore-de-decisao",
+    "car-evaluation-dataset",
+    "decision-tree",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 143151401,
+   "fullName": "MauroCE/PythonBRMLtoolbox",
+   "url": "https://github.com/MauroCE/PythonBRMLtoolbox",
+   "description": "Python 3.7 version of David Barber's MATLAB BRMLtoolbox",
+   "createdAt": "2018-08-01T12:12:28Z",
+   "pushedAt": "2018-08-18T10:17:40Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 707,
+   "stargazersCount": 28,
+   "topics": [
+    "bayesian",
+    "bayesian-analysis",
+    "bayesian-data-analysis",
+    "bayesian-inference",
+    "bayesian-methods",
+    "bayesian-network",
+    "bayesian-networks",
+    "bayesian-neural-networks",
+    "bayesian-optimization",
+    "bayesian-statistics",
+    "graphical-models",
+    "machine-learning",
+    "markov-networks",
+    "matlab",
+    "model-selection",
+    "statistics",
+    "statistics-toolbox",
+    "supervised-learning",
+    "supervised-learning-algorithms",
+    "supervised-machine-learning"
+   ]
+  },
+  {
+   "id": 963927536,
+   "fullName": "mf-wu/HiBoFL",
+   "url": "https://github.com/mf-wu/HiBoFL",
+   "description": "Hierarchy-boosted funnel learning for identifying semiconductors with ultralow lattice thermal conductivity",
+   "createdAt": "2025-04-10T12:30:37Z",
+   "pushedAt": "2025-08-03T07:41:40Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6924,
+   "stargazersCount": 8,
+   "topics": [
+    "interpretable-machine-learning",
+    "lattice-thermal-conductivity",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 541456472,
+   "fullName": "microsoft/ML4C",
+   "url": "https://github.com/microsoft/ML4C",
+   "description": "[SDM'23] ML4C: Seeing Causality Through Latent Vicinity",
+   "createdAt": "2022-09-26T07:18:34Z",
+   "pushedAt": "2022-11-09T01:44:36Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 290,
+   "stargazersCount": 14,
+   "topics": [
+    "causal",
+    "causal-discovery",
+    "causality",
+    "causality-algorithms",
+    "discrete",
+    "graph",
+    "structure-learning",
+    "supervised-causal-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 516679193,
+   "fullName": "miguel-kjh/Improving-Dialogue-Management",
+   "url": "https://github.com/miguel-kjh/Improving-Dialogue-Management",
+   "description": "A detailed analysis of task-oriented dialogue systems, emphasizing the importance of high-quality datasets in dialogue management. We crafted a synthetic dialogue generator to highlight the impact of dataset errors on model outcomes.",
+   "createdAt": "2022-07-22T08:54:28Z",
+   "pushedAt": "2023-10-23T17:32:35Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 172,
+   "stargazersCount": 4,
+   "topics": [
+    "deep-learning",
+    "dialogue",
+    "dialogue-manager",
+    "dialogue-systems",
+    "nlp",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 958279962,
+   "fullName": "mohdmahsoof/ii-researcher",
+   "url": "https://github.com/mohdmahsoof/ii-researcher",
+   "description": "II-Researcher: a new open-source framework designed to aid building search / research agents",
+   "createdAt": "2025-04-01T00:03:13Z",
+   "pushedAt": "2026-10-13T06:27:29Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 1121,
+   "stargazersCount": 3,
+   "topics": [
+    "addon",
+    "deep-learning",
+    "deepmind",
+    "genetic-algorithms",
+    "imitation-learning",
+    "indoor-positioning",
+    "microstructure-characterization",
+    "nsga-ii",
+    "pysc2-library",
+    "python",
+    "pytorch",
+    "reinforcement-learning",
+    "spectator",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 613606212,
+   "fullName": "MrChenFeng/MaskCon_CVPR2023",
+   "url": "https://github.com/MrChenFeng/MaskCon_CVPR2023",
+   "description": "MaskCon: Masked Contrastive Learning for Coarse-Labeled Dataset (CVPR2023)",
+   "createdAt": "2023-03-13T22:48:39Z",
+   "pushedAt": "2025-03-22T13:16:20Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12316,
+   "stargazersCount": 35,
+   "topics": [
+    "coarse-to-fine",
+    "dataset",
+    "deep-learning",
+    "fine-grained-classification",
+    "image-retrieval",
+    "pytorch",
+    "representation-learning",
+    "robustness",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 543627452,
+   "fullName": "MrChenFeng/SSR_BMVC2022",
+   "url": "https://github.com/MrChenFeng/SSR_BMVC2022",
+   "description": "SSR: An Efficient and Robust Framework for Learning with Unknown Label Noise (BMVC2022)",
+   "createdAt": "2022-09-30T13:58:38Z",
+   "pushedAt": "2025-03-22T13:15:44Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6379,
+   "stargazersCount": 32,
+   "topics": [
+    "deep-learning",
+    "noisy-labels",
+    "pytorch",
+    "self-supervised-learning",
+    "semi-supervised-learning",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 156874571,
+   "fullName": "mrtovsky/Paralytics",
+   "url": "https://github.com/mrtovsky/Paralytics",
+   "description": "Python analytical scripts that will overcome paralysis in your data analysis.",
+   "createdAt": "2018-11-09T14:39:21Z",
+   "pushedAt": "2020-02-22T17:02:53Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6832,
+   "stargazersCount": 5,
+   "topics": [
+    "data-science",
+    "machine-learning",
+    "python",
+    "statistics",
+    "supervised-learning",
+    "xai"
+   ]
+  },
+  {
+   "id": 1088717234,
+   "fullName": "msmrexe/neurosymbolic-vqa-program-generator",
+   "url": "https://github.com/msmrexe/neurosymbolic-vqa-program-generator",
+   "description": "A comprehensive implementation of a Neurosymbolic framework for Visual Question Answering (VQA) on the CLEVR dataset. This project translates natural language questions into symbolic programs using three different learning strategies: Supervised (LSTM & Transformer), Reinforcement Learning (REINFORCE), and In-Context Learning (LLM).",
+   "createdAt": "2025-11-03T11:08:26Z",
+   "pushedAt": "2025-11-03T12:49:54Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 105,
+   "stargazersCount": 2,
+   "topics": [
+    "clevr",
+    "course-project",
+    "in-context-learning",
+    "large-language-models",
+    "lstm",
+    "neurosymbolic",
+    "neurosymbolic-ai",
+    "policy-gradient",
+    "program-generator",
+    "pytorch",
+    "reinforce",
+    "reinforcement-learning",
+    "seq2seq",
+    "supervised-learning",
+    "system-2",
+    "transformer",
+    "university-project",
+    "visual-question-answering",
+    "visual-reasoning",
+    "vqa"
+   ]
+  },
+  {
+   "id": 178299802,
+   "fullName": "multiagentshowdown/showdown",
+   "url": "https://github.com/multiagentshowdown/showdown",
+   "description": "Multi-Agent Reinforcement Learning Environment",
+   "createdAt": "2019-03-28T23:56:15Z",
+   "pushedAt": "2019-03-30T20:44:15Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 22,
+   "stargazersCount": 0,
+   "topics": [
+    "deep-learning",
+    "machine-learning",
+    "multiagent-reinforcement-learning",
+    "reinforcement-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 741557125,
+   "fullName": "NakerTheFirst/Fuel-efficiency-prediction",
+   "url": "https://github.com/NakerTheFirst/Fuel-efficiency-prediction",
+   "description": "Comparison of fuel efficiency prediction models using different linear regression types. Based on Mileage Per Gallon (MPG) dataset.",
+   "createdAt": "2024-01-10T16:35:16Z",
+   "pushedAt": "2024-07-22T20:47:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 411,
+   "stargazersCount": 0,
+   "topics": [
+    "least-square-regression",
+    "linear-regression",
+    "machine-learning",
+    "mileage-per-gallon",
+    "ml",
+    "model",
+    "mpg",
+    "mpg-data",
+    "mpg-dataset",
+    "regression",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 906693333,
+   "fullName": "Neelkanth-khithani/AI-Hobbyist",
+   "url": "https://github.com/Neelkanth-khithani/AI-Hobbyist",
+   "description": "AI-Hobbyist is a platform that helps users generate problem statements, clean datasets, and train AI models using a no-code approach.",
+   "createdAt": "2024-12-21T16:20:33Z",
+   "pushedAt": "2025-02-07T15:32:56Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1275,
+   "stargazersCount": 1,
+   "topics": [
+    "idea-generation",
+    "llama3",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 447635246,
+   "fullName": "nestauk/iss_forecasting",
+   "url": "https://github.com/nestauk/iss_forecasting",
+   "description": "Anticipating trends in impact investing",
+   "createdAt": "2022-01-13T14:43:49Z",
+   "pushedAt": "2023-01-17T14:12:32Z",
+   "defaultBranch": "dev",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 88,
+   "stargazersCount": 3,
+   "topics": [
+    "causal-inference",
+    "machine-learning",
+    "supervised-learning",
+    "venture-capital"
+   ]
+  },
+  {
+   "id": 396080255,
+   "fullName": "nikp06/subwAI",
+   "url": "https://github.com/nikp06/subwAI",
+   "description": "Scripts for training an AI to play the endless runner Subway Surfers using a supervised machine learning approach by imitation and a convolutional neural network (CNN) for image classification",
+   "createdAt": "2021-08-14T17:31:24Z",
+   "pushedAt": "2021-10-29T13:09:41Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 68,
+   "stargazersCount": 166,
+   "topics": [
+    "ai",
+    "cnn",
+    "computer-vision",
+    "endless-runner",
+    "game",
+    "image-classification",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1226073613,
+   "fullName": "nitinkesarla/Autonomous-AI-Robotics-Research",
+   "url": "https://github.com/nitinkesarla/Autonomous-AI-Robotics-Research",
+   "description": "Empirical studies in Reinforcement Learning (Q-Learning, SARSA, DQN) and Multi-Modal CNNs for autonomous robotic systems.",
+   "createdAt": "2026-05-01T00:20:35Z",
+   "pushedAt": "2026-05-01T01:05:17Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 934,
+   "stargazersCount": 0,
+   "topics": [
+    "reinforcement-learning",
+    "robotics",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 822725629,
+   "fullName": "NOAA-OWP/rafts",
+   "url": "https://github.com/NOAA-OWP/rafts",
+   "description": "Train algorithms & predict hydrologically-relevant response variables based on watershed descriptors",
+   "createdAt": "2024-07-01T17:34:05Z",
+   "pushedAt": "2026-10-04T11:49:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 10837,
+   "stargazersCount": 4,
+   "topics": [
+    "hydrology",
+    "regression-algorithms",
+    "supervised-learning",
+    "unsupervised-clustering"
+   ]
+  },
+  {
+   "id": 323605428,
+   "fullName": "ocrim1996/VolleyballPlayoffPrediction",
+   "url": "https://github.com/ocrim1996/VolleyballPlayoffPrediction",
+   "description": "Machine learning methods for predictive analysis of team performance in sports.",
+   "createdAt": "2020-12-22T11:22:57Z",
+   "pushedAt": "2021-01-03T00:59:35Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3469,
+   "stargazersCount": 2,
+   "topics": [
+    "linear-regression",
+    "supervised-learning",
+    "svm-classifier",
+    "volleyball"
+   ]
+  },
+  {
+   "id": 771164918,
+   "fullName": "ojaviva/classify",
+   "url": "https://github.com/ojaviva/classify",
+   "description": "El proyecto utiliza un modelo de Random Forest para predecir fen\u00f3menos utilizando datos proporcionados. El prop\u00f3sito principal es crear una herramienta \u00fatil para identificar posibles fen\u00f3menos basados en caracter\u00edsticas espec\u00edficas. Adem\u00e1s, el archivo grafic_3d.py tiene como objetivo proporcionar una herramienta para la visualizaci\u00f3n en 3D.",
+   "createdAt": "2024-03-12T20:01:28Z",
+   "pushedAt": "2024-03-15T20:45:49Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 16318,
+   "stargazersCount": 0,
+   "topics": [
+    "accuracy",
+    "data",
+    "data-science",
+    "data-visualization",
+    "dataanalyst",
+    "dataanalytics",
+    "datamining",
+    "machine-learning",
+    "pca",
+    "pca-analysis",
+    "prediction",
+    "random-forest",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1172062047,
+   "fullName": "omair13/defect-detection-system",
+   "url": "https://github.com/omair13/defect-detection-system",
+   "description": "Detect and classify product defects in real-time using AI and computer vision to improve manufacturing quality control processes.",
+   "createdAt": "2026-03-03T22:49:37Z",
+   "pushedAt": "2026-10-13T06:55:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 559,
+   "stargazersCount": 0,
+   "topics": [
+    "computer-vision",
+    "convolutional-neural-networks",
+    "detection",
+    "image-classification",
+    "inference",
+    "live-demo",
+    "machine-learning",
+    "object-detection",
+    "openvino",
+    "pretrained-models",
+    "pyside6",
+    "python",
+    "realtime-detection",
+    "supervised-learning",
+    "video",
+    "yolov5"
+   ]
+  },
+  {
+   "id": 376273068,
+   "fullName": "omarxadel/knn",
+   "url": "https://github.com/omarxadel/knn",
+   "description": "K Nearest Neighbor Algorithm using Python.",
+   "createdAt": "2021-06-12T11:26:25Z",
+   "pushedAt": "2021-07-17T10:27:13Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13,
+   "stargazersCount": 0,
+   "topics": [
+    "knn-classification",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1082859439,
+   "fullName": "p-dirac/python-keras-cnn",
+   "url": "https://github.com/p-dirac/python-keras-cnn",
+   "description": "This application demonstrates the implementation details of a convolutional network programmed with Python class structures.",
+   "createdAt": "2025-10-24T22:08:33Z",
+   "pushedAt": "2025-11-29T21:36:59Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 7955,
+   "stargazersCount": 0,
+   "topics": [
+    "classes",
+    "cnn",
+    "confusion-matrix",
+    "cross-validation",
+    "cuda",
+    "gridsearchcv",
+    "gui",
+    "hyperparameter-optimization",
+    "image-classification",
+    "keras",
+    "matplotlib",
+    "numpy",
+    "pyinstaller",
+    "pyside6",
+    "python",
+    "pytorch",
+    "signals",
+    "supervised-learning",
+    "threads",
+    "visualization"
+   ]
+  },
+  {
+   "id": 1282833908,
+   "fullName": "PavelKorchahin/mydlutil",
+   "url": "https://github.com/PavelKorchahin/mydlutil",
+   "description": "A lightweight deep learning framework based on PyTorch",
+   "createdAt": "2026-06-28T08:44:58Z",
+   "pushedAt": "2026-11-16T10:17:17Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 298,
+   "stargazersCount": 1,
+   "topics": [
+    "classfication",
+    "deep-learning",
+    "pytorch",
+    "pytorch-lightning",
+    "segmentation",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 990610436,
+   "fullName": "PeaceOloruntoba/special-lamp",
+   "url": "https://github.com/PeaceOloruntoba/special-lamp",
+   "description": "AI module of the blockchain e-voting system with AI fraud detection",
+   "createdAt": "2025-05-26T11:22:58Z",
+   "pushedAt": "2025-06-30T16:22:17Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 7,
+   "stargazersCount": 2,
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "blockchain",
+    "final-year-project",
+    "machine-learning",
+    "ml",
+    "opensource",
+    "python",
+    "pythonprogramming",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 475093888,
+   "fullName": "philipdarke/torchtime",
+   "url": "https://github.com/philipdarke/torchtime",
+   "description": "Benchmark time series data sets for PyTorch",
+   "createdAt": "2022-03-28T16:47:59Z",
+   "pushedAt": "2024-02-14T14:13:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3223,
+   "stargazersCount": 36,
+   "topics": [
+    "classification",
+    "datasets",
+    "physionet",
+    "pytorch",
+    "supervised-learning",
+    "time-series"
+   ]
+  },
+  {
+   "id": 835497869,
+   "fullName": "physiclaw/TabularTransformer",
+   "url": "https://github.com/physiclaw/TabularTransformer",
+   "description": "An end-to-end deep learning framework based on Transformer model, adapted for tabular data domain, support both supervised and self-supervised learning, used for regression, classification tasks.",
+   "createdAt": "2024-07-30T00:59:26Z",
+   "pushedAt": "2024-10-10T07:37:45Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 789,
+   "stargazersCount": 3,
+   "topics": [
+    "classification",
+    "data-science",
+    "python",
+    "regression-analysis",
+    "self-supervised-learning",
+    "supervised-learning",
+    "tabular-data",
+    "transformer"
+   ]
+  },
+  {
+   "id": 810553978,
+   "fullName": "PoojanDoshi11/Speech_Detection",
+   "url": "https://github.com/PoojanDoshi11/Speech_Detection",
+   "description": "\ud83d\udde3\ufe0f Speech Type Detection is a Flask app to classifies text into categories like \"Hate Speech,\" \"Offensive Language,\" or \"No Hate or Offensive Language\" with 87.3% accuracy. It offers a user-friendly interface for text input and prediction, using machine learning algorithms. Idea for managing online inappropriate language. \ud83c\udf10\ud83d\udd0d.",
+   "createdAt": "2024-06-04T23:27:43Z",
+   "pushedAt": "2024-06-05T10:51:08Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1033,
+   "stargazersCount": 1,
+   "topics": [
+    "accuracy-score",
+    "confusion-matrix",
+    "flask",
+    "hate-speech-detection",
+    "machine-learning",
+    "ml",
+    "model-evaluation-metrics",
+    "offensive-speech-detection",
+    "preprocessing",
+    "supervised-learning",
+    "text-classification",
+    "text-preprocessing"
+   ]
+  },
+  {
+   "id": 1032583090,
+   "fullName": "probeen007/ML-Dermav1",
+   "url": "https://github.com/probeen007/ML-Dermav1",
+   "description": "DermaV1 is a machine learning project developed to detect and classify common skin diseases from images. Trained using a curated dataset of skin conditions, the model takes an image input and predicts the type of skin disease, helping to demonstrate how AI can support early medical diagnosis and accessibility.",
+   "createdAt": "2025-08-05T14:13:39Z",
+   "pushedAt": "2025-08-05T16:30:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 100,
+   "stargazersCount": 0,
+   "topics": [
+    "ml",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1073460962,
+   "fullName": "Prokash21/DeepFoldChange",
+   "url": "https://github.com/Prokash21/DeepFoldChange",
+   "description": "Neural network that emulates DGE analysis",
+   "createdAt": "2025-10-10T06:34:13Z",
+   "pushedAt": "2025-10-12T12:34:43Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5663,
+   "stargazersCount": 0,
+   "topics": [
+    "feature-encoding",
+    "mlp-regressor",
+    "neural-networks",
+    "pca-dnn-architecture",
+    "random-forest-regression",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 260934816,
+   "fullName": "pvnieo/FMNet-pytorch",
+   "url": "https://github.com/pvnieo/FMNet-pytorch",
+   "description": "A Pytorch implementation of: \"Deep Functional Maps: Structured Prediction for Dense Shape Correspondence\"",
+   "createdAt": "2020-05-03T13:59:46Z",
+   "pushedAt": "2021-06-09T09:05:27Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 19998,
+   "stargazersCount": 21,
+   "topics": [
+    "fmnet-pytorch",
+    "functional-maps",
+    "python3",
+    "pytorch",
+    "shape-correspondence",
+    "shape-matching",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 660042967,
+   "fullName": "pxaris/ccml",
+   "url": "https://github.com/pxaris/ccml",
+   "description": "PyTorch implementation of cross-cultural music transfer learning",
+   "createdAt": "2023-06-29T05:53:45Z",
+   "pushedAt": "2024-05-15T09:34:08Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 1304,
+   "stargazersCount": 13,
+   "topics": [
+    "deep-learning",
+    "music-classification",
+    "music-information-retrieval",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 999077588,
+   "fullName": "racinewu/NYCU-Machine_Learning_Industrial_Applications",
+   "url": "https://github.com/racinewu/NYCU-Machine_Learning_Industrial_Applications",
+   "description": "NYCU 2021 Fall Machine Learning Industrial Applications \u967d\u660e\u4ea4\u5927 \u9ec3\u884d\u4f50 \u6a5f\u5668\u5b78\u7fd2\u539f\u7406\u8207\u5de5\u696d\u61c9\u7528",
+   "createdAt": "2025-06-09T17:48:49Z",
+   "pushedAt": "2026-03-01T19:46:04Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6719,
+   "stargazersCount": 0,
+   "topics": [
+    "desiciontree",
+    "gradient-boosting",
+    "imdb",
+    "knn",
+    "machine-learning",
+    "mlp",
+    "nycu",
+    "nycu-course",
+    "python",
+    "random-forest",
+    "ridge",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 900366700,
+   "fullName": "rajaddr/simpliml",
+   "url": "https://github.com/rajaddr/simpliml",
+   "description": "SimpliML is a versatile machine learning library designed to be a one-stop solution for the entire data lifecycle. Whether you're preparing raw data or deploying advanced predictive models, SimpliML simplifies every step of the machine learning process",
+   "createdAt": "2024-12-08T15:44:14Z",
+   "pushedAt": "2026-10-11T16:27:13Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 115,
+   "stargazersCount": 0,
+   "topics": [
+    "artificial-intelligence",
+    "attention-mechanism",
+    "bayesian-inference",
+    "convex-optimization",
+    "entropy",
+    "gans",
+    "gradient-descent",
+    "machine-learning",
+    "markov-chain",
+    "mathematics",
+    "neural-networks",
+    "pca",
+    "probability-distributions",
+    "reinforcement-learning",
+    "supervised-learning",
+    "svd",
+    "tensorflow",
+    "transformers"
+   ]
+  },
+  {
+   "id": 1135609242,
+   "fullName": "rearendoh/synkro",
+   "url": "https://github.com/rearendoh/synkro",
+   "description": "\ud83e\udd16 Transform unstructured policies into structured conversation and evaluation data for LLMs with Synkro's versatile framework.",
+   "createdAt": "2026-01-16T10:41:22Z",
+   "pushedAt": "2026-10-13T06:48:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 2455,
+   "stargazersCount": 1,
+   "topics": [
+    "ai",
+    "datasets-preparation",
+    "developer-tools",
+    "ecommerce",
+    "langchain",
+    "langsmith",
+    "llm",
+    "mvc",
+    "openai",
+    "p2p",
+    "php",
+    "project",
+    "qa-dataset",
+    "smartwatch",
+    "supervised-finetuning",
+    "supervised-learning",
+    "sync",
+    "synthetic-data",
+    "tool-calling"
+   ]
+  },
+  {
+   "id": 978482894,
+   "fullName": "redmlovesyou333/arcgentica",
+   "url": "https://github.com/redmlovesyou333/arcgentica",
+   "description": "\ud83e\udd16 Solve ARC-AGI challenges efficiently using LLM-powered agentic AI for high accuracy and robust task performance.",
+   "createdAt": "2025-05-06T04:01:19Z",
+   "pushedAt": "2026-10-14T07:10:27Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 12100,
+   "stargazersCount": 2,
+   "topics": [
+    "ai-models",
+    "arcgentica",
+    "artificial-intelligence",
+    "computer-vision",
+    "data-analysis",
+    "data-science",
+    "deep-learning",
+    "machine-learning",
+    "ml-framework",
+    "natural-language-processing",
+    "neural-network",
+    "open-source",
+    "predictive-modeling",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 137956396,
+   "fullName": "RishabhKothaari/Neural-Network",
+   "url": "https://github.com/RishabhKothaari/Neural-Network",
+   "description": "MNIST digit classification with a Neural Network.",
+   "createdAt": "2018-06-19T23:33:28Z",
+   "pushedAt": "2018-07-11T01:45:04Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 723,
+   "stargazersCount": 1,
+   "topics": [
+    "classification",
+    "linear-classifier",
+    "machine-learning-algorithms",
+    "mnist-classification",
+    "neural-network",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 636565872,
+   "fullName": "rj0822/Purdue-ECE50024-SP23-MachineLearning",
+   "url": "https://github.com/rj0822/Purdue-ECE50024-SP23-MachineLearning",
+   "description": "Course Project Code for Purdue-ECE50024-SP23 Machine Learning I: A re-implementation of \"Learning with Noisy Labels\" (Instuctor: Prof. Qi Guo)",
+   "createdAt": "2023-05-05T06:25:23Z",
+   "pushedAt": "2026-06-23T05:15:36Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 5437,
+   "stargazersCount": 0,
+   "topics": [
+    "machine-learning",
+    "noisy-labels",
+    "supervised-learning",
+    "support-vector-machines"
+   ]
+  },
+  {
+   "id": 584548416,
+   "fullName": "Rohan-s18/SNUPy",
+   "url": "https://github.com/Rohan-s18/SNUPy",
+   "description": "Open Source Python Project for Machine Learning. ",
+   "createdAt": "2023-01-02T22:10:25Z",
+   "pushedAt": "2023-01-09T02:13:38Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 45,
+   "stargazersCount": 3,
+   "topics": [
+    "machine-learning",
+    "neural-networks",
+    "python3",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1078000550,
+   "fullName": "rohanmistry231/Machine-Learning-Algorithms-From-Scratch",
+   "url": "https://github.com/rohanmistry231/Machine-Learning-Algorithms-From-Scratch",
+   "description": "Python implementations of core machine learning algorithms from scratch using only NumPy, covering supervised and unsupervised methods with Jupyter notebooks for learning.",
+   "createdAt": "2025-10-17T04:06:09Z",
+   "pushedAt": "2025-10-17T07:40:34Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 186,
+   "stargazersCount": 3,
+   "topics": [
+    "classification",
+    "clustering",
+    "ensemble-learning",
+    "machine-learning",
+    "numpy",
+    "pca",
+    "python",
+    "regression",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 956627890,
+   "fullName": "sabsen27/oral-cancer-recognition",
+   "url": "https://github.com/sabsen27/oral-cancer-recognition",
+   "description": "Repository for oral cancer recognition experiment",
+   "createdAt": "2025-03-28T15:21:06Z",
+   "pushedAt": "2025-08-05T13:49:01Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 196,
+   "stargazersCount": 0,
+   "topics": [
+    "case-based-reasoning",
+    "deep-learning",
+    "oral-cancer",
+    "self-supervised-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1019042789,
+   "fullName": "saikaushhikp/AI1104-Programming-for-AI",
+   "url": "https://github.com/saikaushhikp/AI1104-Programming-for-AI",
+   "description": "Group Project done as coursework of Programming for AI course under Prof. Karthik P.N. at IITH",
+   "createdAt": "2025-07-13T16:02:03Z",
+   "pushedAt": "2025-12-13T09:57:48Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 1468,
+   "stargazersCount": 0,
+   "topics": [
+    "abalone-dataset",
+    "data-science",
+    "k-means-clustering",
+    "k-nearest-neighbours",
+    "machine-learning",
+    "nueral-network",
+    "supervised-learning",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 401807852,
+   "fullName": "SamanKhamesian/Simple-Linear-SVM-Algorithm",
+   "url": "https://github.com/SamanKhamesian/Simple-Linear-SVM-Algorithm",
+   "description": "This project is an implementation of a simple linear SVM algorithm",
+   "createdAt": "2021-08-31T18:38:20Z",
+   "pushedAt": "2021-08-31T18:51:50Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 209,
+   "stargazersCount": 3,
+   "topics": [
+    "classification",
+    "machine-learning",
+    "python",
+    "supervised-learning",
+    "support-vector-machines",
+    "svm"
+   ]
+  },
+  {
+   "id": 926980617,
+   "fullName": "sanketsh4h/enhanceQRC",
+   "url": "https://github.com/sanketsh4h/enhanceQRC",
+   "description": "This repository corresponds to the study \"Enhancing Quantum Reservoir Computing: Optimization Strategies and Real-World Applications\", Masters' Thesis authored by Sanket Shah",
+   "createdAt": "2025-02-04T07:38:39Z",
+   "pushedAt": "2026-02-05T21:06:06Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 9873,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning",
+    "quantum-computing",
+    "quantum-machine-learning",
+    "supervised-learning",
+    "time-series"
+   ]
+  },
+  {
+   "id": 344559131,
+   "fullName": "sanshigo345/breast_cancer_detector",
+   "url": "https://github.com/sanshigo345/breast_cancer_detector",
+   "description": "A simple program that uses machine learning (supervised learning) to train single layer neural network to classify clinical cases.",
+   "createdAt": "2021-03-04T17:42:21Z",
+   "pushedAt": "2021-03-06T22:52:23Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13,
+   "stargazersCount": 1,
+   "topics": [
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 491776136,
+   "fullName": "santos-k/SMS-SPAM-Classifier",
+   "url": "https://github.com/santos-k/SMS-SPAM-Classifier",
+   "description": "classify SMS and email messages as spam or not spam using machine learning techniques end-to-end project",
+   "createdAt": "2022-05-13T06:02:59Z",
+   "pushedAt": "2023-01-24T03:59:24Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 847,
+   "stargazersCount": 1,
+   "topics": [
+    "bag-of-words",
+    "classification",
+    "dash",
+    "dashboard",
+    "front-end",
+    "machine-learning",
+    "naive-bayes-classifier",
+    "plolty",
+    "python",
+    "supervised-learning",
+    "tfidf",
+    "webapp",
+    "website"
+   ]
+  },
+  {
+   "id": 1074161970,
+   "fullName": "shubham-61291/Unified-ML-Hub",
+   "url": "https://github.com/shubham-61291/Unified-ML-Hub",
+   "description": "Layered machine-learning reference repository covering supervised classification, regression and ranking, plus unsupervised clustering, dimensionality reduction, anomaly detection and association-rule mining. Includes scripts, local dependency files and experiment visualizations.",
+   "createdAt": "2025-10-11T09:00:53Z",
+   "pushedAt": "2026-10-15T12:23:11Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 11059,
+   "stargazersCount": 1,
+   "topics": [
+    "anomaly-detection",
+    "association-rules",
+    "catboost",
+    "classification",
+    "clustering",
+    "data-science",
+    "dimesnionality",
+    "keras",
+    "lightgbm",
+    "machine-learning",
+    "model-evaluation",
+    "python",
+    "pytorch",
+    "ranking",
+    "regression",
+    "skcit-learn",
+    "supervised-learning",
+    "tensorflow",
+    "unsupervised-learning",
+    "xgboost"
+   ]
+  },
+  {
+   "id": 116269248,
+   "fullName": "shubhpawar/Linear-Regression",
+   "url": "https://github.com/shubhpawar/Linear-Regression",
+   "description": "Linear Regression in Python",
+   "createdAt": "2018-01-04T14:28:57Z",
+   "pushedAt": "2018-01-04T14:32:24Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 29,
+   "stargazersCount": 0,
+   "topics": [
+    "linear-regression",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 116269906,
+   "fullName": "shubhpawar/Logistic-Regression",
+   "url": "https://github.com/shubhpawar/Logistic-Regression",
+   "description": "Logistic Regression in Python",
+   "createdAt": "2018-01-04T14:34:37Z",
+   "pushedAt": "2018-01-04T15:03:19Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 6,
+   "stargazersCount": 0,
+   "topics": [
+    "logistic-regression",
+    "machine-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 879681557,
+   "fullName": "siwooyong/imagenet1k",
+   "url": "https://github.com/siwooyong/imagenet1k",
+   "description": "simple pytorch pipeline for pretraining/finetuning vision models on imagenet-1k",
+   "createdAt": "2024-10-28T11:11:16Z",
+   "pushedAt": "2024-11-17T15:32:06Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 665,
+   "stargazersCount": 5,
+   "topics": [
+    "computer-vision",
+    "imagenet-dataset",
+    "large-dataset",
+    "pretraining",
+    "pytorch",
+    "self-supervised-learning",
+    "supervised-learning",
+    "visual-representation-learning"
+   ]
+  },
+  {
+   "id": 152451973,
+   "fullName": "skimbleshank/mlp-pandas",
+   "url": "https://github.com/skimbleshank/mlp-pandas",
+   "description": "The artificial neural network (ANN) made easy with Pandas, matplotlib, and plenty of documentation",
+   "createdAt": "2018-10-10T16:05:52Z",
+   "pushedAt": "2019-03-15T01:01:45Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 9765,
+   "stargazersCount": 1,
+   "topics": [
+    "artificial-neural-networks",
+    "machine-learning",
+    "multilayer-perceptron",
+    "numpy",
+    "pandas",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1073821676,
+   "fullName": "Skismail57/UPI_Fraud_Detection_Using_Machine_Learning",
+   "url": "https://github.com/Skismail57/UPI_Fraud_Detection_Using_Machine_Learning",
+   "description": "Advanced UPI Fraud Detection System using machine learning and deep learning techniques. Features real-time transaction monitoring, multi-model ensemble detection, and interactive dashboard Visualization.",
+   "createdAt": "2025-10-10T17:10:48Z",
+   "pushedAt": "2026-07-20T14:08:17Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3050,
+   "stargazersCount": 17,
+   "topics": [
+    "ai-security",
+    "artificial-intelligence-and-machine-learning",
+    "deep-learning",
+    "fraud-detection",
+    "machine-learning",
+    "model-training",
+    "neural-networks",
+    "python",
+    "real-time-monitoring",
+    "supervised-learning",
+    "unsupervised-learning",
+    "upi-payment"
+   ]
+  },
+  {
+   "id": 1097053938,
+   "fullName": "software-development-course-2025/ai-se-w02-core-concepts",
+   "url": "https://github.com/software-development-course-2025/ai-se-w02-core-concepts",
+   "description": "HealthPredict is a proof-of-concept project demonstrating the application of Supervised Machine Learning to address the United Nations Sustainable Development Goal (SDG) 3: Good Health and Well-being, specifically Target 3.4 \u2013 Non-Communicable Diseases (NCDs). ",
+   "createdAt": "2025-11-15T13:02:51Z",
+   "pushedAt": "2025-11-16T14:56:53Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 413,
+   "stargazersCount": 0,
+   "topics": [
+    "diabetes-prediction",
+    "machine-learning",
+    "public-health",
+    "sdg3",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 747525362,
+   "fullName": "speckly/sucorn",
+   "url": "https://github.com/speckly/sucorn",
+   "description": "ML/DL dataset collection utilities",
+   "createdAt": "2024-01-24T05:20:01Z",
+   "pushedAt": "2025-01-14T06:45:38Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 679,
+   "stargazersCount": 4,
+   "topics": [
+    "classification",
+    "data-gathering",
+    "deep-learning",
+    "discord",
+    "statistics",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 970737691,
+   "fullName": "sree2694/web_pattern_profiling",
+   "url": "https://github.com/sree2694/web_pattern_profiling",
+   "description": "This project leverages AI techniques including supervised and unsupervised machine learning, pattern mining, and statistical inference to analyze web browsing behavior. It identifies frequent navigation sequences and predicts user demographic profiles using simulated data. Complete with a GUI, logging, and export capabilities.",
+   "createdAt": "2025-04-22T13:12:14Z",
+   "pushedAt": "2025-04-25T13:52:35Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 1811,
+   "stargazersCount": 0,
+   "topics": [
+    "artificial-intelligence",
+    "cross-validation",
+    "machine-learning",
+    "pattern-mining",
+    "supervised-learning",
+    "tkinter",
+    "unsupervised-learning",
+    "web-analytics"
+   ]
+  },
+  {
+   "id": 340056032,
+   "fullName": "sujitmandal/Big-Mart-Sales",
+   "url": "https://github.com/sujitmandal/Big-Mart-Sales",
+   "description": "Big Mart Sales Prediction..",
+   "createdAt": "2021-02-18T13:18:56Z",
+   "pushedAt": "2021-03-01T12:25:41Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1849,
+   "stargazersCount": 0,
+   "topics": [
+    "data-science",
+    "numpy",
+    "pandas",
+    "prediction",
+    "python",
+    "statistics",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 468914145,
+   "fullName": "sukiboo/nn_approximation_challenge",
+   "url": "https://github.com/sukiboo/nn_approximation_challenge",
+   "description": "Challenge of shallow neural network approximation with one-dimensional input.",
+   "createdAt": "2022-03-11T22:12:58Z",
+   "pushedAt": "2022-05-31T14:28:53Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 18,
+   "stargazersCount": 0,
+   "topics": [
+    "approximation-theory",
+    "shallow-neural-network",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 188294534,
+   "fullName": "sukiboo/sgn",
+   "url": "https://github.com/sukiboo/sgn",
+   "description": "Source code for the numerical experiments presented in the paper \"Greedy Shallow Networks: An Approach for Constructing and Training Neural Networks\".",
+   "createdAt": "2019-05-23T19:30:25Z",
+   "pushedAt": "2022-03-10T16:12:00Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 31,
+   "stargazersCount": 10,
+   "topics": [
+    "greedy-algorithms",
+    "shallow-neural-network",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 307803806,
+   "fullName": "tamasandacian/BERT-Sentiment-Analysis",
+   "url": "https://github.com/tamasandacian/BERT-Sentiment-Analysis",
+   "description": "Sentiment analysis using BERT on Google Play reviews",
+   "createdAt": "2020-10-27T19:15:58Z",
+   "pushedAt": "2020-10-27T19:32:15Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 3921,
+   "stargazersCount": 1,
+   "topics": [
+    "bert-fine-tuning",
+    "bert-model",
+    "classification",
+    "google-play-review",
+    "jupyter-notebook",
+    "machine-learning",
+    "matplotlib",
+    "natural-language-processing",
+    "python3",
+    "pytorch",
+    "seaborn",
+    "sentiment-analysis",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 737833641,
+   "fullName": "TechLeo-Libraries/BuildML",
+   "url": "https://github.com/TechLeo-Libraries/BuildML",
+   "description": "BuildML is an advanced Python machine learning library created to simplify the machine learning lifecycle. It provides a comprehensive suite of tools, empowering data scientists and machine learning enthusiasts to effortlessly navigate the complexities of building, fine-tuning, and evaluating machine learning models",
+   "createdAt": "2024-01-01T17:05:21Z",
+   "pushedAt": "2026-11-15T21:28:30Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 13605,
+   "stargazersCount": 4,
+   "topics": [
+    "data",
+    "data-science",
+    "libraries",
+    "machine-learning",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 1218230627,
+   "fullName": "theelderemo/pentesting-explanations",
+   "url": "https://github.com/theelderemo/pentesting-explanations",
+   "description": "A high-quality supervised fine-tuning dataset for penetration testing expertise, red team tradecraft, and - as the dataset matures - novel vulnerability research and zero-day reasoning. The dataset is structured to teach models how to think like offensive security practitioners, not merely recall labels or technique names.",
+   "createdAt": "2026-04-22T17:02:38Z",
+   "pushedAt": "2026-04-23T08:56:15Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0"
+   },
+   "size": 15542,
+   "stargazersCount": 1,
+   "topics": [
+    "cybersecurity",
+    "dataset",
+    "hacking",
+    "hacking-tool",
+    "huggingface",
+    "machine-learning",
+    "mitre-attack",
+    "offensive-security",
+    "penetration-testing",
+    "red-team",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 776619554,
+   "fullName": "thswodnjs3/CSTA",
+   "url": "https://github.com/thswodnjs3/CSTA",
+   "description": "The official code of \"CSTA: CNN-based Spatiotemporal Attention for Video Summarization\"",
+   "createdAt": "2024-03-24T02:07:21Z",
+   "pushedAt": "2025-07-27T12:08:59Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 254,
+   "stargazersCount": 72,
+   "topics": [
+    "attention-mechanism",
+    "cnn",
+    "computer-vision",
+    "cvpr",
+    "cvpr2024",
+    "deep-learning",
+    "deep-neural-networks",
+    "pretrained-models",
+    "pytorch",
+    "pytorch-implementation",
+    "supervised-learning",
+    "video-processing",
+    "video-summarization",
+    "video-understanding",
+    "videosummarization"
+   ]
+  },
+  {
+   "id": 309456707,
+   "fullName": "tianchenji/Multimodal-SVAE",
+   "url": "https://github.com/tianchenji/Multimodal-SVAE",
+   "description": "Multimodal Supervised Variational Autoencoder",
+   "createdAt": "2020-11-02T18:14:18Z",
+   "pushedAt": "2020-11-03T15:25:37Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1021,
+   "stargazersCount": 18,
+   "topics": [
+    "anomaly-detection",
+    "deep-learning",
+    "semi-supervised-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 161836727,
+   "fullName": "toodef/neural-pipeline",
+   "url": "https://github.com/toodef/neural-pipeline",
+   "description": "Neural networks training pipeline based on PyTorch",
+   "createdAt": "2018-12-14T20:24:38Z",
+   "pushedAt": "2020-06-01T17:50:58Z",
+   "defaultBranch": "master",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 14297,
+   "stargazersCount": 312,
+   "topics": [
+    "deep-learning",
+    "image-classification",
+    "image-segmentation",
+    "neural-networks",
+    "object-detection",
+    "pipeline",
+    "pytorch",
+    "supervised-learning",
+    "training-pipeline"
+   ]
+  },
+  {
+   "id": 383669514,
+   "fullName": "Tripathi18/Heart-Disease-Prediction-Accuracy",
+   "url": "https://github.com/Tripathi18/Heart-Disease-Prediction-Accuracy",
+   "description": "Heart Disease Classification: This project focuses on utilizing machine learning algorithms to classify heart disease based on various features. The code performs data preprocessing, feature scaling, and applies different classification algorithms.",
+   "createdAt": "2021-07-07T04:08:18Z",
+   "pushedAt": "2023-07-21T17:29:00Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 21,
+   "stargazersCount": 0,
+   "topics": [
+    "decision-trees",
+    "heart-disease-analysis",
+    "heart-disease-prediction",
+    "k-means-clustering",
+    "machine-learning",
+    "machine-learning-algorithms",
+    "supervised-learning",
+    "supervised-machine-learning",
+    "support-vector-machines"
+   ]
+  },
+  {
+   "id": 434064344,
+   "fullName": "UCDvision/CMSF",
+   "url": "https://github.com/UCDvision/CMSF",
+   "description": "Official Code for \"Constrained Mean Shift Using Distant Yet Related Neighbors for Representation Learning\"",
+   "createdAt": "2021-12-02T03:07:31Z",
+   "pushedAt": "2022-10-20T23:24:25Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 18545,
+   "stargazersCount": 5,
+   "topics": [
+    "computer-vision",
+    "convolutional-neural-networks",
+    "deep-learning",
+    "kmeans-clustering",
+    "knn",
+    "machine-learning",
+    "mean-shift",
+    "pytorch",
+    "representation-learning",
+    "self-supervised-learning",
+    "semi-supervised-learning",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 337408397,
+   "fullName": "umutkcbs/hope-autonomous-driving",
+   "url": "https://github.com/umutkcbs/hope-autonomous-driving",
+   "description": "Autonomous Driving project for Euro Truck Simulator 2 Running on Real World",
+   "createdAt": "2021-02-09T13:10:18Z",
+   "pushedAt": "2023-07-02T20:33:16Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 15563,
+   "stargazersCount": 46,
+   "topics": [
+    "automation",
+    "autonomous",
+    "autonomous-driving",
+    "autonomous-vehicles",
+    "beamng",
+    "computer-vision",
+    "euro-truck-simulator-2",
+    "keras",
+    "python",
+    "supervised-learning",
+    "tensorflow"
+   ]
+  },
+  {
+   "id": 156362454,
+   "fullName": "ViktorC/OSML",
+   "url": "https://github.com/ViktorC/OSML",
+   "description": "A Python library of 'old school' machine learning methods such as linear regression, logistic regression, naive Bayes, k-nearest neighbors, decision trees, and support vector machines.",
+   "createdAt": "2018-11-06T09:56:14Z",
+   "pushedAt": "2019-08-08T08:32:57Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 345,
+   "stargazersCount": 0,
+   "topics": [
+    "bagging",
+    "bootstrap-aggregating",
+    "box-cox",
+    "decision-tree",
+    "gradient-boosting",
+    "knearest-neighbors",
+    "lasso-regression",
+    "linear-discriminant-analysis",
+    "linear-regression",
+    "logistic-regression",
+    "machine-learning",
+    "naive-bayes",
+    "numpy",
+    "pandas",
+    "principal-component-analysis",
+    "quadratic-discriminant-analysis",
+    "random-forest",
+    "ridge-regression",
+    "supervised-learning",
+    "svm"
+   ]
+  },
+  {
+   "id": 385294611,
+   "fullName": "Vivswan/HyperParameter-Optimization-VGG",
+   "url": "https://github.com/Vivswan/HyperParameter-Optimization-VGG",
+   "description": "Hyperparameter Optimization on VGG Networks",
+   "createdAt": "2021-07-12T15:28:27Z",
+   "pushedAt": "2023-08-04T02:48:27Z",
+   "defaultBranch": "main",
+   "isArchived": true,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 18873,
+   "stargazersCount": 0,
+   "topics": [
+    "cifar10",
+    "computer-vision",
+    "deep-learning",
+    "hyperparameter-optimization",
+    "pytorch",
+    "supervised-learning",
+    "vgg"
+   ]
+  },
+  {
+   "id": 266683151,
+   "fullName": "Yao-Shao/Maching-Learning-only-with-Numpy",
+   "url": "https://github.com/Yao-Shao/Maching-Learning-only-with-Numpy",
+   "description": "Implementation of Machine learning algorithms only using numpy.",
+   "createdAt": "2020-05-25T04:31:29Z",
+   "pushedAt": "2020-07-06T10:57:47Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 620,
+   "stargazersCount": 0,
+   "topics": [
+    "decision-tree",
+    "expectation-maximization",
+    "gaussian-mixture-models",
+    "gmm",
+    "k-means",
+    "knn",
+    "logistic-regression",
+    "machine-learning",
+    "mlp",
+    "numpy",
+    "ols",
+    "perceptron",
+    "python",
+    "random-forest",
+    "ridge-regression",
+    "supervised-learning",
+    "svm",
+    "total-least-square",
+    "unsupervised-learning"
+   ]
+  },
+  {
+   "id": 1226566089,
+   "fullName": "yildirimemirhan/kinematic-action-recognition",
+   "url": "https://github.com/yildirimemirhan/kinematic-action-recognition",
+   "description": "A full end-to-end pipeline for classifying factory operator actions from high-frequency motion-capture sensor data. Covers out-of-core data engineering, time-series feature extraction, unsupervised and supervised learning,real-time streaming with concept drift detection.",
+   "createdAt": "2026-05-01T15:05:55Z",
+   "pushedAt": "2026-06-13T13:57:47Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 767,
+   "stargazersCount": 0,
+   "topics": [
+    "big-data",
+    "big-data-analysis",
+    "dask",
+    "machine-learning",
+    "supervised-learning",
+    "supervised-machine-learning"
+   ]
+  },
+  {
+   "id": 841704382,
+   "fullName": "Yonas650/Cancer-Classification-Gene-Expression-using-svm-randomforest-and-cnn",
+   "url": "https://github.com/Yonas650/Cancer-Classification-Gene-Expression-using-svm-randomforest-and-cnn",
+   "description": null,
+   "createdAt": "2024-08-12T22:56:55Z",
+   "pushedAt": "2024-08-20T23:49:44Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 13581,
+   "stargazersCount": 1,
+   "topics": [
+    "bioinformatics",
+    "biomedical-research",
+    "cancer-classification",
+    "convolutional-neural-networks",
+    "data-science",
+    "data-visualization",
+    "deep-learning",
+    "feature-selection",
+    "gene-expression",
+    "genomics",
+    "machine-learning",
+    "medical-data-analysis",
+    "model-evaluation",
+    "multiclass-classification",
+    "precision-medicine",
+    "python",
+    "random-forest",
+    "supervised-learning",
+    "support-vector-machines",
+    "tcga-dataset"
+   ]
+  },
+  {
+   "id": 909695764,
+   "fullName": "ystemsrx/mini-nanoGPT",
+   "url": "https://github.com/ystemsrx/mini-nanoGPT",
+   "description": "One-click training of your own GPT. Training a GPT has never been easier for beginners. / \u4e00\u952e\u9884\u8bad\u7ec3+SFT\u4e00\u4e2a\u5c5e\u4e8e\u81ea\u5df1\u7684LLM\uff0c0\u57fa\u7840\u8bad\u7ec3GPT\u539f\u6765\u53ef\u4ee5\u8fd9\u4e48\u7b80\u5355\uff1f",
+   "createdAt": "2024-12-29T14:11:09Z",
+   "pushedAt": "2026-10-12T09:28:31Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 8489,
+   "stargazersCount": 387,
+   "topics": [
+    "ai",
+    "artificial-intelligence",
+    "begginer-friendly",
+    "begginers",
+    "beginner",
+    "database",
+    "deep-learning",
+    "education",
+    "gpt",
+    "gradio",
+    "graphical-interface",
+    "learners",
+    "machine-learning",
+    "neural-network",
+    "pre-training",
+    "pytorch",
+    "starter",
+    "supervised-learning",
+    "train",
+    "user-interface"
+   ]
+  },
+  {
+   "id": 1069187706,
+   "fullName": "zatarra-svg/dataset-toolbox",
+   "url": "https://github.com/zatarra-svg/dataset-toolbox",
+   "description": "\ud83d\udee0\ufe0f Prepare and analyze conversational datasets with ease using our toolbox for CSV operations, filtering, analysis, and seamless PostgreSQL integration.",
+   "createdAt": "2025-10-03T14:35:54Z",
+   "pushedAt": "2026-10-14T06:46:20Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1405,
+   "stargazersCount": 1,
+   "topics": [
+    "autonomous-driving",
+    "benchmark",
+    "classification",
+    "dataset",
+    "event-based",
+    "forecasting",
+    "grasp",
+    "image-processing",
+    "image-registration",
+    "imputation",
+    "nyu-depth-v2",
+    "perceptron-learning-algorithm",
+    "python",
+    "robotics",
+    "supervised-learning",
+    "time-series",
+    "toolbox",
+    "trustworthy-ai"
+   ]
+  },
+  {
+   "id": 891743178,
+   "fullName": "Zer0-Bug/GradientDescent_Optimizing-Theta-Values",
+   "url": "https://github.com/Zer0-Bug/GradientDescent_Optimizing-Theta-Values",
+   "description": "Implementation is to use gradient descent to find the optimal values of \u03b8 that minimize the cost function.",
+   "createdAt": "2024-11-20T21:56:04Z",
+   "pushedAt": "2026-01-31T15:34:42Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1265,
+   "stargazersCount": 4,
+   "topics": [
+    "cost-function",
+    "data-science",
+    "gradient-descent",
+    "logistic-regression",
+    "machine-learning",
+    "machine-learning-theory",
+    "mathematical-modeling",
+    "optimization",
+    "predictive-modeling",
+    "python",
+    "regularization",
+    "statistical-modeling",
+    "supervised-learning",
+    "theta"
+   ]
+  },
+  {
+   "id": 891741243,
+   "fullName": "Zer0-Bug/House_Price_Prediction",
+   "url": "https://github.com/Zer0-Bug/House_Price_Prediction",
+   "description": "A from-scratch Linear Regression model optimized via Gradient Descent for house price prediction.",
+   "createdAt": "2024-11-20T21:49:48Z",
+   "pushedAt": "2026-01-31T15:34:34Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 818,
+   "stargazersCount": 5,
+   "topics": [
+    "cost-function",
+    "data-preprocessing",
+    "data-science",
+    "feature-engineering",
+    "gradient-descent",
+    "house-prices",
+    "linear-regression",
+    "machine-learning",
+    "model-evaluation",
+    "optimization",
+    "predictive-modeling",
+    "python",
+    "regression-analysis",
+    "supervised-learning",
+    "visualization"
+   ]
+  },
+  {
+   "id": 891744307,
+   "fullName": "Zer0-Bug/Perceptron-Binary-Classifier",
+   "url": "https://github.com/Zer0-Bug/Perceptron-Binary-Classifier",
+   "description": "From-scratch Perceptron Learning Algorithm for binary classification, showcasing iterative weight optimization and linear decision boundary formation on labeled datasets.",
+   "createdAt": "2024-11-20T22:00:05Z",
+   "pushedAt": "2026-01-31T15:34:25Z",
+   "defaultBranch": "main",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 1290,
+   "stargazersCount": 4,
+   "topics": [
+    "algorithm",
+    "binary-classification",
+    "classification",
+    "data-analysis",
+    "data-science",
+    "dataset",
+    "evaluation-metrics",
+    "linear-classifier",
+    "machine-learning",
+    "neural-networks",
+    "perceptron",
+    "predictive-modeling",
+    "python",
+    "supervised-learning"
+   ]
+  },
+  {
+   "id": 164046740,
+   "fullName": "ZhaoJ9014/face.evoLVe",
+   "url": "https://github.com/ZhaoJ9014/face.evoLVe",
+   "description": "\ud83d\udd25\ud83d\udd25High-Performance Face Recognition Library on PaddlePaddle & PyTorch\ud83d\udd25\ud83d\udd25",
+   "createdAt": "2019-01-04T02:22:17Z",
+   "pushedAt": "2025-03-20T02:45:06Z",
+   "defaultBranch": "master",
+   "isArchived": false,
+   "isFork": false,
+   "language": "Python",
+   "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT"
+   },
+   "size": 8499,
+   "stargazersCount": 3599,
+   "topics": [
+    "artificial-intelligence",
+    "computer-vision",
+    "convolutional-neural-network",
+    "data-augmentation",
+    "deep-learning",
+    "face-alignment",
+    "face-detection",
+    "face-landmark-detection",
+    "face-recognition",
+    "feature-extraction",
+    "fine-tuning",
+    "hard-negative-mining",
+    "imbalanced-learning",
+    "machine-learning",
+    "model-training",
+    "nus",
+    "pytorch",
+    "supervised-learning",
+    "tencent",
+    "transfer-learning"
+   ]
+  }
+ ]
+}

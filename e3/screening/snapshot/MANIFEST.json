@@ -1,0 +1,241 @@
+{
+ "snapshot_started_utc": "2026-11-17T00:27:39Z",
+ "snapshot_finished_utc": "2026-11-17T00:55:51Z",
+ "git_head": "e68ec1d97cd52f808ead7879feba401d8fe9b606",
+ "protocol_tracked": true,
+ "protocol_clean": true,
+ "protocol_sha256": "8a571bcafa74d7a51615c88199df1960bf98f734afead993257dd61b1f22e74f",
+ "script_sha256": "8bbb510fcd9815b190bc80e1e80a4465f2dcaee65c450e4a6e1c1e6a744a0fb0",
+ "python": "3.12.13",
+ "authenticated": false,
+ "endpoint": "https://api.github.com/search/repositories",
+ "per_page": 100,
+ "all_slices_verified": true,
+ "slices": [
+  {
+   "population": "P4",
+   "slice": "P4-a",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2018-01-01..2022-12-31",
+   "created": [
+    "2018-01-01",
+    "2022-12-31"
+   ],
+   "fetched_utc": "2026-11-17T00:28:28Z",
+   "total_count": 324,
+   "reached_search_cap": false,
+   "n_items": 324,
+   "verified": true,
+   "n_parts": 4
+  },
+  {
+   "population": "P4",
+   "slice": "P4-b",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2023-01-01..2023-12-31",
+   "created": [
+    "2023-01-01",
+    "2023-12-31"
+   ],
+   "fetched_utc": "2026-11-17T00:28:53Z",
+   "total_count": 108,
+   "reached_search_cap": false,
+   "n_items": 108,
+   "verified": true,
+   "n_parts": 2
+  },
+  {
+   "population": "P4",
+   "slice": "P4-c",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2024-01-01..2024-12-31",
+   "created": [
+    "2024-01-01",
+    "2024-12-31"
+   ],
+   "fetched_utc": "2026-11-17T00:29:32Z",
+   "total_count": 180,
+   "reached_search_cap": false,
+   "n_items": 180,
+   "verified": true,
+   "n_parts": 3
+  },
+  {
+   "population": "P4",
+   "slice": "P4-d",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2025-01-01..2025-06-30",
+   "created": [
+    "2025-01-01",
+    "2025-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:30:11Z",
+   "total_count": 207,
+   "reached_search_cap": false,
+   "n_items": 207,
+   "verified": true,
+   "n_parts": 3
+  },
+  {
+   "population": "P4",
+   "slice": "P4-e",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2025-07-01..2025-12-31",
+   "created": [
+    "2025-07-01",
+    "2025-12-31"
+   ],
+   "fetched_utc": "2026-11-17T00:31:16Z",
+   "total_count": 373,
+   "reached_search_cap": false,
+   "n_items": 373,
+   "verified": true,
+   "n_parts": 5
+  },
+  {
+   "population": "P4",
+   "slice": "P4-f",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2026-01-01..2026-03-31",
+   "created": [
+    "2026-01-01",
+    "2026-03-31"
+   ],
+   "fetched_utc": "2026-11-17T00:33:14Z",
+   "total_count": 394,
+   "reached_search_cap": false,
+   "n_items": 394,
+   "verified": true,
+   "n_parts": 6
+  },
+  {
+   "population": "P4",
+   "slice": "P4-g",
+   "query": "topic:scikit-learn language:Python stars:<10 fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause created:2026-04-01..2026-06-30",
+   "created": [
+    "2026-04-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:36:09Z",
+   "total_count": 717,
+   "reached_search_cap": false,
+   "n_items": 717,
+   "verified": true,
+   "n_parts": 11
+  },
+  {
+   "population": "P5",
+   "slice": "P5-random-forest",
+   "query": "topic:random-forest language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+   "created": [
+    "2018-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:37:41Z",
+   "total_count": 434,
+   "reached_search_cap": false,
+   "n_items": 434,
+   "verified": true,
+   "n_parts": 7
+  },
+  {
+   "population": "P5",
+   "slice": "P5-xgboost",
+   "query": "topic:xgboost language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+   "created": [
+    "2018-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:41:29Z",
+   "total_count": 670,
+   "reached_search_cap": false,
+   "n_items": 670,
+   "verified": true,
+   "n_parts": 11
+  },
+  {
+   "population": "P5",
+   "slice": "P5-regression",
+   "query": "topic:regression language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+   "created": [
+    "2018-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:45:32Z",
+   "total_count": 415,
+   "reached_search_cap": false,
+   "n_items": 415,
+   "verified": true,
+   "n_parts": 6
+  },
+  {
+   "population": "P5",
+   "slice": "P5-logistic-regression",
+   "query": "topic:logistic-regression language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+   "created": [
+    "2018-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:46:53Z",
+   "total_count": 293,
+   "reached_search_cap": false,
+   "n_items": 293,
+   "verified": true,
+   "n_parts": 4
+  },
+  {
+   "population": "P5",
+   "slice": "P5-feature-engineering",
+   "query": "topic:feature-engineering language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+   "created": [
+    "2018-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:48:15Z",
+   "total_count": 262,
+   "reached_search_cap": false,
+   "n_items": 262,
+   "verified": true,
+   "n_parts": 5
+  },
+  {
+   "population": "P5",
+   "slice": "P5-supervised-learning",
+   "query": "topic:supervised-learning language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2026-06-30",
+   "created": [
+    "2018-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:49:04Z",
+   "total_count": 170,
+   "reached_search_cap": false,
+   "n_items": 170,
+   "verified": true,
+   "n_parts": 3
+  },
+  {
+   "population": "P5",
+   "slice": "P5-classification-a",
+   "query": "topic:classification language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2018-01-01..2022-12-31",
+   "created": [
+    "2018-01-01",
+    "2022-12-31"
+   ],
+   "fetched_utc": "2026-11-17T00:53:05Z",
+   "total_count": 621,
+   "reached_search_cap": false,
+   "n_items": 621,
+   "verified": true,
+   "n_parts": 9
+  },
+  {
+   "population": "P5",
+   "slice": "P5-classification-b",
+   "query": "topic:classification language:Python fork:false size:<=20000 license:mit license:apache-2.0 license:bsd-3-clause license:bsd-2-clause -topic:scikit-learn -topic:sklearn -topic:mlops created:2023-01-01..2026-06-30",
+   "created": [
+    "2023-01-01",
+    "2026-06-30"
+   ],
+   "fetched_utc": "2026-11-17T00:55:51Z",
+   "total_count": 595,
+   "reached_search_cap": false,
+   "n_items": 595,
+   "verified": true,
+   "n_parts": 8
+  }
+ ]
+}
