@@ -125,6 +125,10 @@ For each population separately:
 - **Automated rules X1–X12:** unchanged from E2 §2.
 - **Manual review M1–M7:** unchanged from E2 §2, including amendment A1 (rule M2′ for repositories excluded only by X6).
 - **E2's screening refinements:** the extended keyword lists, the removal of the `max_features` entry, and the skipping of unsafe archive members all apply from the start.
+- **Implementation:** `e3/screening/screen.py` calls E2's own `screen()` function from `e2/screening/prescreen.py`, unchanged, so the rules are E2's by construction.
+  - Only the GitHub transport differs: the REST API with a personal read-only token instead of the `gh` tool.
+  - Sources are kept only for static passes and X6-only repositories, which M2′ reviews.
+  - An infrastructure failure is retried once, as in E2 S12, and every failure is recorded.
 
 **New rule M8 (duplicates).** Exclude a repository if its entry-point script is byte-identical to that of a repository already accepted earlier in seeded order, or if it is a copy of one with only cosmetic changes (names, comments, formatting). Record the matched repository in the manifest. Duplicates would give correlated cases and overstate the evidence.
 
