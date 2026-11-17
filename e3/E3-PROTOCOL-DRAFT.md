@@ -113,7 +113,12 @@ For each population separately:
   - each slice's exact query string and `total_count`
   - the raw JSON results
   - the UTC time
-- E2 committed raw results but not the command; E3 commits both.
+- E2 committed raw results but not the command; E3 commits both. The script is `e3/screening/snapshot.py`.
+- **How results are fetched.** GitHub's search pagination can repeat or skip results. While the script was being tested on 2026-11-16, one 170-result query returned only 166 unique repositories across three paginated attempts.
+  - Each slice is therefore fetched as date sub-ranges, halved until each fits on a single page of 100 results. The sub-ranges partition the slice's date range, so together they return exactly the slice query's results, and every sub-range query is recorded.
+  - A slice is verified when its own `total_count` equals both the sum of its parts' counts and the number of unique repositories.
+  - Any slice that fails verification is recorded in `e3/DEVIATIONS.md` before screening.
+- **Credentials.** The snapshot runs without a GitHub login, or with a token from the personal account only. A work account is never used.
 
 ### 2.6 Screening rules
 
